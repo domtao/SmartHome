@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height110"
+    android:layout_margin="@dimen/item_height15"
+    android:background="@drawable/bg_gv" >
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/item_height10"
+        android:paddingLeft="@dimen/item_height20"
+        android:paddingRight="@dimen/item_height20"
+        android:paddingBottom="@dimen/item_height5"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.zunder.image.view.SmartImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/item_height60"
+            android:layout_height="@dimen/item_height60"
+            android:src="@mipmap/load_img"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="@dimen/item_height15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/editeMode"
+        android:layout_width="@dimen/item_height40"
+        android:layout_height="@dimen/item_height40"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_margin="@dimen/item_height5"
+        android:visibility="visible"
+        android:src="@mipmap/edit_scene" />
+
+</RelativeLayout>

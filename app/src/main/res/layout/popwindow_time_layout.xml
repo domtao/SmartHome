@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="400dp"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/button_boder_square" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="@dimen/item_height50"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/font_close_press"
+            android:textSize="@dimen/font_size_14"
+            />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="时间段"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_height10"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:src="@mipmap/zun_sure" />
+    </RelativeLayout>
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.zunder.smart.roll.WheelView
+            android:id="@+id/start_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.zunder.smart.roll.WheelView
+            android:id="@+id/start_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="~" />
+
+        <com.zunder.smart.roll.WheelView
+            android:id="@+id/end_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.zunder.smart.roll.WheelView
+            android:id="@+id/end_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

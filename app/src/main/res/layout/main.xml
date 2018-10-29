@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:background="@mipmap/zun_custom_bg1"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <HorizontalScrollView
+                android:id="@+id/main_sv"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height50"
+                android:background="@mipmap/zun_center_top"
+                android:fadingEdge="none"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tabStripEnabled="false" />
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </LinearLayout>
+        <ImageView
+        android:id="@+id/centerSet"
+        android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/item_height5"
+            android:layout_marginRight="@dimen/item_height10"
+        android:layout_width="@dimen/item_height40"
+        android:layout_height="@dimen/item_height40"
+        android:src="@mipmap/center_set"/>
+
+</RelativeLayout>
+</TabHost>

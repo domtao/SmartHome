@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.zunder.smart"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "V1.0.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64", "armeabi-v8a"
+        }
+    }
+    signingConfigs {
+        release {
+            Properties properties = new Properties()
+            //加载本地local.properties文件
+            if (rootProject.file('local.properties').exists()) {
+                properties.load(rootProject.file("local.properties").newDataInputStream())
+                if (properties.get("storeFile") != null) {
+                    storeFile file(properties.get("storeFile"))
+                    storePassword properties.get("storePassword")
+                    keyAlias properties.get("keyAlias")
+                    keyPassword properties.get("keyPassword")
+                }
+            } else if (System.getenv("FLOW_CERTIFICATE_FILE") != null) {
+                storeFile file(System.getenv("FLOW_CERTIFICATE_FILE"))
+                storePassword System.getenv("FLOW_KEYSTORE_PASS")
+                keyAlias System.getenv("FLOW_ALIAS_NAME")
+                keyPassword System.getenv("FLOW_ALIAS_PASS")
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+        destinationDir file("$projectDir/libs")
+        baseName "Native_Libs2"
+        extension "jar"
+        from fileTree(dir: "libs", include: "**/*.so")
+        into "lib"
+    }
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn(nativeLibsToJar)
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        testCompile 'junit:junit:4.12'
+        compile files('libs/hcicloud-3.9.jar')
+        compile files('libs/hcicloud_recorder-3.9.jar')
+        compile files('libs/jcore-android_v1.1.2.jar')
+        compile files('libs/jpush-android_v3.0.5.jar')
+        compile files('libs/MobCommons-2017.0412.1554.jar')
+        compile files('libs/MobTools-2017.0412.1554.jar')
+        compile files('libs/Msc.jar')
+        compile files('libs/nineoldanimatin.jar')
+        compile files('libs/RAK_Scanner.jar')
+        compile files('libs/simpleconfigwizardlib.jar')
+        compile files('libs/SmartConfigClient.jar')
+        compile files('libs/SMSSDK-2.1.4.jar')
+        compile files('libs/xUtils-2.6.14.jar')
+        compile files('libs/jsoup-1.6.3.jar')
+        compile files('libs/zxing.jar')
+        compile files('libs/netty-all-4.0.9.Final.jar')
+        compile files('libs/commons-io-2.5.jar')
+        compile files('libs/commons-lang3-3.1.jar')
+        compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4'
+        compile 'com.andsync.xpermission:XPermissionUtils:1.2'
+        compile 'com.android.support:design:25.3.1'
+        compile 'com.yanzhenjie:recyclerview-swipe:1.0.0'
+        //Tost****
+        compile 'com.github.GrenderG:Toasty:1.1.4'
+        // 图片加载*****
+        compile 'com.github.bumptech.glide:glide:3.7.0'
+        compile 'com.android.support:cardview-v7:25.3.1'
+        //门铃******
+        compile 'com.p2p.core:p2p-core:0.4.3'
+        compile 'com.github.jwkj:ShakManger:v1.0.1'
+        //声波配网库
+        compile 'com.github.jwkj:SoundWaveSender:v2.0.2'
+        //声波配网库说依赖的udp通讯库，不可删除
+        compile 'com.jwkj:udpsender:v2.0.1'
+    }
+}

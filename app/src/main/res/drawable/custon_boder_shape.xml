@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:useLevel="false" android:shape="rectangle">
+    <solid android:color="@color/transparent"/>
+    <corners android:radius="60dip"/>
+    <stroke android:width="1dip"
+        android:color="@color/white"
+        />
+    <!--边框宽度-->
+    <size android:width="@dimen/item_height60"
+        android:height="@dimen/item_height60" />
+    <!--边框-->
+</shape>

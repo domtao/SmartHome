@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="添加安防"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height60"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deviceName"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/deviceName"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="240dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font_size_14"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height60"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deviceId"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/deviceID"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="200dp"
+                    android:layout_marginRight="@dimen/item_height55"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:layout_marginTop="@dimen/item_height10"
+                    android:layout_marginBottom="@dimen/item_height10"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="输入设备ID"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font_size_14"
+                    android:singleLine="true" />
+                <ImageView
+                    android:id="@+id/studyTxt"
+                    android:layout_width="@dimen/item_height30"
+                    android:layout_height="@dimen/item_height30"
+                    android:focusable="true"
+                    android:layout_marginRight="@dimen/item_height10"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/zun_study" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/roomLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height60"
+                android:background="@drawable/tabbar_item_select" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/room"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/roomTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="点击选择"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/typeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height60"
+                android:background="@drawable/tabbar_item_select" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/typeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="点击选择"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ioLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height60"
+                android:background="@drawable/tabbar_item_select" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Io"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/ioTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="回路1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setLayout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/item_height20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height60"
+                    android:background="@drawable/tabbar_item_select">
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentTop="true"
+                        android:background="#ffcccccc" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="安防发生报警联动情景"
+                        android:textColor="#ff3f3f3f"
+                        android:textSize="@dimen/font_size_16"/>
+                    <CheckBox
+                        android:id="@+id/openModeWarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:text="发生报警为紧急情况设置,此情景受 开启/关闭 布防动作\n控制,这里可选择是否自动创建"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/item_height20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height60"
+                    android:background="@drawable/tabbar_item_select">
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentTop="true"
+                        android:background="#ffcccccc" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="安防解除报警联动报警"
+                        android:textColor="#ff3f3f3f"
+                        android:textSize="@dimen/font_size_16"/>
+                    <CheckBox
+                        android:id="@+id/closeModeWarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:text="解除报警为紧急情况设置,此情景受 开启/关闭 布防动作\n控制,这里可选择是否自动创建"/>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/item_height20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height60"
+                    android:background="@drawable/tabbar_item_select" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="传感器开启时联动情景"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <CheckBox
+                        android:id="@+id/modeOpen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:text="当传感器被开启时,执行情景,不受 开启/关闭 布防动作\n控制,这里可选择是否自动创建"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height60"
+                    android:layout_marginTop="@dimen/item_height20"
+                    android:background="@drawable/tabbar_item_select">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="传感器关闭时联动情景"
+                        android:textColor="#ff3f3f3f"
+                        android:textSize="@dimen/font_size_16"/>
+
+                    <CheckBox
+                        android:id="@+id/modeClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:text="当传感器被关闭时,执行情景,不受 开启/关闭 布防动作\n控制,这里可选择是否自动创建"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

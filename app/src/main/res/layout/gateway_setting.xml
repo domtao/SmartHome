@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_item"
+        layout="@layout/header_view" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="10.0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <FrameLayout
+                android:id="@+id/setting_wifi"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/wifiTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_wifi"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/wifiSet"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/setting_user"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/userTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_manger"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/adminsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_operator"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/operatorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_set_user"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/usersetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_camera_alias"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/aliaTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_alia"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/ailasetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_timing"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/timingTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clean_time"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/timmingsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_sence"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/modeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clean_mode"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/modesetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_anHong"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/anHongTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clean_anhong"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/matchsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_point"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:visibility="gone"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/pointTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/alerm_detector"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/pointsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_code"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/machineTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_machine"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/machinesetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@+id/codeFresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:src="@drawable/index_top_left_refresh" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/answerRadio"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/answerRadioTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_answer"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/answerbro"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/timingRadio"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/timingRadioTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_broad"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/timmingbro"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/setting_Control"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/controlTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_remote"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/remotecontrol"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/setting_alerm"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_bj"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/alramset"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_ftp"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/ftp_setting"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="FTP设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/mail_setting"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="邮件设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_sdcard"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_sdk"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/sdksetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_ap"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/ap_setting"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="AP参数设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_ddns"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/setting_ddns"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="DDNS设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_smart_alarm"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_bj"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="智能报警设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_time"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clock"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="设备时钟设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_History"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clock"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/option_info"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+            <FrameLayout
+            android:id="@+id/setting_language"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="@drawable/tabbar_item_select" >
+
+            <TextView
+                android:id="@+id/systemTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="10.0dip"
+                android:drawableLeft="@mipmap/zun_laugvage"
+                android:drawablePadding="8.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/sys_set"
+                android:textColor="@color/color_black"
+                android:textSize="16.0sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="10.0dip"
+                android:src="@mipmap/index_arrow" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.00999999dip"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc" />
+        </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

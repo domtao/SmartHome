@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="420dp" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height50"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_16"
+            android:text="设置"
+            android:background="@mipmap/zun_title_bg"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@mipmap/zun_body_bg"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_margin="@dimen/item_height10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/screen_orientation_rg"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/item_height5"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/landscape_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:text="横屏" />
+
+                    <RadioButton
+                        android:id="@+id/portrait_rb"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="竖屏" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/add_line" />
+                <RadioGroup
+                    android:layout_margin="@dimen/item_height5"
+                    android:id="@+id/tab_position_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/up_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:textColor="@color/black"
+                        android:text="主菜单在上" />
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/bottom_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="主菜单在下" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/add_line" />
+            <LinearLayout
+                android:layout_margin="@dimen/item_height10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/padding_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="菜单间距"
+                    android:inputType="number" />
+                <EditText
+                    android:id="@+id/tab_height_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="菜单高度"
+                    android:inputType="number" />
+
+                <EditText
+                android:id="@+id/setting_min_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="最小菜单数"
+                android:inputType="number" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/add_line" />
+            <LinearLayout
+                android:layout_margin="@dimen/item_height10"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content" >
+                <CheckBox
+                    android:id="@+id/is_custom_color_cb"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="自定义颜色" />
+
+                <EditText
+                    android:id="@+id/color_et"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:layout_marginRight="@dimen/item_height10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="格式(#xxxxxx)" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/add_line" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height50"
+            android:background="@mipmap/zun_botton_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancle_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textColor="@color/font_close_press" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/add_line" />
+
+            <Button
+                android:id="@+id/sure_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/sure"
+                android:textColor="@color/font_open_press" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

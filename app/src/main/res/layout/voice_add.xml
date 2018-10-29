@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/green" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/whites"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/voiceAdd"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textColor="@color/whites"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout android:background="@drawable/tabbar_item_select"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/audioQuest"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/audio_temp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="30dp"
+                            android:text="@string/quest"
+                            android:textColor="#ff3f3f3f"
+                            android:textSize="16.0dip" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/voiceName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="top|left" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:background="@drawable/tabbar_item_select"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/audioAnswer"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/audio_temp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="30dp"
+                            android:text="@string/answer"
+                            android:textColor="#ff3f3f3f"
+                            android:textSize="16.0dip" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/voiceAnswer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top|left"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tabbar_item_select" >
+
+                    <Button
+                        android:id="@+id/audioAction"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/audio_temp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:text="@string/voiceInfo"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:hint="(1)連动设备1,連动设备2[语控文本1,语控文本2]\n\n(2)如果(條件式1,條件式2) 就 (1) 否则 (1)"
+                    android:textColorHint="@color/background_gray"
+                    android:id="@+id/voiceAction"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top|left"
+                    android:padding="5dp" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/commandBtn"
+                android:text="指令"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SymbolBtn"
+                android:text="符号"/>
+            <Button
+                android:id="@+id/deviceBtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设备"/>
+
+            <Button
+                android:id="@+id/modeBtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="情景"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

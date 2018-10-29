@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="选择设备工作Wi-Fi"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_height20"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/small_cloud"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10.0dip"
+        android:gravity="center"
+
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+            <EditText
+                android:id="@+id/edit_wifi_name"
+                android:layout_width="180dp"
+                android:layout_height="35.0dip"
+                android:layout_marginLeft="@dimen/item_height20"
+                android:layout_marginRight="@dimen/item_height20"
+                android:background="@drawable/edit_boder"
+                android:editable="false"
+                android:hint="您目前没有设置Wi-Fi"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true" />
+            <EditText
+                android:layout_marginTop="@dimen/item_height10"
+                android:id="@+id/edit_wifi_pwd"
+                android:layout_width="180dp"
+                android:layout_height="35.0dip"
+                android:layout_marginLeft="@dimen/item_height20"
+                android:layout_marginRight="@dimen/item_height20"
+                android:maxLength="20"
+                android:hint="请输入Wi-Fi密码"
+                android:background="@drawable/edit_boder"
+                android:singleLine="true" />
+        <TextView
+            android:id="@+id/tipTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_height20"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/sendSet"
+            android:textColor="@color/font_press"
+            android:textSize="@dimen/font_size_16"/>
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_boder_shape"
+            android:text="@string/sendStop"
+            android:visibility="gone"
+            android:textColor="@color/green"
+            android:textSize="@dimen/font_size_16" />
+        <Button
+            android:id="@+id/handleBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_boder_shape"
+            android:text="直接搜索"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

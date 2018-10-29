@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/alert_item_bar_2" android:state_pressed="true"></item>
+    <item><shape>
+            <gradient android:angle="270" android:endColor="#e1e1e1" android:startColor="#e1e1e1" />
+
+            <corners android:topLeftRadius="15dp" android:topRightRadius="15dp" />
+        </shape></item>
+    <item><shape>
+            <gradient android:angle="270" android:endColor="#e1e1e1" android:startColor="#e1e1e1" />
+
+            <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" />
+        </shape></item>
+
+</selector>

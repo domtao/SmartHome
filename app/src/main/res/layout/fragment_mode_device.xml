@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/my_device"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="@string/more_select"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/arceLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/arce_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="@string/allArce"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/font_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/down_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/grey_background" />
+
+        <RelativeLayout
+            android:id="@+id/typeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="@string/allType"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/font_size_16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/down_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/grey_background" />
+
+        <RelativeLayout
+            android:id="@+id/productLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/yy_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="@string/all"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/font_size_16"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/down_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                android:id="@+id/deviceList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whites"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <LinearLayout
+            android:id="@+id/checkLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkAll"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_14"
+                android:text="全选"/>
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/moreBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/sure"
+                android:textColor="@color/font_press"
+                android:background="@color/green" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

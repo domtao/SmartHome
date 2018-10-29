@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPullRefreshView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/green" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/machine_manger"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/backTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/back_selector"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="@color/whites"
+                android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/addDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/edite"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.zunder.smart.listview.SwipeListView
+            android:id="@+id/deviceList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#D3D3D3" >
+        </com.zunder.smart.listview.SwipeListView>
+    </RelativeLayout>
+
+</LinearLayout>

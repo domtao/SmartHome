@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.0dip"
+    android:background="@color/griditems_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="6dip"
+            android:text="Quest:"
+            android:textColor="@color/commo_text_color"
+            android:textSize="14.0sp" />
+            <TextView
+            android:id="@+id/voiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dip"
+            android:textColor="@color/commo_text_color"
+            android:textSize="14.0sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/voiceShow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_width="40dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:src="@mipmap/passive_nuse_img"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:padding="6dip"
+            android:text="Answer:"
+            android:textColor="@color/commo_text_color"
+            android:textSize="14.0sp" />
+        <TextView
+            android:id="@+id/voiceAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dip"
+            android:textColor="@color/commo_text_color"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/voiceAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dip"
+            android:textColor="@color/blue"
+            android:textSize="14.0sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_gv" >
+
+
+        <ImageView
+            android:id="@+id/downImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/b_down" />
+    </RelativeLayout>
+
+</LinearLayout>

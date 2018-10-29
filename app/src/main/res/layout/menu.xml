@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+	android:background="@color/transparent"
+    android:layout_height="wrap_content" >
+
+	<GridView
+		android:id="@+id/menuGridChange"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/menu_background"
+		android:numColumns="4"
+		android:columnWidth="@dimen/item_height40"
+		android:horizontalSpacing="10.0dip"
+		android:verticalSpacing="10.0dip"
+		android:listSelector="@drawable/list_item_selector">
+	</GridView>
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/green" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/clean"
+            android:textColor="@color/whites"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/my_device"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="@string/searching"
+            android:textColor="@color/whites"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="48dp">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/radio_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:checked="false"
+            android:text="已添加"
+            android:textColor="@color/black"></RadioButton>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/gray" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/radio_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:checked="false"
+            android:text="未添加"
+            android:textColor="@color/black">
+        </RadioButton>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/gray" />
+        <Button
+            android:text="手动"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/radio_btn"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center"
+        android:background="@mipmap/singleline_item_bg"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/arceLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/arce_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="left|center"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp"
+                android:text="@string/help_all"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/down_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/typeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="left|center"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp"
+                android:text="@string/allType"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/down_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/productLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/product_value"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="left|center"
+                android:minHeight="40dp"
+                android:paddingLeft="5dp"
+                android:text="@string/pro_all"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:src="@mipmap/down_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</LinearLayout>

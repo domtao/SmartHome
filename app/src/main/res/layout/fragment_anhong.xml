@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/safe_bg_img"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/item_height10"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/item_height5"
+                    android:id="@+id/safeHis"
+                    android:layout_width="@dimen/item_height30"
+                    android:layout_height="@dimen/item_height30"
+                    android:layout_marginRight="@dimen/item_height10"
+                    android:src="@mipmap/safe_his"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="@dimen/item_height10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/item_height5"
+                    android:id="@+id/safe"
+                    android:layout_marginRight="@dimen/item_height10"
+                    android:layout_width="@dimen/item_height30"
+                    android:layout_height="@dimen/item_height30"
+                    android:src="@mipmap/safe_set"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageState"
+            android:layout_width="@dimen/item_height60"
+            android:layout_height="@dimen/item_height60"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/item_height60"
+            android:src="@mipmap/safe_open"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height40"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:background="@drawable/view_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/item_height20"
+            android:layout_marginLeft="@dimen/item_height20"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/homeLayout"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/item_height10"
+                android:layout_weight="1"
+                android:background="@drawable/button_safe_shape"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/item_height30"
+                    android:layout_height="@dimen/item_height30"
+                    android:src="@mipmap/safe_home"/>
+                <Button
+                    android:id="@+id/homeBtn"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_14"
+                    android:background="@color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_height5"
+                    android:textColor="@color/font_black_press"
+                    android:text="在家安防" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sleepLayout"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/item_height10"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:background="@drawable/button_safe_shape"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/item_height30"
+                    android:layout_height="@dimen/item_height30"
+                    android:src="@mipmap/safe_sleep"/>
+                <Button
+                    android:id="@+id/sleepBtn"
+                    android:background="@color/transparent"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/font_size_14"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_black_press"
+                    android:layout_marginTop="@dimen/item_height5"
+                    android:text="睡觉安防" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liveLayout"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/item_height10"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_safe_shape"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/item_height30"
+                    android:layout_height="@dimen/item_height30"
+                    android:src="@mipmap/safe_live"/>
+                <Button
+                    android:id="@+id/liveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_14"
+                    android:background="@color/transparent"
+                    android:textColor="@color/font_black_press"
+                    android:layout_marginTop="@dimen/item_height5"
+                    android:text="离家安防" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

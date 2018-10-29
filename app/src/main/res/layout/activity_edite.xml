@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroud" >
+
+        <TextView
+            android:id="@+id/editeTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:background="#D3D3D3"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/delBtn"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/red"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editeBtn"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchBtn"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/down_info"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timingBtn"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/timing_info"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/matchBtn"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/match"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

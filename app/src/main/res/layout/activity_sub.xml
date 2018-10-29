@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="灯光"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" >
+        </TextView>
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/stateImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/light_off"/>
+        <TextView
+            android:id="@+id/peopleTxt"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/item_height150"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:layout_marginTop="@dimen/item_height10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14"
+            android:gravity="center"
+            android:text="请选定时间后,按下定时按钮"/>
+        <LinearLayout
+            android:layout_width="@dimen/item_height180"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button_boder_square"
+            android:gravity="center_vertical">
+
+
+            <com.zunder.scrollview.widget.WheelView
+                android:id="@+id/wvTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:wheelItemCount="1"
+                app:wheelItemSize="@dimen/item_height30"
+                app:dividerColor="@color/white"
+                app:wheelDividerSize="@dimen/item_height30"
+                app:wheelGravity="left"
+                app:wheelTextSize="@dimen/font_size_20"/>
+            <com.zunder.scrollview.widget.WheelView
+                android:id="@+id/wvUtil"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:wheelItemCount="1"
+                app:wheelDividerSize="@dimen/item_height30"
+                app:dividerColor="@color/white"
+                app:wheelItemSize="@dimen/item_height30"
+
+                app:wheelGravity="center"
+                app:wheelTextSize="@dimen/font_size_20"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="@dimen/item_height10"
+                android:id="@+id/msgTxt"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="将会在17:00执行"/>
+            <Button
+                android:id="@+id/timeSure"
+                android:layout_width="@dimen/item_height60"
+                android:layout_height="@dimen/item_height30"
+                android:layout_marginTop="@dimen/item_height10"
+                android:background="@drawable/edite_boder_square"
+                android:text="执行"
+                android:textColor="@color/font_open_press"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

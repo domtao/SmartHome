@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/air_advanced_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/widget_bg" >
+
+    <RelativeLayout
+        android:id="@+id/showLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/show_air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" >
+        </TextView>
+
+    
+        
+         <TextView
+            android:id="@+id/ai_control"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/add_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/air_advanced_show"
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:layout_below="@id/showLayout"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/air_advanced_show_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/green" />
+
+        <ImageView
+            android:id="@+id/air_model_amount"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="210dp"
+            android:layout_marginRight="@dimen/item_height20"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/mode_warm_white" />
+
+        <ImageView
+            android:id="@+id/air_wind_amount"
+            android:layout_width="@dimen/widget_view_wind"
+            android:layout_height="@dimen/widget_view_wind"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="@dimen/item_height80"
+           android:layout_marginRight="@dimen/item_height30" />
+
+        <TextView
+            android:id="@+id/air_advanced_wind_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="20dp"
+            android:text="℃"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/air_by_amount"
+            android:layout_width="@dimen/widget_view_wind"
+            android:layout_height="@dimen/widget_view_wind"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="90dp"
+            android:background="@mipmap/img_air_direction_rock" />
+
+        <TextView
+            android:id="@+id/air_off_on"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="90dp"
+            android:text="状态:?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_18" />
+        <LinearLayout
+            android:layout_width="70dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="22dp">
+            <ImageView
+                android:id="@+id/temp0"
+                android:layout_width="35dip"
+                android:layout_height="50dip"
+                android:src="@mipmap/sz_0" />
+            <ImageView
+                android:id="@+id/temp1"
+                android:layout_width="35dip"
+                android:layout_height="50dip"
+                android:src="@mipmap/sz_0" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/air_advanced_show"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/air_power"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/btn_air_power" />
+
+        <Button
+            android:id="@+id/air_speed"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="130dip"
+            android:background="@drawable/selector_key_round_white"
+            android:text="@string/speed"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="200dip"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/bg_wind" />
+
+        <Button
+            android:id="@+id/air_temp_up"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/btn_temp_up" />
+
+        <Button
+            android:id="@+id/air_temp_down"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/btn_temp_down" />
+
+        <Button
+            android:id="@+id/air_model"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="230dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="7dip"
+            android:background="@drawable/selector_key_round_white"
+            android:text="@string/mode1"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/air_by"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="230dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/selector_key_round_white" />
+
+        <ImageView
+            android:id="@+id/air_cool"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="230dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="215dp"
+            android:src="@drawable/selector_key_round_white"  />
+        <!-- android:src="@drawable/selector_key_round_white" /> -->
+
+      <!--  <ImageView
+            android:id="@+id/img_set"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="215dp"
+            android:src="@drawable/selector_key_round_white" />-->
+
+        <ImageView
+            android:id="@+id/air_hot"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="215dp"
+            android:src="@drawable/selector_key_round_white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="请选定时间后,按下定时按钮"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/item_height10"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_boder_square">
+
+            <Button
+                android:id="@+id/downTime"
+                android:layout_width="@dimen/item_height40"
+                android:layout_height="@dimen/item_height40"
+                android:background="@color/transparent"
+                android:textColor="@color/font_close_press"
+                android:textSize="@dimen/font_size_18"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/timeTxt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/item_height5"
+                android:layout_marginRight="@dimen/item_height5"
+                android:textSize="@dimen/font_size_18"
+                android:text="0小时0分钟"/>
+
+            <Button
+                android:id="@+id/upTime"
+                android:layout_width="@dimen/item_height40"
+                android:layout_height="@dimen/item_height40"
+                android:background="@color/transparent"
+                android:textColor="@color/font_open_press"
+                android:textSize="@dimen/font_size_18"
+                android:text="+"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="@dimen/item_height10"
+                android:id="@+id/msgTxt"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="将会在17:00执行"/>
+            <Button
+                android:id="@+id/timeSure"
+                android:layout_width="@dimen/item_height80"
+                android:layout_height="@dimen/item_height35"
+                android:layout_marginTop="@dimen/item_height10"
+                android:background="@drawable/button_shape"
+                android:text="执行"
+                android:textColor="@color/font_press"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

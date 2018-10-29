@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height110"
+    android:layout_margin="@dimen/item_height15"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_gv" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/item_height10"
+            android:paddingLeft="@dimen/item_height20"
+            android:paddingRight="@dimen/item_height20"
+            android:paddingBottom="@dimen/item_height5"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/textName"
+                android:layout_marginTop="@dimen/item_height15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/commo_text_color"
+                android:textSize="@dimen/font_size_16" />
+            <TextView
+                android:id="@+id/textNum"
+                android:layout_marginTop="@dimen/item_height5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/gray_font"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/editeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ch_edite"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/editeLaout"
+        android:visibility="gone"
+        android:layout_width="@dimen/item_height60"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/editeBtn"
+            android:text="编辑"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:textSize="@dimen/font_size_16" />
+        <Button
+            android:id="@+id/delBtn"
+            android:text="删除"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

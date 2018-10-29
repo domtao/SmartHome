@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <requestFocus />
+    </android.support.v4.view.ViewPager>
+    <ImageView
+        android:id="@+id/imageDo"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/item_height10"
+        android:src="@mipmap/wl_do"/>
+    <ImageView
+        android:id="@+id/imgFinish"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/item_height20"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_height10"
+        android:src="@mipmap/wel_lg"/>
+</RelativeLayout>

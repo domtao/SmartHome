@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="0.4"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45">
+                <fragment
+                    android:id="@+id/anHongFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.zunder.smart.activity.safe.AnHongFragment" />
+                <fragment
+                    android:id="@+id/cameraPlayFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.zunder.smart.activity.camera.CameraPlayFragment" />
+
+            <Button
+              android:layout_marginTop="@dimen/item_height30"
+                android:id="@+id/homeEdite"
+                android:layout_width="@dimen/item_height110"
+                android:layout_height="@dimen/item_height50"
+                android:background="@mipmap/zun_home_select"
+                android:textColor="@color/font_press"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/item_height10"
+                android:text="默认家庭"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height50"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height50">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height50"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <com.zunder.scrollview.widget.WheelView
+                        android:id="@+id/mainScrollView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/item_height50"
+                        android:layout_gravity="center_horizontal"
+                        app:wheelDividerSize="120dp"
+                        app:wheelItemCount="6"
+                        app:wheelItemSize="120dp"
+                        app:wheelOrientation="horizontal"
+                        app:wheelTextSize="@dimen/font_size_16" />
+           </LinearLayout>
+           <ImageButton
+               android:layout_alignParentRight="true"
+               android:id="@+id/cameraButton"
+               android:layout_centerVertical="true"
+               android:layout_width="@dimen/item_height20"
+
+               android:layout_marginRight="10dp"
+               android:layout_height="@dimen/item_height40"
+               android:background="@mipmap/zun_camera_img" />
+       </RelativeLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/add_line"/>
+        <RelativeLayout
+            android:id="@+id/modeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height40"
+            android:background="@drawable/tabbar_item_select" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_height10"
+                android:layout_centerVertical="true"
+                android:text="情景"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_16"  />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="设置"
+                android:layout_marginRight="@dimen/item_height30"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"  />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:src="@mipmap/index_arrow" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:background="#ffcccccc" />
+        </RelativeLayout>
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/modeGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+</LinearLayout>
+
+  <fragment
+        android:id="@+id/modeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.mode.ModeFragment"/>
+    <fragment
+        android:id="@+id/modeAddFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.mode.ModeAddFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.procase.ProCaseFragment"
+        android:id="@+id/proCaseFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.procase.ProCaseAddFragment"
+        android:id="@+id/proCaseAddFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.safe.SafeFragment"
+        android:id="@+id/safeFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.safe.SafeAddFragment"
+        android:id="@+id/safeAddFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.safe.SafeSetFragment"
+        android:id="@+id/safeSetFragment"/>
+    <fragment
+        android:id="@+id/modeListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.mode.ModeListFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.mode.ModeDeviceFragment"
+        android:id="@+id/modeDeviceFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.mode.ModeListActionFragment"
+        android:id="@+id/modeListActionFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.camera.CameraFragment"
+        android:id="@+id/cameraFragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.camera.CameraAddFragment"
+        android:id="@+id/cameraAddFragment"/>
+</RelativeLayout>

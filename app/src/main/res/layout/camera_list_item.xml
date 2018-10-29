@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_height="225dp">
+
+    <FrameLayout
+        android:id="@+id/snapshot_view"
+        android:layout_width="match_parent"
+        android:background="@mipmap/device_list_item_bg"
+        android:layout_height="180dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/online_status_bg"
+            >
+
+            <TextView
+                android:id="@+id/status_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxx"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/device_play_normal"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/device_name_txt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|right"
+            >
+            <TextView
+                android:id="@+id/record_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="录像"
+                android:textColor="@color/color_blue_light"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@drawable/online_status_bg"
+                />
+            <TextView
+                android:id="@+id/setting_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color_blue_light"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="@drawable/online_status_bg"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

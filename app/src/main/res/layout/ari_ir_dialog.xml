@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="180dip"
+    android:layout_gravity="center"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:background="#ffc8c8c8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2px"
+                android:text="@string/air_name"
+                android:textColor="#ff000000" />
+
+            <EditText
+                android:id="@+id/et_ari_name"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/input_air_name"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_ari_chese"
+                android:layout_width="62dip"
+                android:layout_height="40dip"
+                android:text="@string/select_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_ari_up"
+            android:layout_width="72dip"
+            android:layout_height="40dip"
+            android:text="@string/air_pre"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_ari_fashe"
+            android:layout_width="72dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="50dip"
+            android:text="@string/air_send"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_ari_next"
+            android:layout_width="72dip"
+            android:layout_height="40dip"
+            android:text="@string/air_next"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_ari_xiexi"
+            android:layout_width="72dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="50dip"
+            android:text="@string/air_study"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

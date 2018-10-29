@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="添加设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/oil_gray"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:layout_marginTop="@dimen/item_height10"
+                                android:id="@+id/btn_power"
+                                android:layout_width="@dimen/item_height50"
+                                android:layout_height="@dimen/item_height50"
+                                android:background="@mipmap/tv_bg"
+                                android:text="电源"
+                                android:gravity="center"
+                                android:textColor="@color/font_blue_press"
+                                android:textSize="@dimen/font_size_14" />
+
+                            <Button
+                                android:id="@+id/tvBtn"
+                                android:layout_width="@dimen/item_height50"
+                                android:layout_height="@dimen/item_height50"
+                                android:layout_marginTop="@dimen/item_height20"
+                                android:background="@mipmap/tv_bg"
+                                android:gravity="center"
+                                android:text="TV/AV"
+                                android:textColor="@color/font_orange_press"
+                                android:textSize="@dimen/font_size_14" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="46dp"
+                            android:layout_height="125dp"
+                            android:layout_marginLeft="@dimen/item_height30"
+                            android:layout_marginTop="@dimen/item_height10"
+                            android:background="@mipmap/vol_bg"
+                            android:orientation="vertical">
+                            <Button
+                                android:id="@+id/tempAdd"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@mipmap/tv_bg"
+                                android:textColor="@color/font_orange_press"
+                                android:text="+"
+                                android:textSize="@dimen/font_size_14"/>
+                            <Button
+                                android:id="@+id/tempLow"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:text="-"
+                                android:background="@mipmap/tv_bg"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/font_orange_press"
+                                android:layout_alignParentBottom="true"
+                                android:textSize="@dimen/font_size_14" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/item_height30"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/item_height10"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/green_btn"
+                                android:layout_width="@dimen/item_height50"
+                                android:layout_height="@dimen/item_height50"
+                                android:background="@mipmap/tv_bg"
+                                android:textColor="@color/font_blue_press"
+                                android:text="待机"
+                                android:textSize="@dimen/font_size_14"/>
+
+                            <Button
+                                android:id="@+id/prePage"
+                                android:layout_width="@dimen/item_height50"
+                                android:layout_height="@dimen/item_height50"
+                                android:layout_marginLeft="@dimen/item_height15"
+                                android:background="@mipmap/tv_bg"
+                                android:text="@string/prePage"
+                                android:textColor="@color/font_orange_press"
+                                android:textSize="@dimen/font_size_14"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/item_height10"
+                            android:layout_marginTop="20dp">
+
+                            <Button
+                                android:id="@+id/setBtn"
+                                android:layout_width="@dimen/item_height50"
+                                android:layout_height="@dimen/item_height50"
+                                android:background="@mipmap/tv_bg"
+                                android:text="@string/setting"
+                                android:textColor="@color/font_orange_press"
+                                android:textSize="@dimen/font_size_14" />
+
+                            <Button
+                                android:id="@+id/nextPage"
+                                android:layout_width="@dimen/item_height50"
+                                android:layout_height="@dimen/item_height50"
+                                android:layout_marginLeft="@dimen/item_height15"
+                                android:background="@mipmap/tv_bg"
+                                android:text="@string/nextPage"
+                                android:textColor="@color/font_orange_press"
+                                android:textSize="@dimen/font_size_14" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main3_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/one_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14"/>
+
+                        <Button
+                            android:id="@+id/two_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:layout_marginLeft="@dimen/item_height50"
+                            android:layout_marginRight="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:gravity="center"
+
+                            android:text="2"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14"/>
+
+                        <Button
+                            android:id="@+id/three_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/item_height5"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/four_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="4"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                        <Button
+                            android:id="@+id/five_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:layout_marginLeft="@dimen/item_height50"
+                            android:layout_marginRight="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="5"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                        <Button
+                            android:id="@+id/six_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="6"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/item_height5"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/seven_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="7"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                        <Button
+                            android:id="@+id/eight_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:layout_marginLeft="@dimen/item_height50"
+                            android:layout_marginRight="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="8"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                        <Button
+                            android:id="@+id/nine_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="9"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/item_height5"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/digit_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:textSize="@dimen/font_size_14"
+                            android:text="-/--"
+                            android:textColor="@color/font_blue_press"
+                            android:background="@mipmap/tv_bg" />
+                        <Button
+                            android:id="@+id/zero_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:layout_marginLeft="@dimen/item_height50"
+                            android:layout_marginRight="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="0"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                        <Button
+                            android:id="@+id/backtrack_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="@string/backlook"
+                            android:textSize="@dimen/font_size_12"
+                            android:textColor="@color/font_blue_press" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/item_height20"
+                    android:id="@+id/ll2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/rl"
+                        style="@style/tv_controlview_diskrelative"
+                        android:layout_gravity="center_horizontal">
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout2"
+                            style="@style/dvd_controlview_disk"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/ok_bg">
+                            <Button
+                                android:id="@+id/ok_btn"
+                                style="@style/dvd_controlview_disk_buttonok"
+                                android:layout_centerInParent="true"
+                                android:background="@color/transparent"
+                                android:textColor="@drawable/btn_color"
+                                android:textSize="@dimen/font_size_14" />
+                            <Button
+                                android:id="@+id/left_btn"
+                                style="@style/dvd_controlview_disk_buttonHorizontal"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@id/ok_btn"
+                                android:background="@color/transparent" />
+                            <Button
+                                android:id="@+id/right_btn"
+                                style="@style/dvd_controlview_disk_buttonHorizontal"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_alignBaseline="@+id/left_btn"
+                                android:layout_alignBottom="@+id/left_btn"
+                                android:layout_alignParentEnd="true"
+                                android:background="@color/transparent"/>
+                            <Button
+                                android:id="@+id/up_btn"
+                                style="@style/dvd_controlview_disk_buttonVertical"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@color/transparent"/>
+                            <Button
+                                android:id="@+id/down_btn"
+                                style="@style/dvd_controlview_disk_buttonVertical"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/transparent"/>
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/home_btn"
+                            style="@style/dvd_controlview_button"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignTop="@id/relativeLayout2"
+                            android:layout_alignWithParentIfMissing="true"
+                            android:background="@mipmap/tv_bg"
+                            android:text="@string/home"
+                            android:textColor="@color/font_orange_press"
+                            android:textSize="@dimen/font_size_14" />
+
+                        <Button
+                            android:id="@+id/select_btn"
+                            style="@style/dvd_controlview_button"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignBottom="@id/relativeLayout2"
+                            android:layout_alignWithParentIfMissing="true"
+                            android:background="@mipmap/tv_bg"
+                            android:text="@string/select"
+                            android:textColor="@color/font_orange_press"
+                            android:textSize="@dimen/font_size_14" />
+
+                        <Button
+                            android:id="@+id/local_btn"
+                            style="@style/dvd_controlview_button"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignTop="@id/relativeLayout2"
+                            android:layout_toRightOf="@id/relativeLayout2"
+                            android:background="@mipmap/tv_bg"
+                            android:text="@string/local"
+                            android:textColor="@color/font_orange_press"
+                            android:textSize="@dimen/font_size_14" />
+
+                        <Button
+                            android:id="@+id/back_btn"
+                            style="@style/dvd_controlview_button"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignBottom="@id/relativeLayout2"
+                            android:layout_toRightOf="@id/relativeLayout2"
+                            android:background="@mipmap/tv_bg"
+                            android:text="@string/back"
+                            android:textColor="@color/font_orange_press"
+                            android:textSize="@dimen/font_size_14" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="46dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="30.0dip"
+                        android:layout_toLeftOf="@+id/centre_ll"
+                        android:background="@mipmap/vol_bg"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/volume_add_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@mipmap/tv_bg"
+                            android:text="+"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+
+
+
+                        <Button
+                            android:id="@+id/volume_reduce_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:text="-"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@mipmap/tv_bg"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="15.0pt" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/centre_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/item_height30"
+                        android:layout_marginRight="@dimen/item_height30"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:gravity="center"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/mute_btn"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@mipmap/tv_bg"
+                            android:gravity="center"
+                            android:text="静音"
+                            android:textColor="@color/font_blue_press" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="46dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="30.0dip"
+                        android:layout_toRightOf="@id/centre_ll"
+                        android:background="@mipmap/ch_bg"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/channel_add_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/tv_bg"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/font_blue_press"
+                            android:text="+"
+                            android:textSize="@dimen/font_size_14" />
+
+
+
+                        <Button
+                            android:id="@+id/channel_reduce_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/tv_bg"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/font_blue_press"
+                            android:textSize="@dimen/font_size_14" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/fll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/f1_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="F1"
+                            android:textColor="@color/font_orange_press" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/f2_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="F2"
+                            android:textColor="@color/font_orange_press" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/f3_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="F3"
+                            android:textColor="@color/font_orange_press" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/f4_btn"
+                            android:layout_width="@dimen/item_height50"
+                            android:layout_height="@dimen/item_height50"
+                            android:background="@mipmap/tv_bg"
+                            android:text="F4"
+                            android:textColor="@color/font_orange_press" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

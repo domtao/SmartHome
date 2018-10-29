@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="67dp"
+    android:layout_gravity="center"
+    android:background="@color/whites"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+
+        android:gravity="center" >
+
+        <com.zunder.image.view.SmartImageView
+            android:id="@+id/index_add"
+            android:layout_width="80dip"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/http_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.3"
+        android:gravity="center|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/add_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_toRightOf="@id/index_add"
+            android:text="@string/addDevice"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/add_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_str"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/index_add"
+            android:text="@string/line"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.7"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/edit_btn"
+            android:layout_width="50dip"
+            android:layout_centerInParent="true"
+            android:layout_height="35dip" />
+
+        <ImageView
+            android:id="@+id/open"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:src="@mipmap/passive_nuse_img"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

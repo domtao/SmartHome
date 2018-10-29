@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@mipmap/zun_title_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/icoImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:background="@color/transparent" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@mipmap/zun_body_bg"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="@dimen/item_height110"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height35"
+        android:background="@drawable/edite_boder_square"
+        android:hint="@string/ssid_text"
+        android:textSize="@dimen/font_size_14"
+        android:paddingLeft="@dimen/item_height5"
+        android:layout_margin="5dp" />
+    <EditText
+        android:id="@+id/editValue"
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:paddingLeft="@dimen/item_height5"
+        android:layout_height="@dimen/item_height35"
+        android:background="@drawable/edite_boder_square"
+        android:hint="@string/tipinfo"
+        android:textSize="@dimen/font_size_14" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@mipmap/zun_botton_bg"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/cancle_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/font_close_press" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/line_long" />
+        <Button
+            android:id="@+id/sure_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/sure"
+            android:textColor="@color/font_open_press" />
+
+        <View
+            android:layout_width="1dp"
+          android:id="@+id/search_View"
+            android:layout_height="match_parent"
+            android:background="@mipmap/line_long" />
+        <Button
+            android:id="@+id/search_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/searching"
+            android:textColor="@color/font_color" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

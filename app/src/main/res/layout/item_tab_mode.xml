@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height60"
+        android:background="@drawable/tabbar_item_select">
+        <com.zunder.image.view.SmartImageView
+            android:id="@+id/img"
+            android:layout_width="45dip"
+            android:layout_centerVertical="true"
+            android:layout_height="45dip"
+            android:src="@mipmap/load_img"
+            android:padding="3dp" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/item_height50"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/modeName"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_16"
+                android:text="模式"/>
+            <TextView
+                android:layout_marginTop="@dimen/item_height5"
+                android:id="@+id/nickName"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_12"
+                android:text=""/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/index_arrow" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/modeTipLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height40">
+        <TextView
+            android:layout_margin="@dimen/item_height5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_14"
+            android:id="@+id/modeTip"/>
+    </LinearLayout>
+</LinearLayout>

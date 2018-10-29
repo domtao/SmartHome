@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14"/>
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="集合列表"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"/>
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/add"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+  <RelativeLayout
+      android:id="@+id/autoLayout"
+      android:visibility="gone"
+      android:layout_width="match_parent"
+      android:layout_margin="@dimen/item_height5"
+      android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/item_height40"
+        android:hint="请输入搜索的名称"
+        android:id="@+id/autoEdite"
+        android:textSize="@dimen/font_size_16"
+        android:layout_height="@dimen/item_height40"
+        android:background="@drawable/button_boder_shape"/>
+      <ImageView
+          android:layout_width="@dimen/item_height30"
+          android:layout_height="@dimen/item_height30"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/item_height5"
+          android:src="@mipmap/s_m"/>
+  </RelativeLayout>
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/modeList"
+            android:layout_width="match_parent"
+            android:background="#e5e5e5"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

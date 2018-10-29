@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/add_line"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="指定云家庭"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="添加"
+            android:visibility="gone"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height60"
+        android:background="@drawable/tabbar_item_select">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffcccccc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="对方手机号"
+            android:textColor="#ff3f3f3f"
+            android:textSize="@dimen/font_size_16"/>
+
+        <EditText
+            android:id="@+id/phoneEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="240dp"
+            android:layout_margin="@dimen/item_height10"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:gravity="left"
+            android:textColorHint="@color/background_gray"
+            android:hint="@string/input_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_size_14"
+            android:singleLine="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height60"
+        android:background="@drawable/tabbar_item_select">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffcccccc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="对方授权码"
+            android:textColor="#ff3f3f3f"
+            android:textSize="@dimen/font_size_16"/>
+
+        <EditText
+            android:id="@+id/pwdEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="240dp"
+            android:layout_margin="@dimen/item_height10"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:gravity="left"
+            android:textColorHint="@color/background_gray"
+            android:hint="@string/input_content"
+            android:padding="5dp"
+            android:textSize="@dimen/font_size_14"
+            android:layout_centerVertical="true"
+            android:singleLine="true" />
+        <ImageView
+            android:id="@+id/sureBtn"
+            android:layout_width="@dimen/item_height30"
+            android:layout_height="@dimen/item_height30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_height10"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/item_height5"
+            android:src="@mipmap/s_m"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/item_height10"
+        android:background="@color/add_line"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/backupList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

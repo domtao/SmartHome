@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height50"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_16"
+                android:text="添加按钮"
+                android:background="@mipmap/zun_title_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@mipmap/zun_body_bg"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/item_height5"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:textSize="@dimen/font_size_16"
+                    android:text="名称"/>
+                <EditText
+                    android:id="@+id/buttonName"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/item_height5"
+                    android:layout_marginBottom="@dimen/item_height5"
+                    android:layout_marginRight="@dimen/item_height10"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:layout_height="@dimen/item_height40"
+                    android:hint="请输入名称"
+                    android:paddingLeft="@dimen/item_height10"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/button_boder_square"
+                    android:textColorHint="@color/background_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/item_height5"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:textSize="@dimen/font_size_16"
+                    android:text="按钮大小"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/item_height5"
+                    android:layout_marginRight="@dimen/item_height10"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/buttonWidth"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height40"
+                        android:hint="宽"
+                        android:layout_weight="1"
+                        android:text="150"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/item_height10"
+                        android:textCursorDrawable="@null"
+                        android:layout_margin="@dimen/item_height5"
+                        android:background="@drawable/button_boder_square"
+                        android:textColorHint="@color/background_gray" />
+                    <EditText
+                        android:id="@+id/buttonHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height40"
+                        android:hint="高"
+                        android:text="150"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/item_height5"
+                        android:paddingLeft="@dimen/item_height10"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+                        android:background="@drawable/button_boder_square"
+                        android:textColorHint="@color/background_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/item_height5"
+                        android:layout_marginLeft="@dimen/item_height10"
+                        android:textSize="@dimen/font_size_16"
+                        android:text="字体大小"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/item_height5"
+                        android:layout_marginLeft="@dimen/item_height10"
+                        android:textSize="@dimen/font_size_16"
+                        android:text="按钮ID"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/item_height5"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/buttonSize"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/item_height5"
+                        android:layout_marginBottom="@dimen/item_height5"
+                        android:layout_marginRight="@dimen/item_height10"
+                        android:layout_marginLeft="@dimen/item_height10"
+                        android:layout_height="@dimen/item_height40"
+                        android:hint="请输入字体大小"
+                        android:text="16"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/item_height10"
+                        android:textCursorDrawable="@null"
+                        android:background="@drawable/button_boder_square"
+                        android:textColorHint="@color/background_gray" />
+
+                    <EditText
+                        android:id="@+id/buttonID"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/item_height5"
+                        android:layout_marginBottom="@dimen/item_height5"
+                        android:layout_marginRight="@dimen/item_height10"
+                        android:layout_marginLeft="@dimen/item_height10"
+                        android:layout_height="@dimen/item_height40"
+                        android:hint="系统自动生成"
+                        android:paddingLeft="@dimen/item_height10"
+                        android:textCursorDrawable="@null"
+                        android:editable="false"
+                        android:background="@drawable/button_boder_square"
+                        android:textColorHint="@color/background_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/add_line" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_height50"
+                android:background="@mipmap/zun_botton_bg"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/cancle_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="@string/cancle"
+                    android:textColor="@color/font_close_press" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/add_line" />
+                <Button
+                    android:id="@+id/sure_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:text="@string/sure"
+                    android:textColor="@color/font_open_press" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

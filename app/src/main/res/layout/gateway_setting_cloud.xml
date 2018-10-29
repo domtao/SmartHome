@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/back_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/list"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/title_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="@color/color_shadow"
+            android:text="@string/gateSetting"
+            android:textColor="@color/black"
+           android:textSize="@dimen/font_size_16" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="10.0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <FrameLayout
+                android:id="@+id/setting_user"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/userTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_manger"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/adminsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_operator"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/operatorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_set_user"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/usersetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_camera_alias"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/aliaTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_alia"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/ailasetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_timing"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/timingTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clean_time"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/timmingsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_sence"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/modeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clean_mode"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/modesetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/setting_anHong"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/anHongTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_clean_anhong"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/matchsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/setting_master"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/routeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_rote"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/mastersetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/setting_code"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/machineTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_machine"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/machinesetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:id="@+id/codeFresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:src="@drawable/index_top_left_refresh" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/timingRadio"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/timingRadioTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_broad"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/timmingbro"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+            <FrameLayout
+            android:id="@+id/setting_Control"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="@drawable/tabbar_item_select" >
+
+            <TextView
+                android:id="@+id/controlTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="10.0dip"
+                android:drawableLeft="@mipmap/zun_remote"
+                android:drawablePadding="8.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/remotecontrol"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_size_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="10.0dip"
+                android:src="@mipmap/index_arrow" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.00999999dip"
+                android:layout_gravity="bottom"
+                android:background="#ffcccccc" />
+        </FrameLayout>
+            <FrameLayout
+                android:id="@+id/setting_Security"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:visibility="gone"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_alarm"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/alrmsetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_greeting"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/greetingTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_hello"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="欢迎词\n未设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/setting_wakeup"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/wakeupTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_wake"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="唤醒应答\n未设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/answerRadio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55.0dip"
+                    android:background="@drawable/tabbar_item_select">
+
+                    <TextView
+                        android:id="@+id/answerRadioTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="10.0dip"
+                        android:drawableLeft="@mipmap/zun_answer"
+                        android:drawablePadding="8.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/answerbro"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/font_size_14" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@mipmap/index_arrow" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.00999999dip"
+                        android:layout_gravity="bottom"
+                        android:background="#ffcccccc" />
+                </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_city"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:visibility="gone"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/cityTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_city"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/citysetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:visibility="gone"
+                android:id="@+id/setting_History"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="@drawable/tabbar_item_select" >
+
+                <TextView
+                    android:id="@+id/historyTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/zun_aiui"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/aiuisetting"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

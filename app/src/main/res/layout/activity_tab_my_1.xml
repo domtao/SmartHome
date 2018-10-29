@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY" />
+
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_icon_my"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_16" />
+            <TextView
+                android:id="@+id/tipTxt"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:background="@mipmap/my_head" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/userImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/itcp_user_image_backgroud"
+                android:src="@mipmap/itcp_user_image" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/userImageView"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nologin" />
+
+                <Button
+                    android:id="@+id/userLogin"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/itcp_user_btn"
+                    android:text="@string/clicklogin"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/userInfo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:background="@mipmap/itcp_my_login" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myfamily"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/family" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/gateWayLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gatewaylist"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/gateway" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/oneKeySet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oneset"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/one_key_img" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="10.0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_device"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_mydevice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/my_device"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/deviceNumBer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="0/0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_products"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/typez_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/products_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/products_name_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/relayButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_relay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/relayManger"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/relayMangerinfo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/upLoad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_dataupdown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/filemanger"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/upAndLoad"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_debug"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_debugging" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/debug_tool"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/debug_tool_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/sensorBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_sensor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/passive"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/passive"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_laungvage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_language" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/langvage"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/setting"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_skip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_skin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/them"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/themswitch"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_record"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_operationrecord" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/option_list"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/option_list_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_exite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/set_backlogin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/countexite"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/backlogin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/version_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/softversion"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/versionTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="V1.1.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:id="@+id/versionImg"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <!--<fragment
+        android:id="@+id/deviceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.device.DeviceFragment"/>
+    <fragment
+        android:id="@+id/deviceTypeFragment"
+        android:name="com.zunder.smart.activity.device.DeviceTypeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <fragment
+        android:id="@+id/deviceAddFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.device.DeviceAddFragment"/>
+    <fragment
+        android:id="@+id/gatewayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.gateway.GateWayFragment"/>
+    <fragment
+        android:name="com.zunder.smart.activity.gateway.SimpleConfigFragment"
+        android:id="@+id/configFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <fragment
+        android:id="@+id/settingWifiFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.gateway.SettingWifiFragment"/>
+    <fragment
+    android:id="@+id/gatewayAddFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.zunder.smart.activity.gateway.GateWayAddFragment"/>
+    <fragment
+        android:id="@+id/gateWaySettingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.gateway.GateWaySettingFragment" />
+    <fragment
+        android:id="@+id/relayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.relay.RelayFragment" />
+    <fragment
+        android:id="@+id/relayListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.relay.RelayListFragment" />
+    <fragment
+        android:id="@+id/relayDeviceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.relay.RelayDeviceFragment" />
+-->
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oil_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/whites" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="安防管理"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="添加传感器"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/add_line"/>
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/sensorRadio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height40"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:button="@null"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/radiobutton_textcolor"
+        android:textSize="16dp"
+        android:text="传感器"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/add_line"
+            android:layout_height="@dimen/item_height40"/>
+    <RadioButton
+        android:id="@+id/controlRadio"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="@dimen/item_height40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/transparent"
+        android:button="@null"
+        android:textSize="16dp"
+        android:textColor="@color/radiobutton_textcolor"
+        android:text="遥控器"/>
+    </RadioGroup>
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/safeGrid"
+        android:layout_marginTop="@dimen/item_height5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_black"
+    android:orientation="vertical"
+    android:paddingLeft="15.0dip"
+    android:paddingRight="15.0dip" >
+
+    <TextView
+        android:id="@+id/trigger_audio_levelhigh"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center"
+        android:text="@string/alerm_audio_levelhigh"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@mipmap/toptitle"
+        android:src="@color/color_line" />
+
+    <TextView
+        android:id="@+id/trigger_audio_levelmiddle"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center"
+        android:text="@string/alerm_audio_levelmiddle"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:src="@color/color_line" />
+
+    <TextView
+        android:id="@+id/trigger_audio_levellow"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center"
+        android:text="@string/alerm_audio_levellow"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:src="@color/color_line" />
+
+    <TextView
+        android:id="@+id/trigger_audio_levelforbid"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center"
+        android:text="@string/alerm_audio_levelforbid"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:src="@color/color_line" />
+
+</LinearLayout>

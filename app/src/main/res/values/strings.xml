@@ -1,0 +1,3128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_language">en</string>
+    <string name="home">首页</string>
+    <string name="app_id">557d680a</string>
+    <string name="app_name">声控魔法师</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="edite">编辑</string>
+    <string name="add">增加</string>
+    <string name="back">返回</string>
+    <string name="actionOne">仅一次</string>
+    <string name="tab_icon_main">首页</string>
+    <string name="tab_icon_home">家居</string>
+    <string name="tab_icon_mode">集合</string>
+    <string name="tab_icon_sensor">传感</string>
+    <string name="tab_icon_my">我的</string>
+    <string name="mode1">模式</string>
+    <string name="set_file">为默认专案</string>
+    <string name="senceSet">情景集合</string>
+    <string name="room">房间</string>
+    <string name="arcemanger">将设备放在不同的区域,方便管理</string>
+    <string name="arcSort">首页显示的区域(长按移动排序)</string>
+    <string name="arcmore">点击添加更多区域</string>
+    <string name="devicesearch">设备搜索中……</string>
+    <string name="load_data">请稍后，正在获取数据</string>
+    <string name="device_key">请按下你要配对的设备按键</string>
+    <string name="is_del_device">是否要删除当前设备</string>
+    <string name="is_del_learn">是否要学习当前设备</string>
+    <string name="is_save_mode">该模式被修改,是否要存储情景</string>
+    <string name="sensor">传感控制</string>
+    <string name="type">类型</string>
+    <string name="product">产品</string>
+    <string name="Io">回路</string>
+    <string name="nodevice">未知设备</string>
+    <string name="arceEdite">房间管理</string>
+    <string name="deviceTiming">设备定时</string>
+    <string name="qucksearch">快速搜索</string>
+    <string name="cleanAllTimer">清除所有定时</string>
+    <string name="my_device">我的设备</string>
+    <string name="products_name">产品类型</string>
+    <string name="products_name_info">支持多样化的产品类型</string>
+    <string name="filemanger">专案管理</string>
+    <string name="moreLanguage">多语言</string>
+    <string name="save">保存</string>
+    <string name="allArce">全部区域</string>
+    <string name="allType">全部类型</string>
+    <string name="all">默认全部</string>
+    <string name="mode">模式</string>
+    <string name="sence">情景</string>
+    <string name="learn">学习</string>
+    <string name="sence_list">情景列表</string>
+    <string name="set">集合</string>
+    <string name="tip">温馨提示</string>
+    <string name="tipinfo">提示信息</string>
+    <string name="datadown">数据下载</string>
+    <string name="downing">正在下载,是否返回</string>
+    <string name="sencdevice">情景设备</string>
+    <string name="anhonginfo">安防提示信息</string>
+    <string name="getdatefail">获取数据失败</string>
+    <string name="isOne">已是第一首</string>
+    <string name="stopPlay">停止播放</string>
+    <string name="isLast">已是最后一首</string>
+    <string name="sure">确 定</string>
+    <string name="cancle">取 消</string>
+    <string name="isDelArce">是否删除空间及空间所有设备!</string>
+    <string name="isDelRedFra">是否删除当前红外按钮!</string>
+    <string name="sence_name">情景名称</string>
+    <string name="namebeing">名称存在</string>
+    <string name="sence_id">场景ID</string>
+    <string name="sence_info">点击图标进入编辑状态,长按列表拖动排序</string>
+    <string name="actionsence">执行场景</string>
+    <string name="starttime">开始时间</string>
+    <string name="endtime">结束时间</string>
+    <string name="alia">别名(多个别名用,分开)</string>
+    <string name="sence_type">场景类型</string>
+    <string name="select_image">选择图片</string>
+    <string name="sence_msg">场景是一组设备联动集合,可以一键完成复杂的控制</string>
+    <string name="add_sence">添加场景</string>
+    <string name="selectType">请选择类型</string>
+    <string name="inputModeCode">请输入场景代码0-254</string>
+    <string name="modeCodeNull">场景代码不能为空</string>
+    <string name="modeNameNull">场景名称不能为空</string>
+    <string name="modeTypeNull">场景类型不能为空</string>
+    <string name="modeImage">请选择图片</string>
+    <string name="isDelMode">是否删除模式及所有关联场景</string>
+    <string name="isDelFile">是否删除当前项目</string>
+    <string name="isDelDevice">是否删除设备及关联的数据</string>
+    <string name="isDelUser">是否删除用户及关联的数据</string>
+    <string name="isDelModeList">是否删除该情景</string>
+    <string name="addArce">添加区域</string>
+    <string name="addSuccess">添加成功!</string>
+    <string name="updateSuccess">修改成功!</string>
+    <string name="deleteSuccess">删除成功!</string>
+    <string name="end_start">结束时间不能小于开始时间</string>
+    <string name="eightmode">默认8个模式只能修改不能删除</string>
+    <string name="deleteFail">删除失败!</string>
+    <string name="exist">存在</string>
+    <string name="nameLable">名称</string>
+    <string name="nameLable_msg">设备名称</string>
+    <string name="deviceType">设备类型</string>
+    <string name="camera_name">摄像机</string>
+    <string name="deviceId">设备ID</string>
+    <string name="userName">用户名</string>
+    <string name="password">密码</string>
+    <string name="input_content">请在这里输入类容</string>
+    <string name="CQR">扫描二维码</string>
+    <string name="list">列表</string>
+    <string name="addSence">添加场景</string>
+    <string name="addDevice">添加设备</string>
+    <string name="modeSet">场景集合</string>
+    <string name="line">在线</string>
+    <string name="no_roles">您没有控制权限,请联系管理员</string>
+    <string name="editeDevice">编辑设备</string>
+    <string name="finish">完成</string>
+    <string name="sence_time">场景定时</string>
+    <string name="isDelGateWay">是否删除当前网关!</string>
+    <string name="start_voice">开始录音</string>
+    <string name="voice_err">主人,你好像没有说话哦!</string>
+    <string name="no_match">没有匹配结果</string>
+    <string name="result">【结果】</string>
+    <string name="result_1">【置信度】</string>
+    <string name="is_j">是否将</string>
+    <string name="add_relay">添加到中继</string>
+    <string name="fromrelay">从中继</string>
+    <string name="moving">移除</string>
+    <string name="no_into_relay">该设备没有被创建,不能进入中继列表</string>
+    <string name="no_device">设备不存在</string>
+    <string name="cleanTime">清除预约定时?</string>
+    <string name="makeTime">预约定时? </string>
+    <string name="makeTime1">预约定时</string>
+    <string name="clean">清除</string>
+    <string name="alredy">已</string>
+    <string name="stop">停止</string>
+    <string name="next_song">下一首</string>
+    <string name="stopInfo">停</string>
+    <string name="isCleanDevice">是否清空云之声设备!</string>
+    <string name="is_clean">是否清空</string>
+    <string name="book_search">预约查询</string>
+    <string name="book_tine">设置的预约时间</string>
+    <string name="curr_p_n">当前所有人数</string>
+    <string name="clean_all">清空全部</string>
+    <string name="pre_song">上一首</string>
+    <string name="pe_set">人数设定</string>
+    <string name="set_pe">设定人数</string>
+    <string name="select_pe">请选择人数</string>
+    <string name="pe_on_off">人数开关</string>
+        <string name="isCleanVoice">是否清空云之声智能问答!</string>
+    <string name="no_code_num">未设置情景代码编号!</string>
+    <string name="selectSpace">空间选择</string>
+    <string name="senceId">情景ID</string>
+    <string name="spaceNoExist">选择空间不存在!</string>
+    <string name="tempu">温度加一</string>
+    <string name="tempd">温度减一</string>
+    <string name="tempC">温度</string>
+    <string name="modeswitch">模式切换</string>
+    <string name="open_1">打开</string>
+    <string name="close_1">关闭</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="open_2">开启</string>
+    <string name="cleanAllTime">确定清除所有预约定时?</string>
+    <string name="hour">小时</string>
+    <string name="morning">早上</string>
+    <string name="afternoon">下午</string>
+    <string name="evening">晚上</string>
+    <string name="senceSort">长按移动排序</string>
+    <string name="deviceSort">长按移动排序</string>
+    <string name="dateFresh">数据更新</string>
+    <string name="zhiLing">灯光全开-灯光全关-照明全开-照明全关-窗帘全开-窗帘全关-调光全开-调关全开-调光圈开-调光全关-调光圈关-调关全关-彩灯全开-彩灯圈开-彩灯全关-彩灯圈关-空调全开-空调全关-背景音乐全开-背景音乐全关-空间选择-选择空间-开启空间-打开空间-全部空间-退出空间-取消全部预约-取消定时控制-查询定时空間-开启监控-监控开启-校准网关时间-时间校准-读取网关时间-系统撤防-保全系统解除-保全系统设定-系统布防-解除报警</string>
+    <string name="air_set_auto">已设定自动</string>
+    <string name="air_set_cold">已设定制冷</string>
+    <string name="air_set_hot">已设定制热</string>
+    <string name="all_open">灯光全开</string>
+    <string name="all_close">灯光全关</string>
+    <string name="device_close">设备全关</string>
+    <string name="hot">制热</string>
+    <string name="cool">制冷</string>
+    <string name="speedswitch">风量切换</string>
+    <string name="openzc">已开启侦测</string>
+    <string name="is_cancle_bind">是否取消投影机绑定</string>
+    <string name="air_set_wind">已设定送风</string>
+    <string name="air_set_clean">已设定除湿</string>
+    <string name="allset">已设定</string>
+    <string name="degree">度</string>
+    <string name="uper">加</string>
+    <string name="low">降</string>
+    <string name="air_name">名称:</string>
+    <string name="select_name">选择</string>
+    <string name="air_pre">上一笔</string>
+    <string name="air_next">下一笔</string>
+    <string name="air_send">发射</string>
+    <string name="air_study">学习</string>
+    <string name="input_air_name">输入名称</string>
+    <string name="alUplevel">已调高亮度</string>
+    <string name="aldownlevel">已调低亮度</string>
+    <string name="delayTime">延时</string>
+    <string name="delay">延后</string>
+    <string name="fiveProjector">05:投影机</string>
+    <string name="fiveDVD">05:DVD</string>
+    <string name="fiveAttack">05:功放</string>
+    <string name="fiveCustom1">05:自定义1</string>
+    <string name="fiveCustom2">05:自定义2</string>
+    <string name="fiveCustom3">05:自定义3</string>
+    <string name="fiveControl">05:音频控制器</string>
+    <string name="musicType1">21:华尔斯</string>
+    <string name="musicType2">21:泊声</string>
+    <string name="io0">0:1路</string>
+    <string name="io1">1:2路</string>
+    <string name="io2">2:3路</string>
+    <string name="modeSeting">设定</string>
+    <string name="paramErr">参数错误!</string>
+    <string name="pwd1">密码验证错误</string>
+    <string name="pwd2">网络装置不存在</string>
+    <string name="pwd3">密码修改失败</string>
+    <string name="pwd4">密码修改完成</string>
+    <string name="sort">第</string>
+    <string name="box">笔</string>
+    <string name="downtime">下载时间</string>
+    <string name="newSuccess">新增成功</string>
+    <string name="option_fail">操作失败.</string>
+    <string name="search_success">查询成功</string>
+    <string name="modeseted">情景已设定</string>
+    <string name="timmingseted">定时已设定</string>
+    <string name="matchseted">配对已设定</string>
+    <string name="surplus">剩余</string>
+    <string name="action_space">剩余空间</string>
+    <string name="delSuccess">删除成功</string>
+    <string name="tempLed">03:色温LED</string>
+    <string name="temp">色温</string>
+    <string name="moreLed">03:多彩LED</string>
+    <string name="belt">03:灯带</string>
+    <string name="inval_words">无效的识别词?</string>
+    <string name="security_set">安防设置</string>
+    <string name="security_bf">布 防</string>
+    <string name="security_cf">撤 防</string>
+    <string name="set_buf">已布防</string>
+    <string name="set_cef">已撤防</string>
+    <string name="on_off_alarm">按开启或关闭键可清除警报</string>
+    <string name="modeAuto">模式:自动</string>
+    <string name="modeCool">模式:制冷</string>
+    <string name="modeClean">模式:除湿</string>
+
+    <string name="work">工作模式</string>
+    <string name="modeWin">模式:送风</string>
+    <string name="speedAuto">风速:自动</string>
+    <string name="speedLow">风速:低</string>
+    <string name="speedMiddle">风速:中</string>
+    <string name="speedUp">风速:高</string>
+    <string name="speedFour">风速:四</string>
+    <string name="speedFive">风速:五</string>
+    <string name="stateOn">状态:开机</string>
+    <string name="stateOff">状态:关机</string>
+    <string name="cancle1">解除</string>
+    <string name="timing">定时</string>
+    <string name="booking">预约</string>
+    <string name="timingLow">定时:小于1小时</string>
+    <string name="setViceSwitch">设置副控開關...?</string>
+    <string name="switchPair">开关配对</string>
+    <string name="match_set">配对</string>
+    <string name="up">上</string>
+    <string name="down">下</string>
+    <string name="openWindow">开窗</string>
+    <string name="closeWindow">关窗</string>
+    <string name="delBack">是否删除备份:</string>
+    <string name="dimerSpeed">调光速度</string>
+    <string name="speed_1">速度</string>
+    <string name="setSwitchTime">设定开关动作时间</string>
+    <string name="musicSource">本地磁盤,SD,USB,音乐,电影,图片,收音机,日曆,音源</string>
+    <string name="cloud_mager">云知声管理控制</string>
+    <string name="selctMusicSource">选择音乐來源</string>
+    <string name="musicPlayMode">順序播放,全部循环,单曲循环,随机播放</string>
+    <string name="playType">播放类型</string>
+    <string name="play_action">播放音效</string>
+    <string name="play">播放</string>
+    <string name="localplay">本地播放</string>
+    <string name="remoteplay">远程播放</string>
+    <string name="is_down">是否下载</string>
+    <string name="musicVoice">高音+,高音-,低音+,低音-</string>
+    <string name="voiceBigSmall">高低音设置</string>
+    <string name="musicMode">普通,摇滚,流行,舞曲,嘻哈,古典,超重低音,人声,爵士</string>
+    <string name="selectMusicMode">选择音效</string>
+    <string name="setModeState">儲存情景設定,清除情景設定,查询情景状态,查询情景空間,设定情景开关</string>
+    <string name="backgroundInmage">设定背景图,清除背景图</string>
+    <string name="selectGroundInmage">请选择背景图</string>
+    <string name="selceSpace">请选择空间</string>
+    <string name="modeHot">模式: 制热</string>
+    <string name="alrm_info">报警信息</string>
+    <string name="alrm_push">报警推送\n关闭</string>
+    <string name="alrm_push1">报警推送</string>
+    <string name="move">移动侦测\n关闭</string>
+    <string name="move1">移动侦测</string>
+    <string name="peplered">人体红外\n关闭</string>
+    <string name="peplered1">人体红外</string>
+    <string name="road">路</string>
+    <string name="io_1">0:1路</string>
+    <string name="io_2">1:2路</string>
+    <string name="io_3">2:3路</string>
+    <string name="io_4">3:4路</string>
+    <string name="io_5">4:5路</string>
+    <string name="io_6">5:6路</string>
+    <string name="io_7">6:7路</string>
+    <string name="io_8">7:8路</string>
+    <string name="all_2">2:全部</string>
+    <string name="all_3">3:全部</string>
+    <string name="all_4">4:全部</string>
+    <string name="select_io">请选择回路</string>
+    <string name="name_null">识别不能为空</string>
+    <string name="words_null">名称不能为空</string>
+    <string name="words_exit">名称已经存在</string>
+    <string name="date_null">日期不能为空</string>
+    <string name="time_null">时间不能为空</string>
+    <string name="cycle_null">周期不能为空</string>
+    <string name="s_e">开始月份——结束月份</string>
+    <string name="trip_null">行程不能为空</string>
+    <string name="resubmit">不能重复提交</string>
+    <string name="submit">提交</string>
+    <string name="booksuccess">预约成功</string>
+    <string name="bookfail">预约失败</string>
+    <string name="id_null">ID不能为空</string>
+    <string name="arce_null">请选择区域</string>
+    <string name="type_null">请选择类型</string>
+    <string name="product_null">请选择产品</string>
+    <string name="id_len">ID输入长度不对</string>
+    <string name="name_words">关联词不能包含识别词</string>
+    <string name="mode_code">情景必须设置代码:0-255</string>
+    <string name="word_exist">识别词已存在</string>
+    <string name="exist1">已存在</string>
+    <string name="id_code">请输入0-254新的地址.</string>
+    <string name="device_info">设备信息</string>
+    <string name="alrm">报警</string>
+    <string name="match">配对</string>
+    <string name="is_Del">是否删除?</string>
+    <string name="isMatch">是否配对</string>
+    <string name="camara_no">摄像机不在线,无法进行设置.</string>
+    <string name="safety">安全性</string>
+    <string name="xh_info">型号强度:</string>
+    <string name="select_xt">选台</string>
+    <string name="sence1">情景</string>
+    <string name="sence2">集合</string>
+    <string name="tempValue">℃</string>
+    <string name="Second">秒</string>
+    <string name="Munits">分钟</string>
+    <string name="Hour">小时</string>
+    <string name="set1">设定</string>
+    <string name="four_f">4F:万能遥控</string>
+    <string name="count">总计</string>
+    <string name="four_f_msg">长按电源键可以进入学习模式.</string>
+    <string name="zero_group">第0组:开关机</string>
+    <string name="zero_key">第0组:按键0</string>
+    <string name="key0">按键0</string>
+    <string name="key1">按键1</string>
+    <string name="key2">按键2</string>
+    <string name="key3">按键3</string>
+    <string name="key4">按键4</string>
+    <string name="key5">按键5</string>
+    <string name="key6">按键6</string>
+    <string name="key7">按键7</string>
+    <string name="key8">按键8</string>
+    <string name="key9">按键9</string>
+    <string name="keyleft">按键左</string>
+    <string name="keyright">按键右</string>
+    <string name="key">按键</string>
+    <string name="keyup">按键上</string>
+    <string name="keydown">按键下</string>
+    <string name="kc0">扩充00</string>
+    <string name="kc1">扩充01</string>
+    <string name="kc2">扩充02</string>
+    <string name="kc3">扩充03</string>
+    <string name="kc4">扩充04</string>
+    <string name="kc5">扩充05</string>
+    <string name="kc6">扩充06</string>
+    <string name="kc7">扩充07</string>
+    <string name="kc8">扩充08</string>
+    <string name="kc9">扩充09</string>
+    <string name="kc10">扩充10</string>
+    <string name="kc11">扩充11</string>
+    <string name="kc12">扩充12</string>
+    <string name="kc13">扩充13</string>
+    <string name="key_studed">该键值已被学习</string>
+    <string name="study_key">对着设备按下你需要学习的键</string>
+    <string name="red_add_s">红外添加成功</string>
+    <string name="red_update_s">红外修改成功</string>
+    <string name="red_update_f">红外修改失败</string>
+    <string name="last_group">已经是最后一笔</string>
+    <string name="rf">请选择红外组</string>
+    <string name="rf_success">红外线学习成功,长度:</string>
+    <string name="rf_byte">字元</string>
+    <string name="set_machie">设定电机转向:</string>
+    <string name="motor_to">电机转向</string>
+    <string name="motor_pos">电机正转</string>
+    <string name="motor_neg">电机反转</string>
+    <string name="full_on">全开管制</string>
+    <string name="full_on_yes">全开关有效</string>
+    <string name="full_on_no">全开关无效</string>
+    <string name="set_cur">设定窗帘行程动作时间:</string>
+    <string name="timeBroad">定时广播</string>
+    <string name="port_null">IP端口不能为空</string>
+    <string name="isSetMachie">确定进行机码设置吗?</string>
+    <string name="machineSet">主机设置</string>
+    <string name="inputIp">请输入正确的IP地址!</string>
+    <string name="inputPort">请输入端口!</string>
+    <string name="isConect">通讯组网</string>
+    <string name="setPwd">请连接内网才能设置网关密码!</string>
+    <string name="setTimeyy">设定定时预约:</string>
+    <string name="cleanalltiming">清空所有的预约定时</string>
+    <string name="cleanallmode">清空所有的情景代码</string>
+    <string name="cleanallanhong">清空所有配对安防</string>
+    <string name="isAllON">是否确定执行全开操作</string>
+    <string name="isAllOFF">是否确定执行全关操作</string>
+    <string name="cleanallpoint">清空所有预设点</string>
+    <string name="closepush">设备已关闭报警推送</string>
+    <string name="cleanallhis">清空所有的操作记录</string>
+    <string name="searchTimeState">查询定时状态</string>
+    <string name="no_rol">您没有管理员权限,不能删除记录</string>
+    <string name="no_rol_info">您没有管理员权限</string>
+    <string name="no_rec_line">没有操作记录或者设备不在线</string>
+    <string name="device_no_line">设备不在线</string>
+    <string name="input_soft_name">请输入软件名称</string>
+    <string name="login_account">请登录您的账号</string>
+    <string name="createsuccess">专案创建成功</string>
+    <string name="cancleYy">取消预约</string>
+    <string name="searchTimeSpace">查询定时空间</string>
+    <string name="updateTime">校准网关时间</string>
+    <string name="openTime">开启时间:</string>
+    <string name="seven_7">07:安防模组</string>
+    <string name="help">求救</string>
+    <string name="grass">煤气</string>
+    <string name="All">全部</string>
+    <string name="no_action">未定义</string>
+    <string name="fireAlram">火警</string>
+    <string name="myself">自己</string>
+    <string name="no_myself">对方为分组好友</string>
+    <string name="net_nonection">网络无连接</string>
+    <string name="net_fail">网络连接失败:</string>
+    <string name="net_success">网络连接成功:</string>
+    <string name="net_normal">网络连接正常.</string>
+    <string name="doorsuccess">门铃服务器连接成功</string>
+    <string name="servicesuccess">服务器连接成功</string>
+    <string name="servicefail">服务器断开</string>
+    <string name="service">服务器</string>
+    <string name="custom">自定义</string>
+    <string name="serial">串口</string>
+    <string name="file_fail">资料传送失败.</string>
+    <string name="relay_open">中继已开启</string>
+    <string name="servicehly">和利扬服务器</string>
+    <string name="serviceclt">创力特服务器</string>
+    <string name="servicesl">准德服务器</string>
+    <string name="services2">孝感服务器</string>
+    <string name="down_end">下载结束</string>
+    <string name="inputbackName">请输入备份名称</string>
+    <string name="isSendMode">是否更改红外发射模式?</string>
+    <string name="is_update">是否更改</string>
+    <string name="isRfStudy">是否进行红外学习?</string>
+    <string name="studyKey">请长按要学习记忆的按键.</string>
+    <string name="keyStudy">请对着服务器按下要学习的遥控器.</string>
+    <string name="onKey">短按</string>
+    <string name="longKey">长按</string>
+    <string name="studySuccess">红外学习成功,长度:</string>
+    <string name="inputName">输入名称</string>
+    <string name="one_io">一路</string>
+    <string name="two_io">二路</string>
+    <string name="three_io">三路</string>
+    <string name="four_io">四路</string>
+    <string name="set_img">设定背景图</string>
+    <string name="clean_img">清除背景图</string>
+    <string name="select_img">请选择背景图</string>
+    <string name="select_space">空间选择_GUI</string>
+    <string name="tv_rm">记忆频道</string>
+    <string name="cloud">云端</string>
+    <string name="cloudown">云端下载</string>
+    <string name="local_study">本地学习</string>
+    <string name="tv_wn">万能遥控学习</string>
+    <string name="tv_kc">扩充按键学习</string>
+    <string name="tv_msg">只有万能遥控才能学习</string>
+    <string name="set_rf_fun">设定红外学习功能</string>
+    <string name="album_null">频道不能为空</string>
+    <string name="album_six">65:最爱频道</string>
+    <string name="album_success">新建频道成功</string>
+    <string name="album_fail">新建频道失败</string>
+    <string name="voice_fail">离线语音加载失败</string>
+    <string name="voice_dis">未能正确识别,请重新输入</string>
+    <string name="master">好的主人</string>
+    <string name="tc">TC_BUS指令还没创建</string>
+    <string name="sheerCur">02:主纱窗</string>
+    <string name="cleanTemyy">清除临时预约</string>
+    <string name="cleanCycleyy">清除周期预约</string>
+    <string name="alrm_msg">注意!紧急求救……</string>
+    <string name="alrm_gras_msg">注意!瓦斯报警……</string>
+    <string name="alrm_fire_msg">注意!火警报警……</string>
+    <string name="alrm_other_msg">注意!其它求救……</string>
+    <string name="grayTime">网关时间:</string>
+    <string name="time">时间:</string>
+    <string name="air">空调</string>
+    <string name="other">其他设备</string>
+    <string name="light">灯光</string>
+    <string name="lock">电子锁</string>
+    <string name="anfon">安防</string>
+    <string name="music">背景音乐</string>
+    <string name="cureentpepole">当前人数</string>
+    <string name="week">周日, 周一, 周二, 周三, 周四, 周五,周六</string>
+    <string name="weekeen">周日, 周一, 周二, 周三, 周四, 周五,周六,仅一次</string>
+    <string name="clean_mode_device">清空所有设备和情景</string>
+    <string name="onestudy">单码学习</string>
+    <string name="twoopen">双码开机</string>
+    <string name="twoclose">双码关机</string>
+    <string name="opencode">开机码</string>
+    <string name="closecode">关机码</string>
+    <string name="input_open_code">波特率,校验,資料</string>
+    <string name="nomalstate">正常状态</string>
+    <string name="hstate">垂直翻转</string>
+    <string name="vstate">水平翻转</string>
+    <string name="allstate">全部翻转</string>
+    <string name="high">高清</string>
+    <string name="biao">标清</string>
+    <string name="liu">流畅</string>
+    <string name="basicinfo">基本信息</string>
+    <string name="accountno">当前账号无效,请注册登录</string>
+    <string name="is_exite">是否注销账户</string>
+    <string name="allgateway">全部网关</string>
+    <string name="seletgateway"> 请你选择要设定的网关</string>
+    <string name="deving">正在开发中</string>
+    <string name="jh">集合</string>
+    <string name="semnce">情景</string>
+    <string name="tv">电视</string>
+    <string name="switch0">插座</string>
+    <string name="cur">窗帘与幕布</string>
+    <string name="dimmer">调光</string>
+    <string name="rfx">红外线</string>
+    <string name="txt_null">文本框不能为空</string>
+    <string name="modeSence">情景与集合</string>
+    <string name="device">设备</string>
+    <string name="Travel_reservation">行程预约</string>
+    <string name="histrip">历史预约</string>
+    <string name="Intelligence_QA">智能问答</string>
+    <string name="joke">笑话</string>
+    <string name="story">故事</string>
+    <string name="aiui_music">音乐</string>
+    <string name="playing">当前正在播放</string>
+    <string name="push_dd">推送到主机</string>
+    <string name="dataloading">数据加载中</string>
+    <string name="noupdata">服务端没有上传数据,请上传 !</string>
+    <string name="peotry">唐诗宋词</string>
+    <string name="versionchange">硬件版本切换</string>
+    <string name="newversion">新版</string>
+    <string name="oldversion">旧版</string>
+    <string name="anhong_info">安防信息</string>
+    <string name="ap_one">AP配置第一步</string>
+    <string name="ap_two">AP配置第二步</string>
+    <string name="ap_three">AP配置第三步</string>
+    <string name="setting">设置</string>
+    <string name="back_up">备份_下载</string>
+    <string name="code">编码:</string>
+    <string name="input_code">请输入12位机码</string>
+    <string name="pwdnulll">密码不能为空或者不正确</string>
+    <string name="data_up">数据上传</string>
+    <string name="uping">正在上传数据</string>
+    <string name="gateway">网关</string>
+    <string name="addgateway">添加网关</string>
+    <string name="addgateway1">请添加网关</string>
+    <string name="please_action">请选择你的动作</string>
+    <string name="s_sort">请选择正确的排序</string>
+    <string name="videoswitch">切换视频</string>
+    <string name="videochange">视频转换</string>
+    <string name="point">预设点</string>
+    <string name="point_long">长按预设点可以进行设置</string>
+    <string name="home_sort">首页不能排序</string>
+    <string name="videolistten">视频监听</string>
+    <string name="definition">清晰度</string>
+    <string name="allscreen">全屏</string>
+    <string name="videojl">声控精灵</string>
+    <string name="videotalk">视频对讲</string>
+    <string name="localmode">本地情景模式</string>
+    <string name="sencebro">情景播报</string>
+    <string name="nowifi">暂不支持5G频段，请确认手机和设备处在同一WIFI下</string>
+    <string name="leftMore">向左滑动设置更多功能</string>
+    <string name="nogree">不支持</string>
+    <string name="redfra">红外</string>
+    <string name="fresh">刷新</string>
+    <string name="delete">删除</string>
+    <string name="down_info">下载</string>
+    <string name="timing_info">定时</string>
+    <string name="contry">国家和地区</string>
+    <string name="contryNo">国家代码无效</string>
+    <string name="listselect">从列表选择</string>
+    <string name="china">中国</string>
+    <string name="fast_control">快捷控制</string>
+    <string name="input_phone">请输入手机号码</string>
+    <string name="debug_tool">调试工具</string>
+    <string name="debug_tool_info">仅限开发商使用</string>
+    <string name="relayManger">中继管理</string>
+    <string name="relayMangerinfo">中继管理器</string>
+    <string name="clickrelayinfo">点击取消中继(每组允许同时存在32个)</string>
+    <string name="clickaddrelay">点击添加中继</string>
+    <string name="isOpendoor">是否开门</string>
+    <string name="nobinddoor">未绑定门锁,长按绑定</string>
+    <string name="deviceuse">设备正在使用中,请选择其它设备</string>
+    <string name="passive">传感器情景管理</string>
+    <string name="langvage">语言设置</string>
+    <string name="langvage1">语言</string>
+    <string name="them">主题皮肤</string>
+    <string name="themswitch">主题切换</string>
+    <string name="machine_swicth">新旧设备版本切换</string>
+    <string name="on_off">OFF表示新版本,ON表示旧版本</string>
+    <string name="speech_play">语音播报</string>
+    <string name="aiui1">下载当前专案[</string>
+    <string name="aiui2">],将覆盖云知声数据,不可恢复,请谨慎操作!</string>
+    <string name="reboot">AIUI服务更新成功,正在重启设备,请稍后</string>
+    <string name="softreboot">软件更新成功,正在重启设备,请稍后"</string>
+    <string name="dateDown">正在下载数据</string>
+    <string name="save_data">正在保存数据,稍后……</string>
+    <string name="no_type_data">该类型不存在数据</string>
+    <string name="start_down_red">开始下载红外数据</string>
+    <string name="study_on_off">学习开关机</string>
+    <string name="power_study">编码学习</string>
+    <string name="page">条</string>
+    <string name="machine_set">服务器设置</string>
+    <string name="set_ip">设置IP地址和端口</string>
+    <string name="clean_file">清空当前专案</string>
+    <string name="clean_all_sence">清除所有设备和情景</string>
+    <string name="book_setting">预约设置</string>
+    <string name="cycle">周期</string>
+    <string name="please_select">请选择</string>
+    <string name="label_null">标签不能为空</string>
+    <string name="machine_manger">设备管理</string>
+    <string name="pwd_info">请先复位设备,并在听到请进行网络连接之后开始配网</string>
+    <string name="book_time">预约时间</string>
+    <string name="prePage">上页</string>
+    <string name="nextPage">下页</string>
+    <string name="backlook">回看</string>
+    <string name="select">选项</string>
+    <string name="local">本地</string>
+    <string name="sequ">时序</string>
+
+    <string name="air_on">断路器</string>
+    <string name="air_alrm1">回路1过载</string>
+    <string name="air_alrm2">回路2过载</string>
+    <string name="air_alrm3">回路3过载</string>
+    <string name="air_alrm4">回路4过载</string>
+    <string name="air_alrm5">回路5过载</string>
+    <string name="air_alrm6">回路6过载</string>
+    <string name="air_alrm7">回路7过载</string>
+    <string name="air_alrm8">回路8过载</string>
+
+
+    <string name="sequ_switch">时序开关</string>
+    <string name="air_switch">智能空开</string>
+    <string name="sequ_1">时序1路</string>
+    <string name="sequ_2">时序2路</string>
+    <string name="sequ_3">时序3路</string>
+    <string name="sequ_4">时序4路</string>
+    <string name="sequ_5">时序5路</string>
+    <string name="sequ_6">时序6路</string>
+    <string name="sequ_7">时序7路</string>
+    <string name="sequ_8">时序8路</string>
+
+    <string name="air_switch_1">断路器1路</string>
+    <string name="air_switch_2">断路器2路</string>
+    <string name="air_switch_3">断路器3路</string>
+    <string name="air_switch_4">断路器4路</string>
+    <string name="air_switch_5">断路器5路</string>
+    <string name="air_switch_6">断路器6路</string>
+    <string name="air_switch_7">断路器7路</string>
+    <string name="air_switch_8">断路器8路</string>
+
+    <string name="sequ_alia">时序开关别名设置</string>
+    <string name="air_alia">智能空开别名设置</string>
+    <string name="sequ_alia_s">别名修改成功</string>
+    <string name="sequ_list">时序1路,时序2路,时序3路,时序4路,时序5路,时序6路,时序7路,时序8路</string>
+    <string name="air_list">断路器1路,断路器2路,断路器3路,断路器4路,断路器5路,断路器6路,断路器7路,断路器8路</string>
+    <string name="sequ_all">总开/关</string>
+    <string name="red_device">红外设备</string>
+    <string name="bind">绑定</string>
+    <string name="bind_device">关联设备:</string>
+    <string name="no">无</string>
+    <string name="pro_no">投影幕布不存在</string>
+    <string name="control_no">中控主机不存在</string>
+    <string name="pro_bind">投影幕布绑定</string>
+    <string name="no_bind_pro">未绑定幕布</string>
+    <string name="single_source">信号源</string>
+    <string name="single_source1">信号源1</string>
+    <string name="single_source2">信号源2</string>
+    <string name="single_source3">信号源3</string>
+    <string name="single_source4">信号源4</string>
+    <string name="control_source">控制源</string>
+    <string name="dh_info">单火开关第一次使用必须进入[编辑]-[单火配对]</string>
+    <string name="color_light">彩光</string>
+    <string name="white_light">白光</string>
+    <string name="warm_light">暖光</string>
+    <string name="neutral_light">中性光</string>
+    <string name="saturation">饱和度</string>
+    <string name="color_high">彩光亮度</string>
+    <string name="colors1">白光,暖光,中性光,彩光</string>
+    <string name="colors2">白光亮度,暖光亮度,中性亮度,彩光</string>
+    <string name="colors">红色,紫色,蓝色,青色,绿色,黄色,橙色</string>
+    <string name="wifiName">WIFI名称</string>
+    <string name="safe">安全性</string>
+    <string name="signal_intensity">信号强度</string>
+    <string name="disarm">已撤防</string>
+    <string name="Locke">已开锁</string>
+    <string name="uLocke">已关锁</string>
+    <string name="openLocke">开锁</string>
+    <string name="closeLocke">关锁</string>
+    <string name="select_state">请选择状态</string>
+    <string name="is_check_time">是否校时系统时间</string>
+    <string name="node">节点</string>
+    <string name="speed">风速</string>
+    <string name="voiceAdd">添加问答</string>
+    <string name="quest">问 题</string>
+    <string name="answer">回 答</string>
+    <string name="voiceInfo">动  作(多个别名用,分开)</string>
+    <string name="scribeAdd">添加预约</string>
+    <string name="scribeName">名 称</string>
+    <string name="scribeDate">日 期</string>
+    <string name="scribeTime">时 间</string>
+    <string name="scribeTrip">行 程</string>
+    <string name="scribeAction">动 作</string>
+    <string name="sendSet">开始配置</string>
+    <string name="sendStop">停止发送</string>
+    <string name="wifiManger">WiFi管理</string>
+    <string name="wifiInfo">请先复位设备，并在听到【请进行网络连接】之后开始配网\n暂不支持5G频段，请确认手机和设备处在同一WIFI下</string>
+    <string name="wifiSet">WIFI设置</string>
+    <string name="relayAdd">点击添加中继 </string>
+    <string name="relayCancle">点击取消中继(最多允许同时存在32个)</string>
+    <string name="gateWayInfo">只能允许存在一个主网关,智能网关允许多个</string>
+    <string name="please_match">请配对(红色表示已经存在)</string>
+    <string name="ele">电流侦测</string>
+    <string name="ele1">电流侦测(第1步)</string>
+    <string name="ele2">电流侦测(第2步)</string>
+    <string name="ele3">电流侦测(第3步)</string>
+    <string name="studing">正在学习</string>
+    <string name="start_down">开始下载数据</string>
+    <string name="devicepower">设备电源</string>
+    <string name="funcontrol">摆叶控制</string>
+    <string name="close_state">请确定设备处于关闭状态</string>
+    <string name="open_state">请确定设备处于开启状态</string>
+    <string name="please_tv">请选择电视</string>
+    <string name="send_get">发送获取</string>
+    <string name="eleResult">设备电流侦测结果</string>
+    <string name="deteClose">侦测关闭值:</string>
+    <string name="deteReco">侦测推荐值:</string>
+    <string name="deteOpen">侦测开启值:</string>
+    <string name="is_set_dete">是否设置电流侦测</string>
+    <string name="is_set">是否设置</string>
+    <string name="set_mutu">设置互控</string>
+    <string name="mutu_switch">为互控开关</string>
+    <string name="is_match_mutu">是否确定要【单火配对】</string>
+    <string name="mutu_match">单火配对</string>
+    <string name="is_del_mutu">是否确定要【单火删除】</string>
+     <string name="mutu_del">单火删除</string>
+    <string name="openDete">开启侦测</string>
+    <string name="alarm_out">报警输出</string>
+    <string name="door_sence">开门联动情景</string>
+    <string name="alarm_cancle">报警解除</string>
+    <string name="is_create_alarm">是否创建报警模式</string>
+    <string name="is_create_door">是否创建开门联动模式</string>
+    <string name="is_create_Closedoor">是否创建关门联动模式</string>
+    <string name="is_to_sence">是否跳转至情景</string>
+    <string name="createDevice">创建设备</string>
+    <string name="actionParam">动作参数</string>
+    <string name="actionParam1">动作参数1</string>
+    <string name="actionParam2">动作参数2</string>
+    <string name="actionParam3">动作参数3</string>
+    <string name="actionParam4">动作参数4</string>
+    <string name="actioncycle">动作周期</string>
+    <string name="actiondelay">动作延时</string>
+    <string name="actiontime">动作时间</string>
+    <string name="show_data">已经显示完所有数据</string>
+    <string name="reminding">提醒语:</string>
+    <string name="threekey">请连续按下设置键3次</string>
+    <string name="admin_set">管理者密码设置</string>
+    <string name="input_num_pd">请输入数字频道</string>
+    <string name="tb_ad_id">是否同步修改频道ID</string>
+    <string name="match_success">配对成功</string>
+    <string name="al">频道</string>
+    <string name="more_select">多选</string>
+    <string name="is_edite">是否放弃本次编辑</string>
+    <string name="input_num_code">请输入数字</string>
+    <string name="manger">管理</string>
+    <string name="input_admin_set">请输入管理者密码</string>
+    <string name="input_option_set">操作者账号密码设置</string>
+    <string name="input_option_count">请输入操作者账号</string>
+    <string name="input_option_pwd">请输入操作者密码</string>
+    <string name="settingfail1">设置失败,管理员和密码最大长度为8</string>
+    <string name="settingfail">设置失败,操作者和密码最大长度为8</string>
+    <string name="settingsuccess">设置成功</string>
+    <string name="systemset">系统设置</string>
+    <string name="mute1">静音</string>
+    <string name="mute_on">静音开</string>
+    <string name="mute_off">静音关</string>
+    <string name="voladd">音量加</string>
+    <string name="voldown">音量减</string>
+    <string name="vol">音量</string>
+    <string name="chadd">频道加</string>
+    <string name="chdown">频道减</string>
+    <string name="enter">ENTER</string>
+    <string name="door_state">门锁状态</string>
+    <string name="ele_state">电量上报</string>
+    <string name="jjld">家居联动</string>
+    <string name="alrm_state">报警状态</string>
+    <string name="addfine">添加指纹</string>
+    <string name="delfine">删除指纹</string>
+    <string name="input_f">只能输入数字0-255</string>
+    <string name="manger_pwd">管理密码</string>
+    <string name="ch">中文</string>
+    <string name="eh">英文</string>
+    <string name="machineseting">确定进行机码配置吗</string>
+    <!-- helpCode -->
+    <string name="help_all">全部命令</string>
+    <string name="pro_all">全部产品</string>
+    <string name="switch_code">开关量回码</string>
+    <string name="dimmer_code">调光量回码</string>
+    <string name="ml_code">模拟量回码</string>
+    <string name="sence_code">情景命令</string>
+    <string name="control_code">控制命令</string>
+    <string name="memary_code">存储器回码</string>
+    <string name="tx_code">通讯模式</string>
+    <string name="help_zero">00:開關量回碼</string>
+    <string name="help_four">04:調光量回碼</string>
+    <string name="help_three">03:模擬量回碼</string>
+    <string name="help_nineteen">19:控制命令</string>
+    <string name="help_thirtytwo">32:情景命令</string>
+    <string name="selfName">android文件传输</string>
+    <string name="local_net">内网</string>
+    <string name="local_net_msg">请设置内网IP和端口</string>
+    <string name="remote_net">外网</string>
+    <string name="remote_net_msg">请设置外网IP和端口</string>
+    <string name="wifi_msg">请设置WiFi IP和端口</string>
+    <string name="noBack">未备份数据</string>
+    <string name="fileName">请输入文件夹名称</string>
+    <string name="isUp">确定新建专案吗?</string>
+    <string name="fileExist">文件已存在</string>
+    <string name="backName">备份名称</string>
+    <string name="noBackFile">没有备份</string>
+    <string name="searching">查询</string>
+    <string name="file_null">文件名不能为空</string>
+    <string name="updatetype">产品类型更新</string>
+    <!-- domtao -->
+    <string name="noUserNull">用户名不能为空</string>
+    <string name="backList">获取备份列表</string>
+    <string name="inputBackName">请选择(输入)备份的名称!</string>
+    <string name="fileUpBack">档案上传备份</string>
+    <string name="fileIsExite">该档案已备份，是否覆盖!</string>
+    <string name="updateFail">修改失败</string>
+    <string name="givePower">授权</string>
+    <string name="powerPwd">请输入授权密码</string>
+    <string name="powerNum">请输入授权次数</string>
+    <string name="wifi_dateTime">请连接wifi才能设置网关!</string>
+    <string name="no_read_code">无法读取机码!</string>
+    <string name="isdownLoad">确定切换专案吗?</string>
+    <string name="select_file">请选择传入的文件</string>
+    <string name="no_role">沒有发現專案</string>
+    <string name="info">信号强度</string>
+    <string name="isStudyPro">是否進行红外线學习...?</string>
+    <string name="text_is_null">不能为空!</string>
+    <string name="chazuo">插座</string>
+    <string name="handleName">手动添加</string>
+    <string name="selectArea">请选择区域</string>
+    <string name="mandarin">普通话</string>
+    <string name="cantonese">粤语</string>
+    <string name="henanese">河南话</string>
+    <string name="en_us">英语</string>
+    <string name="exit">确定要退出程序?</string>
+    <string name="allSearch">按全部查询</string>
+    <string name="typeSearch">按类型查询</string>
+    <string name="areaSearch">按区域查询</string>
+    <string name="myDevice">我的设备</string>
+    <string name="QR">扫瞄QR Code</string>
+    <string name="selectAreaName">请滑动屏幕选择一个区域名称</string>
+    <string name="oneSwitch">01:一路开关</string>
+    <string name="twoSwitch">01:二路开关</string>
+    <string name="feelSwitch">01:感应开关</string>
+    <string name="threeSwitch">06:三路开关</string>
+    <string name="deviceName">设备名称</string>
+    <string name="onlyvalue">请输入唯一值</string>
+    <string name="redfradId">红外模块ID(系统自动生成)</string>
+    <string name="redfradKey">KEY(系统自动生成)</string>
+    <string name="redfradIR">IR Code(系统自动生成)</string>
+    <string name="fratype">学习类型</string>
+    <string name="product1">品牌</string>
+    <string name="version">型号</string>
+    <string name="keyvalue">键 值</string>
+    <string name="loadingvideo">正在加载视频</string>
+    <string name="visitor">来客访问</string>
+    <string name="tallking">通话中</string>
+    <string name="line_pwd">设备在线,请设置密码</string>
+    <string name="starttalk">开始对讲</string>
+    <string name="pointnull">不能设置预设点</string>
+    <string name="ack">ACK回调</string>
+    <string name="success">成功</string>
+    <string name="initpwd">设置初始密码成功</string>
+    <string name="othererr"> 其他错误</string>
+    <string name="pwdexise">密码已存在</string>
+    <string name="soundsend">声波发送中</string>
+    <string name="soundsend1">继续发送声波</string>
+    <string name="gateWayName">网关名称</string>
+    <string name="inputGateWayName">请输入网关名称</string>
+    <string name="gateWayID">网关ID</string>
+    <string name="inputGateWayID">请输入网关ID</string>
+    <string name="seachGateWay">搜索附近网关</string>
+    <string name="gateWayFind">网关搜索</string>
+    <string name="freshfail">刷新失败</string>
+    <string name="isBack">还原数据</string>
+    <string name="vserion_null">设备型号不存在</string>
+    <string name="inputUserCount">请输入用户账号</string>
+   <string name="number_1">0,1,2,3,4,5,6,7,8,9,零,一,二,三,四,五,六,七,八,九,两,拾,十,百,;</string>
+    <string name="date_device_timezone">TimeZone</string>
+    <string name="date_ntp_server_auto_check">Use NTP Server Auto Correct</string>
+    <string name="date_phone_time_auto_check">Mobile phone time calibration</string>
+    <string name="date_ntp_server">NTP Server</string>
+    <string name="date_middle_island">(GMT-11:00) Midway Islands, Samoa Islands</string>
+    <string name="date_hawaii">(GMT -10:00)Hawaii</string>
+    <string name="date_alaska">(GMT-09:00)Alaska Standard</string>
+    <string name="date_pacific_time">(GMT-08:00)Pacific Standard(USA and Canada)</string>
+    <string name="date_mountain_time">(GMT-07:00)Mountain StandardPacific Standard(USA
+		and Canada)</string>
+    <string name="date_middle_part_time">(GMT-06:00) Central Standard(USA and Canada),
+		Mexico City</string>
+    <string name="date_eastern_time">(GMT-05:00)Eastern Standard(USA and Canada), Lima,
+		Bogota</string>
+    <string name="date_ocean_time">(GMT-04:00)Atlantic Standard (Canada), Santiago, La
+		Paz</string>
+    <string name="date_newfoundland">(GMT-03:30)Newfoundland</string>
+    <string name="date_brasilia">(GMT-03:00)Brasilia, Buenos Aires, Georgetown</string>
+    <string name="date_center_ocean">(GMT-02:00)South Geogia I</string>
+    <string name="date_cape_verde_island">(GMT-01:00)Reykjavik</string>
+    <string name="date_greenwich">(GMT)Greenwich mean time; London, Lisbon,
+		Casablanca</string>
+    <string name="date_brussels">(GMT+01:00)Brussels, Paris, Berlin, Rome, Madrid,
+		Stockholm, Beograd, Praha</string>
+    <string name="date_athens">(GMT +02:00)Athens, Jerusalem, Cairo, Helsinki</string>
+    <string name="date_nairobi">(GMT +03:00)Nairobi, Riyadh, Moscow</string>
+    <string name="date_teheran">(GMT +03:30)Tehran</string>
+    <string name="date_baku">(GMT +04:00)Baku, Tbilisi, Abu Dhabi, Muscat</string>
+    <string name="date_kebuer">(GMT +04:30)Kabul</string>
+    <string name="date_islamabad">(GMT +05:00)Islamabad, Karachi, Tashkent</string>
+    <string name="date_calcutta">(GMT +05:30)Bombay, Calcutta, Madras, New Delhi</string>
+    <string name="date_alamotu">(GMT +06:00)Astana, Almaty, Dhaka, Colombo</string>
+    <string name="date_bangkok">(GMT +07:00)Bangkok, Hanoi, Jakarta</string>
+    <string name="date_beijing">(GMT +08:00)Beijing, Singapore, Taipei</string>
+    <string name="date_seoul">(GMT +09:00)Seoul, Yakutsk, Tokyo</string>
+    <string name="date_darwin">(GMT +09:30)Darwin</string>
+    <string name="date_guam">(GMT +10:00)Guam, Melbourne, Sydney, Port Moresby,
+		Vladivostok</string>
+    <string name="date_suolumen">(GMT +11:00)Magadan, Solomon Islands, New Calenonia</string>
+    <string name="date_auckland">(GMT +12:00)Auckland, Wellington, Fiji Islands</string>
+    <string name="date_ntp_server_time_nist_gov">time.nist.gov</string>
+    <string name="date_ntp_server_time_kriss_re_kr">time.kriss.re.kr</string>
+    <string name="date_ntp_server_time_windows_com">time.windows.com</string>
+    <string name="date_ntp_server_time_nuri_net">time.nuri.net</string>
+    <string name="date_setting_success">Setting Device Time Success</string>
+    <string name="date_setting_failed">Setting Device Time Failed</string>
+    <string name="date_get_params">Time Params is getting...</string>
+    <string name="alerm_detector_layout">Motion Detect Armed</string>
+    <string name="alerm_detector_sensitivity">移动侦测灵敏度</string>
+    <string name="alerm_sensitivity_desc">(More small,More Sensitive)</string>
+    <string name="alerm_io_layout">Alarm Input Armed</string>
+    <string name="alerm_audio_level">Audio Input Armed</string>
+    <string name="alerm_trigger_level">Trigger Level</string>
+    <string name="alerm_pir_layout">PIR Input Armed</string>
+    <string name="alerm_audio_sensitivity">灵敏度</string>
+    <string name="alerm_presetsit">报警时预置位联动</string>
+    <string name="alerm_io_move">IO联动</string>
+    <string name="alerm_ioout_level">Output Level</string>
+    <string name="alerm_mail_inform">报警邮件通知</string>
+    <string name="alerm_upload_picture">报警后上传图片</string>
+    <string name="alerm_upload_picture_time_interval">Upload Interval(Seconds)</string>
+    <string name="alerm_trigger_event">报警触发事件</string>
+    <string name="event">事件</string>
+    <string name="alerm_set_failed">Alerm Setting Failed</string>
+    <string name="alerm_ioin_levelhight">High</string>
+    <string name="alerm_audio_levelhigh">高度灵敏</string>
+    <string name="alerm_audio_levelmiddle">中度灵敏</string>
+    <string name="alerm_audio_levellow">低度灵敏</string>
+    <string name="alerm_audio_levelforbid">禁止检测</string>
+    <string name="alerm_ioin_levellow">Low</string>
+    <string name="alerm_getparams">Alerm Params is getting...</string>
+    <string name="alerm_getparams_failed">Alerm Params gets failed</string>
+    <string name="alerm_preset_no">No</string>
+    <string name="alerm_upload_picture_num">Upload picture number</string>
+    <string name="alerm_uploadinterval_toolong">The Max Upload Member is 10</string>
+    <string name="alerm_uploadinterval_toolong1">Upload time cannot great than 3600 seconds</string>
+    <string name="alerm_uploadpic_prompt">0 or null means do not upload pictures</string>
+    <string name="alerm_log">Alarm Log</string>
+    <string name="alerm_motion_alarm">Motion detection alarm</string>
+    <string name="alerm_ir_alarm">ir alarm</string>
+    <string name="alerm_door_alarm">door alarm</string>
+    <string name="alerm_smoke_alarm">smoke alarm</string>
+    <string name="alerm_bellife_alarm">bellife alarm</string>
+    <string name="alerm_gpio_alarm">GPIO Alarm</string>
+    <string name="alerm_no_log">No Alarm Logs</string>
+    <string name="alerm_setting">Alarm Setting</string>
+    <string name="alerm_record">报警录像 </string>
+    <string name="alerm_smart_record_lable">Wireless Alarm Recording</string>
+    <string name="alerm_io_layout1">Intelligent Alarm Video</string>
+    <string name="wifi_status_lable">Device Status</string>
+    <string name="wifi">Wifi</string>
+    <string name="wifi_manager">WiFi Manager</string>
+    <string name="wifi_channel">Channel:</string>
+    <string name="wifi_channel_show">The channel number can not be empty</string>
+    <string name="wifi_signal_strong">Wifi Signal</string>
+    <string name="wifi_safe">Wifi Safe</string>
+    <string name="wifi_no_safe">No</string>
+    <string name="wifi_set_failed">WiFi Setting Failed</string>
+    <string name="wifi_set_success">WiFi Setting Success,Camera will be Restarted</string>
+    <string name="wifi_not_connected">WiFi not connected</string>
+    <string name="wifi_scanning">WiFi Scanning,Please waiting...</string>
+    <string name="wifi_scan_failed">WiFi Scan Failed</string>
+    <string name="wifi_getparams">Wifi Params is getting...</string>
+    <string name="wifi_getparams_failed">Wifi Params gets failed</string>
+    <string name="wifi_notchange">Wifi not Change</string>
+    <string name="wifi_pwd_toolong">The password cannot great than 128 bite</string>
+    <string name="wifi_local_manager">Local WiFi Manager</string>
+    <string name="gateWayNamenull">网关名称不能为空</string>
+    <string name="gateWayIDnull">网关ID不能为空</string>
+    <string name="no_item">数据列表没有数据</string>
+    <string name="gatewaylist">网关列表</string>
+    <string name="nologin">未登录</string>
+    <string name="clicklogin">点击登录</string>
+    <string name="myfamily">我的家人</string>
+    <string name="oneset">一键配置</string>
+    <string name="dev_pwd">请输入开发商提供的密码</string>
+    <string name="input_num">只能输入数字或者字母</string>
+    <string name="input_num1">只能输入数字</string>
+    <string name="is_del_manger_pwd">是否清除管理员密码</string>
+    <string name="temp_pwd">临时密码</string>
+    <!-- 提示 -->
+    <string name="user_login">用户登录</string>
+    <string name="user_register">用户注册</string>
+    <string name="login_fail">登录失败,请检查您的网络!</string>
+    <string name="user_error">用户名或者密码错误</string>
+    <string name="date_over">软件使用期限已到</string>
+    <string name="updateapk">软件更新</string>
+    <string name="updateapkNew">是否更新软件到最新版本</string>
+    <string name="finished">已完成:</string>
+    <string name="device_error">该设备与账号不匹配，请重新登录你的账号</string>
+    <string name="loading">正在加载数据!</string>
+    <string name="user_no">用户名或者机码不正确</string>
+    <string name="acount_error">账号错误</string>
+    <string name="account">账号:</string>
+    <string name="pwd_error">密码错误</string>
+    <string name="soft_pass">软件已过期</string>
+    <string name="no_reegister">您的账号与设备不匹配，请重新输入正确的账号,或者注册您的软件!</string>
+    <string name="register_fail">注册失败,请检查您的网络!</string>
+    <string name="check_error">验证码错误</string>
+    <string name="user_exist">用户名已经存在</string>
+    <string name="check_register">验证码已被注册</string>
+    <string name="check_err">验证码输入错误</string>
+    <string name="check_send">验证码已经发送</string>
+    <string name="pwd_err">密码找回失败</string>
+    <string name="check_net">请检查网络</string>
+    <string name="countno">账号不存在</string>
+    <string name="gateway_no_line">网关不在线</string>
+    <string name="get_check_no">获取验证码失败</string>
+    <string name="countyes">账号已被注册</string>
+    <string name="input_user">请输入账号</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="no_re_add">不能重复添加设备</string>
+    <string name="input_new_pwd">请输入新的密码</string>
+    <string name="input_mail">请输入邮箱</string>
+    <string name="input_check">请输入验证码</string>
+    <string name="clickapp">点击打开APP</string>
+    <string name="get_check">获取验证码</string>
+    <string name="input_name">请输入昵称</string>
+    <string name="optionuser">操作者:</string>
+    <string name="login">登 录</string>
+    <string name="next">下一步</string>
+    <string name="nick">请输入昵称</string>
+    <string name="register">注 册</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="remenber_pwd">记住密码</string>
+    <string name="register_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="saveMode">儲存情景設定</string>
+    <string name="cleanMode">清除情景設定</string>
+    <string name="searchModeState">查询情景状态</string>
+    <string name="searchModeSpace">查询情景空間</string>
+    <string name="searchTimingpace">查询定时空間</string>
+    <string name="setMode">设定情景开关</string>
+    <string name="cleanAllMode">清除所有情景</string>
+    <string name="upAndLoad">上传下载</string>
+    <string name="gateWayLine">在线</string>
+    <string name="gateWayUnLine">不在线</string>
+    <string name="gateLinkError">连接错误</string>
+    <string name="checkuser">校验用户账号</string>
+    <string name="gateInvaUn">网关无效</string>
+    <string name="gateLinkLose">网关无效</string>
+    <string name="lose">断开</string>
+    <string name="gateLinkPass">连接超时</string>
+    <string name="gateInvalidId">无效ID</string>
+    <string name="gateLink">连接中</string>
+    <string name="gateUserError">用户名密码错误</string>
+    <string name="gateUserCount">超过最大可连接用户数</string>
+    <string name="gateStream">Stream ID错误</string>
+    <string name="videoLose">视频丢失</string>
+    <string name="gateSearch">网关搜索中....</string>
+    <string name="gateSet">是否设置当前网关为默认网关！</string>
+    <string name="gateSetting">网关设置</string>
+    <string name="citysetting">城市设置\n未设置</string>
+    <string name="citysetting1">城市设置</string>
+    <string name="adminsetting">管理员密码设置\n未设置</string>
+    <string name="adminsetting1">管理员密码设置</string>
+    <string name="usersetting">普通用户密码设置\n未设置</string>
+    <string name="usersetting1">普通用户密码设置</string>
+    <string name="noset">未设置</string>
+    <string name="ailasetting">网关别名\n云知声</string>
+    <string name="ailasetting1">网关别名</string>
+    <string name="aliaset">别名设置</string>
+
+    <string name="timmingsetting">清除所有定时\n未知</string>
+    <string name="timmingsetting1">清除所有定时</string>
+    <string name="modesetting">清除所有情景\n未知</string>
+    <string name="modesetting1">清除所有情景</string>
+    <string name="machinesetting">机码设置\n######</string>
+    <string name="machinesetting1">机码设置</string>
+    <string name="matchsetting">清除所有配对安防\n未设置</string>
+    <string name="mastersetting">路由转发\n用户可以添加6个网关作为路由转发</string>
+    <string name="matchsetting1">清除所有配对安防</string>
+    <string name="pointsetting">清除所有预设点\n未设置</string>
+    <string name="pointsetting1">清除所有预设点</string>
+    <string name="answerbro">应答广播</string>
+    <string name="timmingbro">定时广播</string>
+    <string name="remotecontrol">远程控制\n未支持</string>
+    <string name="remotecontrol1">远程控制</string>
+    <string name="alrmsetting">报警信息\n用户自定义报警信息</string>
+    <string name="ddns">禁止ddns服务</string>
+    <string name="alramset">报警设置</string>
+    <string name="sdksetting">SD卡设置</string>
+    <string name="sdkcount">SD卡总容量(M)</string>
+    <string name="sdkstate">SD卡状态:</string>
+    <string name="videofg">录像覆盖</string>
+    <string name="sound">声音</string>
+    <string name="soundvideo">声音录像:</string>
+    <string name="timmingvideo">定时录像:</string>
+    <string name="sdkformat">SD卡格式化</string>
+    <string name="aiuisetting">AIUI服务\n当前版本0.0.0</string>
+    <string name="aiuiservice">AIUI服务</string>
+    <string name="sequential1">时序1路</string>
+    <string name="sequential2">时序2路</string>
+    <string name="sequential3">时序3路</string>
+    <string name="sequential4">时序4路</string>
+    <string name="sequential5">时序5路</string>
+    <string name="sequential6">时序6路</string>
+    <string name="sequential7">时序7路</string>
+    <string name="sequential8">时序8路</string>
+    <string name="isSetRelay">你是否确定要将[</string>
+    <string name="Relay">]设置为中继</string>
+    <string name="unRelay">]取消中继</string>
+    <string name="deleterelay">是否删除中继</string>
+    <string name="deleterelaydevice">该设备没有被创建,不能删除</string>
+    <string name="isOpen">是否开启旧版本</string>
+    <string name="is_open">是否开启</string>
+    <string name="is_off">是否关闭</string>
+    <string name="isClose">是否关闭旧版本</string>
+    <string name="minuteago">分钟前</string>
+    <string name="minute">分钟</string>
+    <string name="hourago">小时前</string>
+    <string name="dayago">天前</string>
+    <string name="refresh_release">松开获取更多</string>
+    <string name="refresh_pull">下拉可以刷新</string>
+    <string name="refresh_lasttime">上次更新:</string>
+    <string name="tip_reload">重新加载</string>
+    <string name="at_now">刚刚</string>
+    <string name="more">更多</string>
+    <string name="goback">返回</string>
+    <string name="option_list">操作记录</string>
+    <string name="sys_set">系统设置\n未设置</string>
+    <string name="option_list_info">设备历史操作记录</string>
+    <string name="option_info">操作记录\n记录用户控制设备的时间</string>
+    <string name="countexite">账号注销</string>
+    <string name="backlogin">返回登录界面</string>
+    <string name="softversion">软件版本</string>
+    <string name="choosemodule">Choose Module</string>
+    <string name="choosemodulenote">1.Choose the type of the module to configure.\n2.Click \"Choose Module\" to confirm.</string>
+    <string name="screenshot_success">获取图片成功</string>
+    <string name="screenshot_error">获取图片成失败</string>
+    <string name="mouth">月</string>
+    <!-- Tabhost底部标签 -->
+    <string name="main_local_scan">设备列表</string>
+    <string name="main_config">一健配置</string>
+    <string name="ap_config">AP配置</string>
+    <string name="main_ota">版本</string>
+    <string name="main_ota2">OTA2</string>
+    <string name="pwd_no_empty">密码不能为空</string>
+    <string name="upname">名   称:</string>
+    <string name="backupname">备份名称</string>
+    <string name="role">授权码:</string>
+    <string name="roleinfo">请输入小于6位数授权码</string>
+    <string name="upsuccess">数据上传成功</string>
+    <string name="upfail">数据上传失败</string>
+    <string name="downsuccess">数据下载成功</string>
+    <string name="downfail">数据下载失败</string>
+    <string name="input_name1">请输入名称</string>
+    <string name="input_alia">请输入别名</string>
+    <string name="alias">别名</string>
+    <string name="tip_info">请输入提示信息</string>
+    <string name="getdevice">正在获取设备</string>
+    <string name="getmode">正在获取情景</string>
+    <string name="pass">获取数据超时</string>
+    <string name="modeidte">模式修改</string>
+    <string name="isEditemode">是否更改情景模式</string>
+    <string name="getdeviceinfo">获取设备信息</string>
+    <string name="getting">获取中……</string>
+    <string name="city">当前城市</string>
+    <string name="input_city">请输入城市</string>
+    <string name="city_null">城市不能为空</string>
+    <!-- Tabhost1 -->
+    <string name="localscan">本地搜索</string>
+    <string name="search">搜索</string>
+    <string name="get_anhong_info">正在获取安防信息</string>
+    <string name="get_trip_info">正在获取行程预约</string>
+    <string name="editetrip">编辑预约</string>
+    <string name="seletedate">请选择日期</string>
+    <string name="timecopare">时间不能小于当前时间</string>
+    <string name="datecopare">选择的日期不能小于当前日期</string>
+    <string name="trip_cycle">行程预约周期设置</string>
+    <string name="everyday">每天</string>
+    <string name="get_answer_info">正在获取问答</string>
+    <string name="ddanswer">叮咚问答</string>
+    <string name="cloundanswer">云端问答</string>
+    <string name="editeanswer">编辑问答</string>
+    <string name="quest_null">问题不能为空</string>
+    <string name="answer_null">答案不能为空</string>
+    <string name="answersuccess">提问成功</string>
+    <string name="answerfail">提问失败</string>
+    <string name="localscannote">1.Click \"LocalScan\" to start search local devices.\n2.The local devices will show as a list in another page.\n3.Click a device in the list,it will show the information of the device.</string>
+    <string name="downdevice">指定设备下载</string>
+    <string name="mode_exite">情景模式已存在</string>
+    <string name="device_exite">设备列表已存在</string>
+    <!-- 指定网络连接 -->
+    <string name="psk_hint">请输入密码</string>
+    <string name="edit">编辑</string>
+    <string name="scan_text">Scan</string>
+    <string name="ssid_text">名称:</string>
+    <string name="psk_text">密码:</string>
+    <string name="psk_shw">显示密码</string>
+    <string name="localNet">本地网络</string>
+    <string name="chanel">通道:</string>
+    <string name="log">日志</string>
+    <string name="connect_network">连 接</string>
+    <string name="simpleconfigrak477note">1.让手机连接网络.\n2.输入该网络的密码.\n3.单击“默认”键让装置在一键模式.\n4.单击“连接”开始配置设备的网络.\n5.如果配置成功，它将返回设备的MAC，或返回超时.</string>
+    <string name="simpleconfigrak476note">1.让手机连接网络.\n2.输入该网络的密码.\n3.让设备在一键模式下发送\"at+easy_config\"命令.\n4..单击“连接”开始配置设备的网络.\n5.如果配置成功，它将返回设备的MAC，或返回超时.</string>
+    <string name="simpleconfigrak475note">1.让手机连接网络.\n2.输入该网络的密码.\n3.让设备在一键模式下点击\"default\"默认值.\n4.单击“连接”开始配置设备的网络.\n5.如果配置成功，它将返回设备的MAC，或返回超时.</string>
+    <string name="cloudconfig">1.让手机连接网络,输入该网络的密码.\n2.长按云知声设置键5秒进联网模式.\n3.单击“发送配置”开始配置设备的网络.\n4.如果配置成功，它将返回设备的MAC，或返回超时.\n5.暂不支持5G频段，请确认手机和设备处在同一WIFI下.</string>
+    <string name="simpleconfigrak473note">1.让手机连接网络.\n2.输入该网络的密码.\n3.让设备在一键模式下,发送\"at+easy_config\"命令\n4.单击“连接”开始配置设备的网络.\n5.如果配置成功，它将返回设备的MAC，或返回超时.</string>
+    <string name="device_type">设备类型</string>
+    <string name="device_camera">智能摄像头</string>
+    <string name="device_door">门铃</string>
+    <string name="open_door">正在打开门铃服务,请稍后……</string>
+    <string name="connect_service">正在连接服务器,请稍后</string>
+    <string name="opendoor">开门</string>
+    <string name="device_cloud">云知声</string>
+    <string name="device_gateway">智能小网关</string>
+    <string name="device_camera_txt">智能摄像头</string>
+    <string name="device_door_txt">门铃</string>
+    <string name="device_cloud_txt">云知声</string>
+    <string name="device_gateway_txt">智能小网关</string>
+    <string name="config_device_easy_title">一键配置</string>
+    <string name="scan_device_info">Device Info</string>
+    <string name="apconfig_rak477_note">1.按住默认键5秒,让设备恢复出厂设置.\n2.让手机连接到创建命名为\"RAK477_AP_XXXXXX\"的模块</string>
+    <string name="apconfig_rak476_note">1.按住默认键5秒,让设备恢复出厂设置.\n2.Let the phone connect to the network named as \"RAK476_WEB_XXXXXX\" created by the module.</string>
+    <string name="apconfig_rak475_note">1.按住默认键5秒,让设备恢复出厂设置.\n2.Let the phone connect to the network named as \"RAK475_AP_XXXXXX\" created by the module.</string>
+    <string name="apconfig_rak473_note">1.Send \"at+start_web\" command to let the module be in AP mode.\n2.Let the phone connect to the network named as \"RAK473_WEB_XXXXXX\" created by the module.</string>
+    <string name="main_get_info">参数配置</string>
+    <string name="ota_rak473_note">1.点击\"参数配置\"找到设备.\n2.选择一个设备开始升级.</string>
+    <string name="ota_start">开  始</string>
+    <string name="warning">警告</string>
+    <string name="searchdevice">搜索设备</string>
+    <string name="seraching">搜索设备中……</string>
+    <string name="ota_rak473_note2">1.Name the firmware such as:RAK475_OTA_V1.0.0.6-2.6.2.bin\n2.Put the firmware to RAK47X folder created in your phone.\n3.Click \"Start\" to upgrade.</string>
+
+    <string name="pepo1">人数1</string>
+    <string name="pepo2">人数2</string>
+    <string name="pepo3">人数3</string>
+    <string name="pepo4">人数4</string>
+    <string name="pepo5">人数5</string>
+    <string name="pepo6">人数6</string>
+    <string name="pepo7">人数7</string>
+    <string name="pepo8">人数8</string>
+    <string name="passiveList">传感器情景列表</string>
+    <string name="pepoinfo">当人数达到,是否开启对应事件</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="mute">Mute</string>
+    <string name="talk">Intercom</string>
+    <string name="talking">对讲</string>
+    <!--命令控制 -->
+    <string name="command">如果  就  否则  ;温度;湿度;PM25;甲醛;亮度;人员;室外下雨;空气质量;时间段;指定日期时间;指定日期;指定某月;指定某日;指定某时;指定某分;指定星期;时间;分钟</string>
+    <string name="Big">大于</string>
+    <string name="Less">小于</string>
+    <string name="excellent">优</string>
+    <string name="good">良</string>
+    <string name="Symbol">符号</string>
+    <string name="SymbolCommand">[;];[  ];#;,;+;TTS;URL;SD;[远程];[本地];[查询]</string>
+    <string name="bauText">波特率</string>
+    <string name="checkText">校   验</string>
+    <string name="data">资   料</string>
+    <string name="hexadecimal">16进制</string>
+    <string name="input_version">型号会自动加上ON或OFF</string>
+    <string name="input_product">输入品牌名称</string>
+    <string name="serialport">串口</string>
+    <string name="join">拼接</string>
+    <string name="memory">内   存</string>
+    <string name="version_name">型号或名称</string>
+    <string name="input_version_name">输入品牌型号或名称</string>
+    <string name="input_hexadecimal">请输入16进制资料</string>
+    <string name="no_version">没有上传类型</string>
+    <string name="no_data">数据不存在</string>
+    <string name="work1">自动</string>
+    <string name="work2">手动</string>
+    <string name="work3">定时</string>
+    <string name="speed0">自动</string>
+    <string name="speed1">低速</string>
+    <string name="speed2">中速</string>
+    <string name="speed3">高速</string>
+    <string name="closeValue">关阀</string>
+    <string name="openValue">开阀</string>
+    <string name="vocdiget">VOC浓度</string>
+    <string name="sideValue">旁阀门</string>
+
+    <!-- 空气开关-->
+
+    <string name="set_voltage_up">配置电压上限</string>
+    <string name="set_voltage_down">配置电压下限</string>
+    <string name="leakage_current_up">漏电电流上限</string>
+    <string name="set_power_down">配置功率上限</string>
+    <string name="set_temp_up">配置温度上限</string>
+    <string name="set_current_up">配置电流上限</string>
+    <string name="alrm_voltage_up">预警电压上限</string>
+    <string name="alrm_voltage_down">预警电压下限</string>
+    <string name="set_voltage_value">配置电量数据</string>
+    <string name="open_storage_permit">请打开存储权限</string>
+    <string name="open_sms_permit">请打开短信权限</string>
+    <string name="open_location_permit">请打开位置权限</string>
+    <string name="open_audio_permit">请打开录音权限</string>
+    <string name="open_camnera_permit">请打开相机权限</string>
+    <string name="open_wifi_permit">请打开WIFI权限</string>
+    <string name="open_permit">请打开权限</string>
+    <string name="tab_view_title">菜单</string>
+    <string name="tier_button_title">二层菜单</string>
+    <string name="secondtier_button_title">三层菜单</string>
+    <string-array name="serials">
+        <item>不指定</item>
+        <item>串口1</item>
+        <item>串口2</item>
+        <item>串口3 </item>
+        <item>串口4</item>
+        <item>串口5</item>
+        <item>串口6</item>
+        <item>串口7</item>
+        <item>串口8</item>
+    </string-array>
+    <string-array name="arces">
+        <item>室内</item>
+        <item>室外</item>
+        <item>客厅</item>
+        <item>餐厅</item>
+        <item>主人房</item>
+        <item>父母房</item>
+        <item>儿童房</item>
+        <item>卧室</item>
+    </string-array>
+    <string name="is_sure_delete">是否删除？</string>
+    <string name="property">属性</string>
+    <string-array name="sensors">
+        <item>照度</item>
+        <item>传感器</item>
+    </string-array>
+
+    <string-array name="baus">
+        <item>115200</item>
+        <item>57600</item>
+        <item>38400</item>
+        <item>19200 </item>
+        <item>9600</item>
+        <item>4800</item>
+        <item>2400</item>
+        <item>1200</item>
+    </string-array>
+    <string-array name="cycles">
+        <item>每天</item>
+        <item>周期</item>
+        <item>仅一次</item>
+        <item>指定日期</item>
+    </string-array>
+    <string-array name="check">
+        <item>1</item>
+        <item>2 </item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="checks">
+        <item>无校验</item>
+        <item>奇校验</item>
+        <item>偶校验 </item>
+    </string-array>
+    <string-array name="machine">
+        <item>电机正转</item>
+        <item>电机反转</item>
+        <item>全开关有效</item>
+        <item>全开关无效</item>
+    </string-array>
+    <string-array name="curmunits">
+        <item>5 秒钟</item>
+        <item>6 秒钟</item>
+        <item>7 秒钟</item>
+        <item>8 秒钟</item>
+        <item>9 秒钟</item>
+        <item>10 秒钟</item>
+        <item>11 秒钟</item>
+        <item>12 秒钟</item>
+        <item>13 秒钟</item>
+        <item>14 秒钟</item>
+        <item>15 秒钟</item>
+        <item>16 秒钟</item>
+        <item>17 秒钟</item>
+        <item>18 秒钟</item>
+        <item>19 秒钟</item>
+        <item>20 秒钟</item>
+        <item>21 秒钟</item>
+        <item>22 秒钟</item>
+        <item>23 秒钟</item>
+        <item>24 秒钟</item>
+        <item>25 秒钟</item>
+        <item>26 秒钟</item>
+        <item>27 秒钟</item>
+        <item>28 秒钟</item>
+        <item>29 秒钟</item>
+        <item>30 秒钟</item>
+        <item>31 秒钟</item>
+        <item>32 秒钟</item>
+        <item>33 秒钟</item>
+        <item>34 秒钟</item>
+        <item>35 秒钟</item>
+        <item>36 秒钟</item>
+        <item>37 秒钟</item>
+        <item>38 秒钟</item>
+        <item>39 秒钟</item>
+        <item>40 秒钟</item>
+        <item>41 秒钟</item>
+        <item>42 秒钟</item>
+        <item>43 秒钟</item>
+        <item>44 秒钟</item>
+        <item>45 秒钟</item>
+        <item>46 秒钟</item>
+        <item>47 秒钟</item>
+        <item>48 秒钟</item>
+        <item>49 秒钟</item>
+        <item>50 秒钟</item>
+        <item>51 秒钟</item>
+        <item>52 秒钟</item>
+        <item>53 秒钟</item>
+        <item>54 秒钟</item>
+        <item>55 秒钟</item>
+        <item>56 秒钟</item>
+        <item>57 秒钟</item>
+        <item>58 秒钟</item>
+        <item>59 秒钟</item>
+        <item>60 秒钟</item>
+        <item>61 秒钟</item>
+        <item>62 秒钟</item>
+        <item>63 秒钟</item>
+        <item>64 秒钟</item>
+        <item>65 秒钟</item>
+        <item>66 秒钟</item>
+        <item>67 秒钟</item>
+        <item>68 秒钟</item>
+        <item>69 秒钟</item>
+        <item>70 秒钟</item>
+        <item>71 秒钟</item>
+        <item>72 秒钟</item>
+        <item>73 秒钟</item>
+        <item>74 秒钟</item>
+        <item>75 秒钟</item>
+        <item>76 秒钟</item>
+        <item>77 秒钟</item>
+        <item>78 秒钟</item>
+        <item>79 秒钟</item>
+        <item>80 秒钟</item>
+        <item>81 秒钟</item>
+        <item>82 秒钟</item>
+        <item>83 秒钟</item>
+        <item>84 秒钟</item>
+        <item>85 秒钟</item>
+        <item>86 秒钟</item>
+        <item>87 秒钟</item>
+        <item>88 秒钟</item>
+        <item>89 秒钟</item>
+        <item>90 秒钟</item>
+        <item>91 秒钟</item>
+        <item>92 秒钟</item>
+        <item>93 秒钟</item>
+        <item>94 秒钟</item>
+        <item>95 秒钟</item>
+        <item>96 秒钟</item>
+        <item>97 秒钟</item>
+        <item>98 秒钟</item>
+        <item>99 秒钟</item>
+        <item>100 秒钟</item>
+        <item>101 秒钟</item>
+        <item>102 秒钟</item>
+        <item>103 秒钟</item>
+        <item>104 秒钟</item>
+        <item>105 秒钟</item>
+        <item>106 秒钟</item>
+        <item>107 秒钟</item>
+        <item>108 秒钟</item>
+        <item>109 秒钟</item>
+        <item>110 秒钟</item>
+        <item>111 秒钟</item>
+        <item>112 秒钟</item>
+        <item>113 秒钟</item>
+        <item>114 秒钟</item>
+        <item>115 秒钟</item>
+        <item>116 秒钟</item>
+        <item>117 秒钟</item>
+        <item>118 秒钟</item>
+        <item>119 秒钟</item>
+        <item>120 秒钟</item>
+    </string-array>
+    <string-array name="tvStudy">
+        <item>按键0</item>
+        <item>按键1</item>
+        <item>按键2</item>
+        <item>按键3</item>
+        <item>按键4</item>
+        <item>按键5</item>
+        <item>按键6</item>
+        <item>按键7</item>
+        <item>按键8</item>
+        <item>按键9</item>
+        <item>开关机</item>
+        <item>音量加</item>
+        <item>音量减</item>
+        <item>频道加</item>
+        <item>频道减</item>
+        <item>静音</item>
+        <item>信号选择</item>
+        <item>返回</item>
+        <item>上</item>
+        <item>下</item>
+        <item>左</item>
+        <item>右</item>
+        <item>ENTER</item>
+    </string-array>
+    <string-array name="studys">
+        <item>关机</item>
+        <item>开机</item>
+        <item>18度自动</item>
+        <item>19度自动</item>
+        <item>20度自动</item>
+        <item>21度自动</item>
+        <item>22度自动</item>
+        <item>23度自动</item>
+        <item>24度自动</item>
+        <item>25度自动</item>
+        <item>26度自动</item>
+        <item>27度自动</item>
+        <item>28度自动</item>
+        <item>29度自动</item>
+        <item>30度自动</item>
+        <item>18度制冷</item>
+        <item>19度制冷</item>
+        <item>20度制冷</item>
+        <item>21度制冷</item>
+        <item>22度制冷</item>
+        <item>23度制冷</item>
+        <item>24度制冷</item>
+        <item>25度制冷</item>
+        <item>26度制冷</item>
+        <item>27度制冷</item>
+        <item>28度制冷</item>
+        <item>29度制冷</item>
+        <item>30度制冷</item>
+        <item>18度除湿</item>
+        <item>19度除湿</item>
+        <item>20度除湿</item>
+        <item>21度除湿</item>
+        <item>22度除湿</item>
+        <item>23度除湿</item>
+        <item>24度除湿</item>
+        <item>25度除湿</item>
+        <item>26度除湿</item>
+        <item>27度除湿</item>
+        <item>28度除湿</item>
+        <item>29度除湿</item>
+        <item>30度除湿</item>
+        <item>18度制热</item>
+        <item>19度制热</item>
+        <item>20度制热</item>
+        <item>21度制热</item>
+        <item>22度制热</item>
+        <item>23度制热</item>
+        <item>24度制热</item>
+        <item>25度制热</item>
+        <item>26度制热</item>
+        <item>27度制热</item>
+        <item>28度制热</item>
+        <item>29度制热</item>
+        <item>30度制热</item>
+        <item>18度送风</item>
+        <item>19度送风</item>
+        <item>20度送风</item>
+        <item>21度送风</item>
+        <item>22度送风</item>
+        <item>23度送风</item>
+        <item>24度送风</item>
+        <item>25度送风</item>
+        <item>26度送风</item>
+        <item>27度送风</item>
+        <item>28度送风</item>
+        <item>29度送风</item>
+        <item>30度送风 </item>
+    </string-array>
+    <string-array name="PowerStstr">
+        <item>状态: 关机</item>
+        <item>状态: 开机</item>
+        <item>定時小於1小时</item>
+        <item>定時1小时</item>
+        <item>定時2小时</item>
+        <item>定時3小时</item>
+        <item>定時4小时</item>
+        <item>定時5小时</item>
+        <item>定時6小时</item>
+        <item>定時7小时</item>
+        <item>定時8小时</item>
+    </string-array>
+    <string-array name="sets">
+        <item>开启报警情景</item>
+        <item>关闭报警情景</item>
+        <item>传感器常开NO</item>
+        <item>传感器常关NC</item>
+        <item>开门联动</item>
+        <item>关门联动</item>
+    </string-array>
+    <string-array name="leds">
+        <item>情景</item>
+        <item>模式1</item>
+        <item>模式2</item>
+        <item>模式3</item>
+        <item>模式4</item>
+        <item>模式5</item>
+        <item>模式6</item>
+        <item>模式7</item>
+        <item>模式8</item>
+        <item>模式9</item>
+    </string-array>
+    <string-array name="setProject">
+        <item>VGA-PC输入接口</item>
+        <item>S-Video输入接口</item>
+        <item>复合视频信号(AV)</item>
+        <item>USB接口</item>
+        <item>RGBHV输入</item>
+        <item>DVI接口</item>
+        <item>HDMI接口</item>
+        <item>RS232接口</item>
+    </string-array>
+    <string-array name="lightSate">
+        <item>灯光全开</item>
+        <item>灯光全关</item>
+        <item>照明全开</item>
+        <item>照明全关</item>
+        <item>设备全关</item>
+        <item>设备全部关闭</item>
+        <item>设备全开</item>
+        <item>设备全部打开</item>
+        <item>全部关闭</item>
+    </string-array>
+    <string-array name="closeMutes">
+        <item>关闭静音</item>
+        <item>静音关闭</item>
+        <item>静音关</item>
+        <item>取消静音</item>
+        <item>静音取消</item>
+        <item>关静音</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="sw_open_on">
+        <item>打开时序1路</item>
+        <item>*SA1</item>
+        <item>打开时序2路</item>
+        <item>*SA2</item>
+        <item>打开时序3路</item>
+        <item>*SA3</item>
+        <item>打开时序4路</item>
+        <item>*SA4</item>
+        <item>打开时序5路</item>
+        <item>*SA5</item>
+        <item>打开时序6路</item>
+        <item>*SA6</item>
+        <item>打开时序7路</item>
+        <item>*SA7</item>
+        <item>打开时序8路</item>
+        <item>*SA8</item>
+        <item>打开断路器1路</item>
+        <item>*SA1</item>
+        <item>打开断路器2路</item>
+        <item>*SA2</item>
+        <item>打开断路器3路</item>
+        <item>*SA3</item>
+        <item>打开断路器4路</item>
+        <item>*SA4</item>
+        <item>打开断路器5路</item>
+        <item>*SA5</item>
+        <item>打开断路器6路</item>
+        <item>*SA6</item>
+        <item>打开断路器7路</item>
+        <item>*SA7</item>
+        <item>打开断路器8路</item>
+        <item>*SA8</item>
+    </string-array>
+    <string-array name="sw_open_off">
+        <item>关闭时序1路</item>
+        <item>*SA1</item>
+        <item>关闭时序2路</item>
+        <item>*SA2</item>
+        <item>关闭时序3路</item>
+        <item>*SA3</item>
+        <item>关闭时序4路</item>
+        <item>*SA4</item>
+        <item>关闭时序5路</item>
+        <item>*SA5</item>
+        <item>关闭时序6路</item>
+        <item>*SA6</item>
+        <item>关闭时序7路</item>
+        <item>*SA7</item>
+        <item>关闭时序8路</item>
+        <item>*SA8</item>
+
+        <item>关闭断路器1路</item>
+        <item>*SA1</item>
+        <item>关闭断路器2路</item>
+        <item>*SA2</item>
+        <item>关闭断路器3路</item>
+        <item>*SA3</item>
+        <item>关闭断路器4路</item>
+        <item>*SA4</item>
+        <item>关闭断路器5路</item>
+        <item>*SA5</item>
+        <item>关闭断路器6路</item>
+        <item>*SA6</item>
+        <item>关闭断路器7路</item>
+        <item>*SA7</item>
+        <item>关闭断路器8路</item>
+        <item>*SA8</item>
+    </string-array>
+    <string-array name="open_off">
+        <item>打开</item>
+        <item>开启</item>
+        <item>开起</item>
+        <item>开灯</item>
+        <item>开去</item>
+        <item>启动</item>
+        <item>开</item>
+        <item>ON</item>
+        <item>on</item>
+        <item>OPEN</item>
+        <item>open</item>
+        <item>START</item>
+        <item>start</item>
+        <item>关闭</item>
+        <item>关</item>
+        <item>观</item>
+        <item>CLOSE</item>
+        <item>close</item>
+        <item>OFF</item>
+        <item>off</item>
+        <item>关窗</item>
+        <item>关机</item>
+    </string-array>
+    <string-array name="air">
+        <item>模式切换</item>
+        <item>00</item>
+        <item>自冷</item>
+        <item>02</item>
+        <item>制冷</item>
+        <item>02</item>
+        <item>制冷模式</item>
+        <item>02</item>
+        <item>冷气</item>
+        <item>02</item>
+        <item>智能模式</item>
+        <item>02</item>
+        <item>智能</item>
+        <item>02</item>
+        <item>加热</item>
+        <item>04</item>
+        <item>制热</item>
+        <item>04</item>
+        <item>制热模式</item>
+        <item>04</item>
+        <item>炙热</item>
+        <item>04</item>
+        <item>送风</item>
+        <item>05</item>
+        <item>送风模式</item>
+        <item>05</item>
+        <item>出风</item>
+        <item>05</item>
+        <item>除湿</item>
+        <item>03</item>
+        <item>抽湿</item>
+        <item>03</item>
+        <item>厨师</item>
+        <item>03</item>
+        <item>自动</item>
+        <item>01</item>
+        <item>自动模式</item>
+        <item>01</item>
+        <item>制动</item>
+        <item>01</item>
+    </string-array>
+    <string-array name="airfan">
+        <item>风量切换</item>
+        <item>00</item>
+        <item>自动</item>
+        <item>00</item>
+        <item>风量高速</item>
+        <item>04</item>
+        <item>高速</item>
+        <item>04</item>
+        <item>风量中速</item>
+        <item>03</item>
+        <item>中速</item>
+        <item>03</item>
+        <item>风量低速</item>
+        <item>02</item>
+        <item>低速</item>
+        <item>02</item>
+    </string-array>
+
+    <string-array name="airTemp">
+        <item>太冷</item>
+        <item>0A</item>
+        <item>太冷了</item>
+        <item>0A</item>
+        <item>太低</item>
+        <item>0A</item>
+        <item>太低了</item>
+        <item>0A</item>
+        <item>温度太低</item>
+        <item>0A</item>
+        <item>温度太低了</item>
+        <item>0A</item>
+        <item>温度太冷</item>
+        <item>0A</item>
+        <item>温度太冷了</item>
+        <item>0A</item>
+        <item>太热</item>
+        <item>04</item>
+        <item>太热了</item>
+        <item>04</item>
+        <item>太高</item>
+        <item>04</item>
+        <item>温度太高</item>
+        <item>04</item>
+        <item>太高了</item>
+        <item>04</item>
+        <item>温度太高了</item>
+        <item>04</item>
+        <item>温度太热</item>
+        <item>04</item>
+        <item>温度太热了</item>
+        <item>04</item>
+        <item>温度最高</item>
+        <item>0D</item>
+        <item>温度最大</item>
+        <item>0D</item>
+        <item>最大温度</item>
+        <item>0D</item>
+        <item>最高温度</item>
+        <item>0D</item>
+        <item>最大</item>
+        <item>0D</item>
+        <item>最高</item>
+        <item>0D</item>
+        <item>最小温度</item>
+        <item>01</item>
+        <item>最低温度</item>
+        <item>01</item>
+        <item>最小</item>
+        <item>01</item>
+        <item>最低</item>
+        <item>01</item>
+        <item>温度最低</item>
+        <item>01</item>
+        <item>温度最小</item>
+        <item>01</item>
+    </string-array>
+    <string-array name="Openmutes">
+        <item>打开静音</item>
+        <item>开静音</item>
+        <item>开启静音</item>
+        <item>静音打开</item>
+        <item>静音开启</item>
+        <item>静音开</item>
+        <item>静音</item>
+    </string-array>
+    <string-array name="playSet">
+        <item>播放</item>
+        <item>播放打开</item>
+        <item>播放开始</item>
+        <item>播放开启</item>
+        <item>打开播放</item>
+        <item>开启播放</item>
+        <item>开始播放</item>
+        <item>暂停</item>
+        <item>暂停播放</item>
+        <item>取消播放</item>
+        <item>停止</item>
+        <item>停止播放</item>
+        <item>播放停止</item>
+    </string-array>
+    <string-array name="ledColor">
+        <item>蓝</item>
+        <item>蓝色</item>
+        <item>蓝色光</item>
+        <item>蓝光</item>
+        <item>红色</item>
+        <item>红色光</item>
+        <item>红光</item>
+        <item>绿</item>
+        <item>绿色</item>
+        <item>绿光</item>
+        <item>绿色光</item>
+        <item>白</item>
+        <item>白色</item>
+        <item>白光</item>
+        <item>白色光</item>
+        <item>紫</item>
+        <item>紫色</item>
+        <item>紫色光</item>
+        <item>紫光</item>
+        <item>橙</item>
+        <item>橙色光</item>
+        <item>橙色</item>
+        <item>橙光</item>
+        <item>黄色光</item>
+        <item>黄色</item>
+        <item>黄</item>
+        <item>黄光</item>
+        <item>粉色光</item>
+        <item>粉色</item>
+        <item>粉红</item>
+        <item>粉红色</item>
+        <item>场景</item>
+        <item>场景模式</item>
+        <item>情景</item>
+        <item>情景模式</item>
+        <item>自动</item>
+        <item>自动变色</item>
+        <item>自动变</item>
+        <item>暖光</item>
+        <item>暖色</item>
+    </string-array>
+    <string-array name="speed">
+        <item>速度快</item>
+        <item>速度加</item>
+        <item>速度快一点</item>
+        <item>速度慢</item>
+        <item>速度减</item>
+        <item>速度慢一点</item>
+    </string-array>
+    <string-array name="LedAlarm">
+        <item>报警</item>
+        <item>警报</item>
+        <item>闪烁</item>
+    </string-array>
+    <string-array name="ledSpeed">
+        <item>速度正常</item>
+        <item>高速</item>
+        <item>中速</item>
+        <item>低速</item>
+    </string-array>
+    <string-array name="dimmer">
+        <item>调亮一点</item>
+        <item>灯光亮一点</item>
+        <item>亮一点</item>
+        <item>变亮一点</item>
+        <item>调亮</item>
+        <item>变亮</item>
+        <item>变量</item>
+        <item>量一点</item>
+        <item>变量一点</item>
+        <item>靓一点</item>
+        <item>太暗</item>
+        <item>调暗一点</item>
+        <item>灯光暗一点</item>
+        <item>暗一点</item>
+        <item>灯光按一点</item>
+        <item>按一点</item>
+        <item>案一点</item>
+        <item>调暗</item>
+        <item>变暗</item>
+        <item>变暗一点</item>
+        <item>太亮</item>
+        <item>安逸点</item>
+        <item>最大亮度</item>
+        <item>最大量度</item>
+        <item>最亮</item>
+        <item>最量</item>
+        <item>最靓</item>
+        <item>最小亮度</item>
+        <item>最小量度</item>
+        <item>最暗</item>
+        <item>罪案</item>
+    </string-array>
+    <string-array name="sw_open">
+        <item>打开</item>
+        <item>开启</item>
+        <item>开起</item>
+        <item>开灯</item>
+        <item>开去</item>
+        <item>启动</item>
+        <item>开</item>
+        <item>ON</item>
+        <item>on</item>
+        <item>OPEN</item>
+        <item>open</item>
+        <item>START</item>
+        <item>start</item>
+    </string-array>
+    <string-array name="sw_close">
+        <item>关闭</item>
+        <item>关</item>
+        <item>观</item>
+        <item>CLOSE</item>
+        <item>close</item>
+        <item>OFF</item>
+        <item>off</item>
+        <item>官</item>
+    </string-array>
+    <string-array name="SwType">
+        <item>副控</item>
+        <item>互控</item>
+    </string-array>
+    <string-array name="time">
+        <item>秒</item>
+        <item>分</item>
+        <item>时</item>
+        <item>;</item>
+    </string-array>
+    <string-array name="openAngle">
+        <item>四分之一</item>
+        <item>三分之一</item>
+        <item>二分之一</item>
+        <item>三分之二</item>
+        <item>四分之三</item>
+        <item>一半</item>
+        <item>1/4</item>
+        <item>1/3</item>
+        <item>1/2</item>
+        <item>3/4</item>
+        <item>2/3</item>
+    </string-array>
+    <string-array name="airMode">
+        <item>自冷</item>
+        <item>制冷</item>
+        <item>制冷模式</item>
+        <item>冷气</item>
+        <item>智能模式</item>
+        <item>智能</item>
+    </string-array>
+    <string-array name="hotMode">
+        <item>加热</item>
+        <item>制热</item>
+        <item>制热模式</item>
+        <item>炙热</item>
+    </string-array>
+    <string-array name="right_redfra">
+        <item>添加红外</item>
+        <item>创建侦测</item>
+        <item>预约设置</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_redfras">
+        <item>添加红外</item>
+        <item>设置侦测</item>
+        <item>预约设置</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_channel">
+        <item>添加频道</item>
+        <item>预约设置</item>
+        <item>延时设置</item>
+    </string-array>
+    <string-array name="right_project">
+        <item>幕布绑定</item>
+        <item>取消绑定</item>
+        <item>中控绑定</item>
+        <item>编码学习</item>
+        <item>更多设置</item>
+    </string-array>
+
+    <string-array name="right_file">
+        <item>创建专案</item>
+        <item>删除专案</item>
+        <item>上传下载</item>
+    </string-array>
+
+    <string-array name="right_air">
+        <item>预约设置</item>
+        <item>电流侦测</item>
+        <item>更多设置</item>
+    </string-array>
+
+    <string-array name="right_air_xx">
+        <item>预约设置</item>
+        <item>电流侦测</item>
+        <item>更多设置</item>
+        <item>万能学习</item>
+    </string-array>
+
+    <string-array name="right_fresh_air">
+        <item>PM 2.5</item>
+        <item>VOC浓度</item>
+        <item>设置定时</item>
+        <item>更多设置</item>
+    </string-array>
+
+    <string-array name="right_tv">
+        <item>预约设置</item>
+        <item>电流侦测</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_tv_xx">
+        <item>预约设置</item>
+        <item>电流侦测</item>
+        <item>更多设置</item>
+        <item>万能学习</item>
+    </string-array>
+    <string-array name="right_back">
+        <item>上传数据</item>
+        <item>指定用户</item>
+    </string-array>
+    <string-array name="right_menu">
+        <item>添加按钮</item>
+        <item>修改按钮</item>
+        <item>删除按钮</item>
+        <item>设置侦测</item>
+    </string-array>
+    <string-array name="modelists">
+        <item>添加设备</item>
+        <item>预约设置</item>
+
+    </string-array>
+    <string-array name="mode">
+        <item>添加情景</item>
+        <item>查存储量</item>
+        <item>查询空间</item>
+    </string-array>
+    <string-array name="setlist">
+        <item>删除设备</item>
+        <item>添加设备</item>
+    </string-array>
+    <string-array name="relay_menus">
+        <item>编辑</item>
+        <item>全部删除</item>
+        <item>下载更新</item>
+    </string-array>
+    <string-array name="weekens">
+        <item>仅一次</item>
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+
+    <string-array name="subWeekens">
+        <item>指定日期</item>
+        <item>每天</item>
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="passives">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>启用</item>
+    </string-array>
+    <string-array name="weeken">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="fweeken">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string-array name="openClose">
+        <item>打开</item>
+        <item>关闭</item>
+    </string-array>
+    <string-array name="all_on_off">
+        <item>灯光全开</item>
+        <item>灯光全关</item>
+        <item>照明全开</item>
+        <item>照明全关</item>
+        <item>窗帘全开</item>
+        <item>窗帘全关</item>
+        <item>调光全开</item>
+        <item>调关全开</item>
+        <item>调光圈开</item>
+        <item>调光全关</item>
+        <item>调光圈关</item>
+        <item>调关全关</item>
+        <item>彩光全开</item>
+        <item>彩光圈开</item>
+        <item>彩光全关</item>
+        <item>彩光圈关</item>
+        <item>撤防</item>
+        <item>保全解除</item>
+        <item>保全设定</item>
+        <item>布防 </item>
+    </string-array>
+    <string-array name="step">
+        <item>设置互控</item>
+        <item>单火配对</item>
+        <item>单火删除</item>
+        <item>无线配对</item>
+    </string-array>
+    <string-array name="puase">
+        <item>停止</item>
+        <item>暂停</item>
+        <item>停</item>
+        <item>STOP</item>
+        <item>stop</item>
+        <item>好了</item>
+        <item>够了</item>
+        <item>可以了</item>
+    </string-array>
+    <string-array name="LedColor">
+        <item>蓝</item>
+        <item>蓝色</item>
+        <item>蓝色光</item>
+        <item>蓝光</item>
+        <item>红色</item>
+        <item>红色光</item>
+        <item>红光</item>
+        <item>绿</item>
+        <item>绿色</item>
+        <item>绿光</item>
+        <item>绿色光</item>
+        <item>白</item>
+        <item>白色</item>
+        <item>白光</item>
+        <item>白色光</item>
+        <item>紫</item>
+        <item>紫色</item>
+        <item>紫色光</item>
+        <item>紫光</item>
+        <item>橙</item>
+        <item>橙色光</item>
+        <item>橙色</item>
+        <item>橙光</item>
+        <item>黄色光</item>
+        <item>黄色</item>
+        <item>黄</item>
+        <item>黄光</item>
+        <item>粉色光</item>
+        <item>粉色</item>
+        <item>粉红</item>
+        <item>粉红色</item>
+        <item>暖光</item>
+        <item>暖色</item>
+        <item>中性光</item>
+        <item>青色</item>
+        <item>彩光</item>
+        <item>模式1</item>
+        <item>模式2</item>
+        <item>模式3</item>
+        <item>模式4</item>
+        <item>模式5</item>
+        <item>模式6</item>
+        <item>模式7</item>
+        <item>模式8</item>
+        <item>模式9</item>
+        <item>场景</item>
+        <item>场景模式</item>
+        <item>情景</item>
+        <item>情景模式</item>
+        <item>自动</item>
+        <item>自动变色</item>
+        <item>自动变</item>
+    </string-array>
+
+<string-array name="airOne">
+    <item>温度加一</item>
+    <item>*SA2</item>
+    <item>温度高一点</item>
+    <item>*SA2</item>
+    <item>温度高点</item>
+    <item>*SA2</item>
+    <item>高一点</item>
+    <item>*SA2</item
+        ><item>升一点</item>
+    <item>*SA2</item>
+    <item>调高一点</item>
+    <item>*SA2</item>
+    <item>温度上升</item>
+    <item>*SA2</item>
+    <item>上升</item>
+    <item>*SA2</item>
+    <item>再高一点</item>
+    <item>*SA2</item>
+    <item>温度减一</item>
+    <item>*SA3</item>
+    <item>温度低一点</item>
+    <item>*SA3</item>
+    <item>温度低点</item>
+    <item>*SA3</item>
+    <item>低一点</item>
+    <item>*SA3</item>
+    <item>降一点</item>
+    <item>*SA3</item>
+    <item>第一点</item>
+    <item>*SA3</item>
+    <item>调低一点</item>
+    <item>*SA3</item>
+    <item>温度下降</item>
+    <item>*SA3</item>
+    <item>下降</item>
+    <item>*SA3</item>
+    <item>再低一点</item>
+    <item>*SA3</item>
+</string-array>
+    <string-array name="AddSub">
+        <item>加</item>
+        <item>*SA9</item>
+        <item>升</item>
+        <item>*SA9</item>
+        <item>生</item>
+        <item>*SA9</item>
+        <item>昇</item>
+        <item>*SA9</item>
+        <item>减</item>
+        <item>*SAA</item>
+        <item>降</item>
+        <item>*SAA</item>
+        <item>将</item>
+        <item>*SAA</item>
+    </string-array>
+    <string-array name="vol_up">
+        <item>音量加</item>
+        <item>声音大</item>
+        <item>音量大</item>
+        <item>声音大一点</item>
+        <item>音量大一点</item>
+        <item>声音太小了</item>
+        <item>高一点</item>
+        <item>音量加一点</item>
+        <item>再加一点</item>
+        <item>再大一点</item>
+        <item>大一点</item>
+        <item>太小了</item>
+    </string-array>
+    <string-array name="vol_down">
+        <item>音量小</item>
+        <item>声音小</item>
+        <item>声音小一点</item>
+        <item>音量小一点</item>
+        <item>声音太大了</item>
+        <item>低一点</item>
+        <item>音量减</item>
+        <item>再小一点</item>
+        <item>小一点</item>
+        <item>音量太大了</item>
+        <item>减一点</item>
+        <item>太大了</item>
+        <item>音量在大了</item>
+        <item>音量键</item>
+    </string-array>
+    <string-array name="ch">
+        <item>频道加</item>
+        <item>0D</item>
+        <item>电视频道加</item>
+        <item>0D</item>
+        <item>贫道加</item>
+        <item>0D</item>
+        <item>平道加</item>
+        <item>0D</item>
+        <item>平到家</item>
+        <item>0D</item>
+        <item>下一台</item>
+        <item>0D</item>
+        <item>加一台</item>
+        <item>0D</item>
+        <item>频道减</item>
+        <item>0E</item>
+        <item>电视频道减</item>
+        <item>0E</item>
+        <item>电视频道假</item>
+        <item>0E</item>
+        <item>频道假</item>
+        <item>0E</item>
+        <item>频道几</item>
+        <item>0E</item>
+        <item>贫道戒</item>
+        <item>0E</item>
+        <item>电视频道几</item>
+        <item>0E</item>
+        <item>上一台</item>
+        <item>0E</item>
+        <item>平道减</item>
+        <item>0E</item>
+        <item>平到减</item>
+        <item>0E</item>
+        <item>减一台</item>
+        <item>0E</item>
+    </string-array>
+    <string-array name="Key">
+        <item>按键0</item>
+        <item>00</item>
+        <item>按键1</item>
+        <item>01</item>
+        <item>按键2</item>
+        <item>02</item>
+        <item>按键3</item>
+        <item>03</item>
+        <item>按键4</item>
+        <item>04</item>
+        <item>按键5</item>
+        <item>05</item>
+        <item>按键6</item>
+        <item>06</item>
+        <item>按键7</item>
+        <item>07</item>
+        <item>按键8</item>
+        <item>08</item>
+        <item>按键9</item>
+        <item>09</item>
+        <item>设备电源</item>
+        <item>0A</item>
+        <item>信号源</item>
+        <item>10</item>
+        <item>返回</item>
+        <item>11</item>
+        <item>按键上</item>
+        <item>12</item>
+        <item>按键下</item>
+        <item>13</item>
+        <item>按键左</item>
+        <item>14</item>
+        <item>按键右</item>
+        <item>15</item>
+        <item>ENTER</item>
+        <item>16</item>
+        <item>扩充00</item>
+        <item>17</item>
+        <item>扩充01</item>
+        <item>18</item>
+        <item>扩充02</item>
+        <item>19</item>
+        <item>扩充03</item>
+        <item>1A</item>
+        <item>扩充04</item>
+        <item>1B</item>
+        <item>扩充05</item>
+        <item>1C</item>
+        <item>扩充06</item>
+        <item>1D</item>
+        <item>扩充07</item>
+        <item>1E</item>
+        <item>扩充08</item>
+        <item>1F</item>
+        <item>扩充09</item>
+        <item>20</item>
+        <item>扩充10</item>
+        <item>21</item>
+        <item>扩充11</item>
+        <item>22</item>
+        <item>扩充12</item>
+        <item>23</item>
+        <item>扩充13</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="freshWork">
+        <item>关机</item>
+        <item>00</item>
+        <item>开机</item>
+        <item>01</item>
+        <item>自动</item>
+        <item>02</item>
+        <item>手动</item>
+        <item>03</item>
+        <item>定时</item>
+        <item>04</item>
+        <item>停止</item>
+        <item>05</item>
+        <item>低速</item>
+        <item>06</item>
+        <item>中速</item>
+        <item>07</item>
+        <item>高速</item>
+        <item>08</item>
+        <item>关阀</item>
+        <item>09</item>
+        <item>开阀</item>
+        <item>0A</item>
+    </string-array>
+
+    <string-array name="music">
+        <item>上一首</item>
+        <item>*SA8</item>
+        <item>上一曲</item>
+        <item>*SA8</item>
+        <item>上一取</item>
+        <item>*SA8</item>
+        <item>上一娶</item>
+        <item>*SA8</item>
+        <item>上一手</item>
+        <item>*SA8</item>
+        <item>上一守</item>
+        <item>*SA8</item>
+        <item>下一首</item>
+        <item>*SA9</item>
+        <item>下一曲</item>
+        <item>*SA9</item>
+        <item>下一取</item>
+        <item>*SA9</item>
+        <item>下一娶</item>
+        <item>*SA9</item>
+        <item>下一手</item>
+        <item>*SA9</item>
+        <item>下一守</item>
+        <item>*SA9</item>
+    </string-array>
+    <string-array name="song">
+        <item>首</item>
+        <item>曲</item>
+        <item>取</item>
+        <item>娶</item>
+        <item>手</item>
+    </string-array>
+    <string-array name="devicelists">
+        <item>添加设备</item>
+        <item>获取设备</item>
+        <item>下载设备</item>
+    </string-array>
+    <string-array name="voicelists">
+        <item>主机问答</item>
+        <item>云端问答</item>
+        <item>添加问答</item>
+        <item>清空问答</item>
+    </string-array>
+    <string-array name="subscribelists">
+        <item>行程预约</item>
+        <item>历史预约</item>
+        <item>添加预约</item>
+        <item>清空预约</item>
+    </string-array>
+    <string-array name="cusModelist">
+        <item>添加情景</item>
+        <item>获取情景</item>
+        <item>下载情景</item>
+    </string-array>
+    <string-array name="cusMode">
+        <item>添加设备</item>
+        <item>更新情景</item>
+    </string-array>
+    <string-array name="gateWays">
+        <item>设置主网关</item>
+    </string-array>
+    <string-array name="right_aiui">
+        <item>下载数据</item>
+        <item>清空数据</item>
+        <item>软件更新</item>
+        <item>语音播报</item>
+    </string-array>
+    <string-array name="right_set">
+        <item>定时设置</item>
+        <item>互控设置</item>
+    </string-array>
+    <string-array name="right_airswitch">
+        <item>设置别名</item>
+        <item>设置参数</item>
+        <item>设置定时</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_sque">
+        <item>设置别名</item>
+        <item>设置定时</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_sub">
+        <item>预约设置</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_light">
+        <item>预约设置</item>
+        <item>设置互控</item>
+        <item>单火配对</item>
+        <item>单火删除</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_people">
+        <item>清空全部</item>
+        <item>设定人数</item>
+        <item>人数开关</item>
+    </string-array>
+    <string-array name="right_led">
+        <item>预约设置</item>
+        <item>更多设置</item>
+    </string-array>
+    <string-array name="right_cur">
+        <item>预约设置</item>
+        <item>行程设定</item>
+        <item>设置转向</item>
+        <item>无线配对</item>
+        <item>更多设置</item>
+    </string-array>
+
+    <string-array name="right_dzs">
+        <item>门锁状态</item>
+        <item>电量上报</item>
+        <item>家居联动</item>
+        <item>报警状态</item>
+        <item>远程控制</item>
+        <item>设置时间</item>
+        <item>添加指纹</item>
+        <item>删除指纹</item>
+        <item>设置密码</item>
+        <item>清除密码</item>
+        <item>临时密码</item>
+    </string-array>
+    <string-array name="musicCycle">
+        <item>顺序播放</item>
+        <item>全部循环</item>
+        <item>单曲循环</item>
+        <item>随机播放</item>
+    </string-array>
+    <string-array name="musicAction">
+        <item>普通</item>
+        <item>摇滚</item>
+        <item>流行</item>
+        <item>舞曲</item>
+        <item>嘻哈</item>
+        <item>古典</item>
+        <item>人声</item>
+        <item>爵士</item>
+        <item>超重低音</item>
+    </string-array>
+
+    <string-array name="country_code_list_en" translatable="false">
+        <item>Angola                     *+244  </item>
+        <item>Afghanistan                *+93   </item>
+        <item>Albania                    *+355  </item>
+        <item>Algeria                    *+213  </item>
+        <item>Andorra                    *+376  </item>
+        <item>Anguilla                   *+1264 </item>
+        <item>Antigua and Barbuda        *+1268 </item>
+        <item>Argentina                  *+54   </item>
+        <item>Armenia                    *+374  </item>
+        <item>Ascension                  *+247  </item>
+        <item>Australia                  *+61   </item>
+        <item>Austria                    *+43   </item>
+        <item>Azerbaijan                 *+994  </item>
+        <item>Bahamas                    *+1242 </item>
+        <item>Bahrain                    *+973  </item>
+        <item>Bangladesh                 *+880  </item>
+        <item>Barbados                   *+1246 </item>
+        <item>Belarus                    *+375  </item>
+        <item>Belgium                    *+32   </item>
+        <item>Belize                     *+501  </item>
+        <item>Benin                      *+229  </item>
+        <item>BermudaIs.                 *+1441 </item>
+        <item>Bolivia                    *+591  </item>
+        <item>Botswana                   *+267  </item>
+        <item>Brazil                     *+55   </item>
+        <item>Brunei                     *+673  </item>
+        <item>Bulgaria                   *+359  </item>
+        <item>Burkina-faso               *+226  </item>
+        <item>Burma                      *+95   </item>
+        <item>Burundi                    *+257  </item>
+        <item>Cameroon                   *+237  </item>
+        <item>Canada                     *+1    </item>
+        <item>Cayman Is.                 *+1345 </item>
+        <item>Central African Republic   *+236  </item>
+        <item>Chad                       *+235  </item>
+        <item>Chile                      *+56   </item>
+        <item>China                      *+86   </item>
+        <item>Colombia                   *+57   </item>
+        <item>Congo                      *+242  </item>
+        <item>Cook Is.                   *+682  </item>
+        <item>Costa Rica                 *+506  </item>
+        <item>Cuba                       *+53   </item>
+        <item>Cyprus                     *+357  </item>
+        <item>Czech Republic             *+420  </item>
+        <item>Denmark                    *+45   </item>
+        <item>Djibouti                   *+253  </item>
+        <item>Dominica Rep.              *+1890 </item>
+        <item>Ecuador                    *+593  </item>
+        <item>Egypt                      *+20   </item>
+        <item>EISalvador                 *+503  </item>
+        <item>Estonia                    *+372  </item>
+        <item>Ethiopia                   *+251  </item>
+        <item>Fiji                       *+679  </item>
+        <item>Finland                    *+358  </item>
+        <item>France                     *+33   </item>
+        <item>French Guiana              *+594  </item>
+        <item>Gabon                      *+241  </item>
+        <item>Gambia                     *+220  </item>
+        <item>Georgia                    *+995  </item>
+        <item>Germany                    *+49   </item>
+        <item>Ghana                      *+233  </item>
+        <item>Gibraltar                  *+350  </item>
+        <item>Greece                     *+30   </item>
+        <item>Grenada                    *+1809 </item>
+        <item>Guam                       *+1671 </item>
+        <item>Guatemala                  *+502  </item>
+        <item>Guinea                     *+224  </item>
+        <item>Guyana                     *+592  </item>
+        <item>Haiti                      *+509  </item>
+        <item>Honduras                   *+504  </item>
+        <item>Hongkong                   *+852  </item>
+        <item>Hungary                    *+36   </item>
+        <item>Iceland                    *+354  </item>
+        <item>India                      *+91   </item>
+        <item>Indonesia                  *+62   </item>
+        <item>Iran                       *+98   </item>
+        <item>Iraq                       *+964  </item>
+        <item>Ireland                    *+353  </item>
+        <item>Israel                     *+972  </item>
+        <item>Italy                      *+39   </item>
+        <item>IvoryCoast                 *+225  </item>
+        <item>Jamaica                    *+1876 </item>
+        <item>Japan                      *+81   </item>
+        <item>Jordan                     *+962  </item>
+        <item>Kampuchea (Cambodia )      *+855  </item>
+        <item>Kazakstan                  *+327  </item>
+        <item>Kenya                      *+254  </item>
+        <item>Korea                      *+82   </item>
+        <item>Kuwait                     *+965  </item>
+        <item>Kyrgyzstan                 *+331  </item>
+        <item>Laos                       *+856  </item>
+        <item>Latvia                     *+371  </item>
+        <item>Lebanon                    *+961  </item>
+        <item>Lesotho                    *+266  </item>
+        <item>Liberia                    *+231  </item>
+        <item>Libya                      *+218  </item>
+        <item>Liechtenstein              *+423  </item>
+        <item>Lithuania                  *+370  </item>
+        <item>Luxembourg                 *+352  </item>
+        <item>Macao                      *+853  </item>
+        <item>Madagascar                 *+261  </item>
+        <item>Malawi                     *+265  </item>
+        <item>Malaysia                   *+60   </item>
+        <item>Maldives                   *+960  </item>
+        <item>Mali                       *+223  </item>
+        <item>Malta                      *+356  </item>
+        <item>Mariana Is                 *+1670 </item>
+        <item>Martinique                 *+596  </item>
+        <item>Mauritius                  *+230  </item>
+        <item>Mexico                     *+52   </item>
+        <item>Moldova, Republic of       *+373  </item>
+        <item>Monaco                     *+377  </item>
+        <item>Mongolia                   *+976  </item>
+        <item>Montserrat Is              *+1664 </item>
+        <item>Morocco                    *+212  </item>
+        <item>Mozambique                 *+258  </item>
+        <item>Namibia                    *+264  </item>
+        <item>Nauru                      *+674  </item>
+        <item>Nepal                      *+977  </item>
+        <item>Netheriands Antilles       *+599  </item>
+        <item>Netherlands                *+31   </item>
+        <item>NewZealand                 *+64   </item>
+        <item>Nicaragua                  *+505  </item>
+        <item>Niger                      *+227  </item>
+        <item>Nigeria                    *+234  </item>
+        <item>North Korea                *+850  </item>
+        <item>Norway                     *+47   </item>
+        <item>Oman                       *+968  </item>
+        <item>Pakistan                   *+92   </item>
+        <item>Panama                     *+507  </item>
+        <item>Papua New Cuinea           *+675  </item>
+        <item>Paraguay                   *+595  </item>
+        <item>Peru                       *+51   </item>
+        <item>Philippines                *+63   </item>
+        <item>Poland                     *+48   </item>
+        <item>French Polynesia           *+689  </item>
+        <item>Portugal                   *+351  </item>
+        <item>PuertoRico                 *+1787 </item>
+        <item>Qatar                      *+974  </item>
+        <item>Reunion                    *+262  </item>
+        <item>Romania                    *+40   </item>
+        <item>Russia                     *+7    </item>
+        <item>Saint Lueia                *+1758 </item>
+        <item>Saint Vincent              *+1784 </item>
+        <item>Samoa Eastern              *+684  </item>
+        <item>Samoa Western              *+685  </item>
+        <item>San Marino                 *+378  </item>
+        <item>Sao Tome and Principe      *+239  </item>
+        <item>Saudi Arabia               *+966  </item>
+        <item>Senegal                    *+221  </item>
+        <item>Seychelles                 *+248  </item>
+        <item>Sierra Leone               *+232  </item>
+        <item>Singapore                  *+65   </item>
+        <item>Slovakia                   *+421  </item>
+        <item>Slovenia                   *+386  </item>
+        <item>Solomon Is                 *+677  </item>
+        <item>Somali                     *+252  </item>
+        <item>South Africa               *+27   </item>
+        <item>Spain                      *+34   </item>
+        <item>Sri Lanka                  *+94   </item>
+        <item>St.Lucia                   *+1758 </item>
+        <item>St.Vincent                 *+1784 </item>
+        <item>Sudan                      *+249  </item>
+        <item>Suriname                   *+597  </item>
+        <item>Swaziland                  *+268  </item>
+        <item>Sweden                     *+46   </item>
+        <item>Switzerland                *+41   </item>
+        <item>Syriaw                     *+963  </item>
+        <item>Taiwan                     *+886  </item>
+        <item>Tajikstan                  *+992  </item>
+        <item>Tanzania                   *+255  </item>
+        <item>Thailand                   *+66   </item>
+        <item>Togo                       *+228  </item>
+        <item>Tonga                      *+676  </item>
+        <item>Trinidad and Tobago        *+1809 </item>
+        <item>Tunisia                    *+216  </item>
+        <item>Turkey                     *+90   </item>
+        <item>Turkmenistan               *+993  </item>
+        <item>Uganda                     *+256  </item>
+        <item>Ukraine                    *+380  </item>
+        <item>United Arab Emirates       *+971  </item>
+        <item>United Kiongdom            *+44   </item>
+        <item>United States of America   *+1    </item>
+        <item>Uruguay                    *+598  </item>
+        <item>Uzbekistan                 *+233  </item>
+        <item>Venezuela                  *+58   </item>
+        <item>Vietnam                    *+84   </item>
+        <item>Yemen                      *+967  </item>
+        <item>Yugoslavia                 *+381  </item>
+        <item>South Africa               *+27   </item>
+        <item>Zimbabwe                   *+263  </item>
+        <item>Zaire                      *+243  </item>
+        <item>Zambia                     *+260  </item>
+    </string-array>
+    <string-array name="country_code_list_ch" translatable="false" >
+        <item>安哥拉             *+244  </item>
+        <item>阿富汗             *+93   </item>
+        <item>阿尔巴尼亚         *+355  </item>
+        <item>阿尔及利亚         *+213  </item>
+        <item>安道尔共和国       *+376  </item>
+        <item>安圭拉岛           *+1264 </item>
+        <item>安提瓜和巴布达     *+1268 </item>
+        <item>阿根廷             *+54   </item>
+        <item>亚美尼亚           *+374  </item>
+        <item>阿森松             *+247  </item>
+        <item>澳大利亚           *+61   </item>
+        <item>奥地利             *+43   </item>
+        <item>阿塞拜疆           *+994  </item>
+        <item>巴哈马             *+1242 </item>
+        <item>巴林               *+973  </item>
+        <item>孟加拉国           *+880  </item>
+        <item>巴巴多斯           *+1246 </item>
+        <item>白俄罗斯           *+375  </item>
+        <item>比利时             *+32   </item>
+        <item>伯利兹             *+501  </item>
+        <item>贝宁               *+229  </item>
+        <item>百慕大群岛         *+1441 </item>
+        <item>玻利维亚           *+591  </item>
+        <item>博茨瓦纳           *+267  </item>
+        <item>巴西               *+55   </item>
+        <item>文莱               *+673  </item>
+        <item>保加利亚           *+359  </item>
+        <item>布基纳法索         *+226  </item>
+        <item>缅甸               *+95   </item>
+        <item>布隆迪             *+257  </item>
+        <item>喀麦隆             *+237  </item>
+        <item>加拿大             *+1    </item>
+        <item>开曼群岛           *+1345 </item>
+        <item>中非共和国         *+236  </item>
+        <item>乍得               *+235  </item>
+        <item>智利               *+56   </item>
+        <item>中国               *+86   </item>
+        <item>哥伦比亚           *+57   </item>
+        <item>刚果               *+242  </item>
+        <item>库克群岛           *+682  </item>
+        <item>哥斯达黎加         *+506  </item>
+        <item>古巴               *+53   </item>
+        <item>塞浦路斯           *+357  </item>
+        <item>捷克               *+420  </item>
+        <item>丹麦               *+45   </item>
+        <item>吉布提             *+253  </item>
+        <item>多米尼加共和国     *+1890 </item>
+        <item>厄瓜多尔           *+593  </item>
+        <item>埃及               *+20   </item>
+        <item>萨尔瓦多           *+503  </item>
+        <item>爱沙尼亚           *+372  </item>
+        <item>埃塞俄比亚         *+251  </item>
+        <item>斐济               *+679  </item>
+        <item>芬兰               *+358  </item>
+        <item>法国               *+33   </item>
+        <item>法属圭亚那         *+594  </item>
+        <item>加蓬               *+241  </item>
+        <item>冈比亚             *+220  </item>
+        <item>格鲁吉亚           *+995  </item>
+        <item>德国               *+49   </item>
+        <item>加纳               *+233  </item>
+        <item>直布罗陀           *+350  </item>
+        <item>希腊               *+30   </item>
+        <item>格林纳达           *+1809 </item>
+        <item>关岛               *+1671 </item>
+        <item>危地马拉           *+502  </item>
+        <item>几内亚             *+224  </item>
+        <item>圭亚那             *+592  </item>
+        <item>海地               *+509  </item>
+        <item>洪都拉斯           *+504  </item>
+        <item>香港               *+852  </item>
+        <item>匈牙利             *+36   </item>
+        <item>冰岛               *+354  </item>
+        <item>印度               *+91   </item>
+        <item>印度尼西亚         *+62   </item>
+        <item>伊朗               *+98   </item>
+        <item>伊拉克             *+964  </item>
+        <item>爱尔兰             *+353  </item>
+        <item>以色列             *+972  </item>
+        <item>意大利             *+39   </item>
+        <item>科特迪瓦           *+225  </item>
+        <item>牙买加             *+1876 </item>
+        <item>日本               *+81   </item>
+        <item>约旦               *+962  </item>
+        <item>柬埔寨             *+855  </item>
+        <item>哈萨克斯坦         *+327  </item>
+        <item>肯尼亚             *+254  </item>
+        <item>韩国               *+82   </item>
+        <item>科威特             *+965  </item>
+        <item>吉尔吉斯坦         *+331  </item>
+        <item>老挝               *+856  </item>
+        <item>拉脱维亚           *+371  </item>
+        <item>黎巴嫩             *+961  </item>
+        <item>莱索托             *+266  </item>
+        <item>利比里亚           *+231  </item>
+        <item>利比亚             *+218  </item>
+        <item>列支敦士登         *+423  </item>
+        <item>立陶宛             *+370  </item>
+        <item>卢森堡             *+352  </item>
+        <item>澳门               *+853  </item>
+        <item>马达加斯加         *+261  </item>
+        <item>马拉维             *+265  </item>
+        <item>马来西亚           *+60   </item>
+        <item>马尔代夫           *+960  </item>
+        <item>马里               *+223  </item>
+        <item>马耳他             *+356  </item>
+        <item>马里亚那群岛       *+1670 </item>
+        <item>马提尼克           *+596  </item>
+        <item>毛里求斯           *+230  </item>
+        <item>墨西哥             *+52   </item>
+        <item>摩尔多瓦           *+373  </item>
+        <item>摩纳哥             *+377  </item>
+        <item>蒙古               *+976  </item>
+        <item>蒙特塞拉特岛       *+1664 </item>
+        <item>摩洛哥             *+212  </item>
+        <item>莫桑比克           *+258  </item>
+        <item>纳米比亚           *+264  </item>
+        <item>瑙鲁               *+674  </item>
+        <item>尼泊尔             *+977  </item>
+        <item>荷属安的列斯       *+599  </item>
+        <item>荷兰               *+31   </item>
+        <item>新西兰             *+64   </item>
+        <item>尼加拉瓜           *+505  </item>
+        <item>尼日尔             *+227  </item>
+        <item>尼日利亚           *+234  </item>
+        <item>朝鲜               *+850  </item>
+        <item>挪威               *+47   </item>
+        <item>阿曼               *+968  </item>
+        <item>巴基斯坦           *+92   </item>
+        <item>巴拿马             *+507  </item>
+        <item>巴布亚新几内亚     *+675  </item>
+        <item>巴拉圭             *+595  </item>
+        <item>秘鲁               *+51   </item>
+        <item>菲律宾             *+63   </item>
+        <item>波兰               *+48   </item>
+        <item>法属玻利尼西亚     *+689  </item>
+        <item>葡萄牙             *+351  </item>
+        <item>波多黎各           *+1787 </item>
+        <item>卡塔尔             *+974  </item>
+        <item>留尼旺             *+262  </item>
+        <item>罗马尼亚           *+40   </item>
+        <item>俄罗斯             *+7    </item>
+        <item>圣卢西亚           *+1758 </item>
+        <item>圣文森特岛         *+1784 </item>
+        <item>东萨摩亚(美)       *+684  </item>
+        <item>西萨摩亚           *+685  </item>
+        <item>圣马力诺           *+378  </item>
+        <item>圣多美和普林西比   *+239  </item>
+        <item>沙特阿拉伯         *+966  </item>
+        <item>塞内加尔           *+221  </item>
+        <item>塞舌尔             *+248  </item>
+        <item>塞拉利昂           *+232  </item>
+        <item>新加坡             *+65   </item>
+        <item>斯洛伐克           *+421  </item>
+        <item>斯洛文尼亚         *+386  </item>
+        <item>所罗门群岛         *+677  </item>
+        <item>索马里             *+252  </item>
+        <item>南非               *+27   </item>
+        <item>西班牙             *+34   </item>
+        <item>斯里兰卡           *+94   </item>
+        <item>圣卢西亚           *+1758 </item>
+        <item>圣文森特           *+1784 </item>
+        <item>苏丹               *+249  </item>
+        <item>苏里南             *+597  </item>
+        <item>斯威士兰           *+268  </item>
+        <item>瑞典               *+46   </item>
+        <item>瑞士               *+41   </item>
+        <item>叙利亚             *+963  </item>
+        <item>台湾省             *+886  </item>
+        <item>塔吉克斯坦         *+992  </item>
+        <item>坦桑尼亚           *+255  </item>
+        <item>泰国               *+66   </item>
+        <item>多哥               *+228  </item>
+        <item>汤加               *+676  </item>
+        <item>特立尼达和多巴哥   *+1809 </item>
+        <item>突尼斯             *+216  </item>
+        <item>土耳其             *+90   </item>
+        <item>土库曼斯坦         *+993  </item>
+        <item>乌干达             *+256  </item>
+        <item>乌克兰             *+380  </item>
+        <item>阿拉伯联合酋长国   *+971  </item>
+        <item>英国               *+44   </item>
+        <item>美国               *+1    </item>
+        <item>乌拉圭             *+598  </item>
+        <item>乌兹别克斯坦       *+233  </item>
+        <item>委内瑞拉           *+58   </item>
+        <item>越南               *+84   </item>
+        <item>也门               *+967  </item>
+        <item>南斯拉夫           *+381  </item>
+        <item>南非               *+27   </item>
+        <item>津巴布韦           *+263  </item>
+        <item>扎伊尔             *+243  </item>
+        <item>赞比亚             *+260  </item>
+    </string-array>
+
+    <string name="camera_status_online">在线</string>
+    <string name="camera_status_connecting">连接中</string>
+    <string name="camera_status_disconnect">设备断开</string>
+    <string name="camera_status_connect_failed">连接失败</string>
+    <string name="camera_status_invalid_id">ID不可用</string>
+    <string name="camera_status_offline">离线</string>
+    <string name="camera_status_connect_timeout">连接超时</string>
+    <string name="camera_status_user_pwd_err">用户名或密码错误</string>
+    <string name="alarm_move_lable">移动报警</string>
+    <string name="alarm_audio_lable">声音报警</string>
+    <string name="alerm_pir_lable">PIR报警</string>
+    <string name="alerm_gpio_lable">IO联动报警</string>
+    <string-array name="lan_arr">
+        <item>静音</item>
+        <item>中文</item>
+        <item>英文</item>
+    </string-array>
+    <string-array name="week_zh_lable">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string-array name="ntp_lable">
+        <item> name="date_ntp_server_time_nist_gov">time.nist.gov</item>
+        <item> name="date_ntp_server_time_kriss_re_kr">time.kriss.re.kr</item>
+        <item> name="date_ntp_server_time_windows_com">time.windows.com</item>
+        <item> name="date_ntp_server_time_nuri_net">time.nuri.net</item>
+    </string-array>
+    <string-array name="zone_lable">
+        <item>(GMT-11:00)中途岛,萨摩亚群岛</item>
+        <item>(GMT -10:00) 夏威夷</item>
+        <item>(GMT-09:00)阿拉斯加</item>
+        <item>(GMT-08:00)太平洋时间(美国和加拿大)</item>
+        <item>(GMT-07:00)山地时间(美国和加拿大)</item>
+        <item>(GMT-06:00)中部时间(美国和加拿大),墨西哥城</item>
+        <item>(GMT-05:00)东部时间(美国和加拿大),利马,波哥大</item>
+        <item>(GMT-04:00)大西洋时间(加拿大),圣地亚哥,拉巴斯</item>
+        <item>(GMT-03:30)纽芬兰</item>
+        <item>(GMT-03:00)巴西利亚,布宜若斯艾丽斯,乔治敦</item>
+        <item>(GMT-02:00)中大西洋</item>
+        <item>(GMT-01:00)佛得角群岛</item>
+        <item>(GMT)格林威治平时,伦敦,里斯本,卡萨布兰卡</item>
+        <item>(GMT+01:00)布鲁赛尔,巴黎,柏林,罗马,马德里,斯多哥尔摩, 贝尔格莱德, 布拉格</item>
+        <item>(GMT +02:00) 雅典, 耶路撒冷, 开罗, 赫尔辛基</item>
+        <item>(GMT +03:00) 内罗毕, 利雅得, 莫斯科</item>
+        <item>(GMT +03:30) 德黑兰</item>
+        <item>(GMT +04:00) 巴库, 第比利斯, 阿布扎比, 马斯科特</item>
+        <item>(GMT +04:30) 科布尔</item>
+        <item>(GMT +05:00) 伊斯兰堡, 卡拉奇, 塔森干</item>
+        <item>(GMT +05:30) 加尔各答, 孟买, 马德拉斯, 新德里</item>
+        <item>(GMT +06:00) 阿拉木图, 新西伯利亚, 阿斯塔南, 达尔</item>
+        <item>(GMT +07:00) 曼谷, 河内, 雅加达</item>
+        <item>(GMT +08:00) 北京, 新加坡, 台北</item>
+        <item>(GMT +09:00) 首尔, 雅库茨克, 东京</item>
+        <item>(GMT +09:30) 达尔文</item>
+        <item>(GMT +10:00) 关岛, 墨尔本, 悉尼, 莫尔兹比港, 符拉迪沃斯托克</item>
+        <item>(GMT +11:00)马加丹,所罗门群岛, 新喀里多尼亚</item>
+        <item>(GMT +12:00) 奥克兰, 惠灵顿, 斐济</item>
+    </string-array>
+    <string-array name="right_device">
+        <item>小网关</item>
+        <item>云知声</item>
+        <item>投影中控</item>
+    </string-array>
+    <string-array name="right_procase">
+        <item>我的云家庭</item>
+        <item>指定云家庭</item>
+    </string-array>
+</resources>

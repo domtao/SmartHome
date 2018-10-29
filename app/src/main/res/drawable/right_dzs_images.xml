@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@mipmap/popu_zt"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@mipmap/popu_dl"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="@mipmap/popu_ld"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@mipmap/popu_bj"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="@mipmap/popu_yc"
+        android:maxLevel="4"/>
+    <item
+        android:drawable="@mipmap/popu_time"
+        android:maxLevel="5"/>
+    <item
+        android:drawable="@mipmap/popu_addzw"
+        android:maxLevel="6"/>
+    <item
+        android:drawable="@mipmap/popu_delzw"
+        android:maxLevel="7"/>
+    <item
+        android:drawable="@mipmap/popu_pwd"
+        android:maxLevel="8"/>
+    <item
+        android:drawable="@mipmap/popu_delpwd"
+        android:maxLevel="9"/>
+    <item
+        android:drawable="@mipmap/popu_lspwd"
+        android:maxLevel="10"/>
+
+</level-list>

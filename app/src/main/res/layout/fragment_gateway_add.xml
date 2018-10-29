@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/addgateway"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="绑 定"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:background="#ffcccccc" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/gateWayName"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/gateWayName"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="240dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:textSize="@dimen/font_size_14"
+                    android:padding="5dp"
+                    android:gravity="right"
+                    android:singleLine="true" />
+                <ImageView
+                    android:id="@+id/scanImage"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:cropToPadding="true"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:src="@mipmap/scan" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/gateWayID"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/gateWayID"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="240dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userName"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="240dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/password"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/pwd"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="240dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp">
+                <ImageButton
+                    android:id="@+id/set_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/typeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="小网关"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/tabbar_item_select"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/seachGateWay"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/nowifi"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_14"/>
+
+                </LinearLayout>
+
+                <com.zunder.smart.custom.view.MyGridView
+                    android:id="@+id/gateWayList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

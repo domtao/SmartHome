@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_item"
+        layout="@layout/header_view" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="10.0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_sleep"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="消息反馈"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_hx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_audio"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="语音播报"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/long_andimage"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="开启硬件旧版本"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <CheckBox
+                    android:id="@+id/mangerBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_audio_img"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="连接模式"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/aduio_local"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="本地"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/aduio_net"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:text="远程"
+                        android:textColor="#000000" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:id="@+id/readWords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_audio"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="唤醒识别词"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@+id/readBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:clickable="true"
+                    android:src="@drawable/index_top_right_edit" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_smart_getway"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/smart_camera_ipc"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="智能網关设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/set_luanguage"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/language_img"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="语言识别"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/set_device"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_new"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="新建专案"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/set_upload"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_change"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="专案切换"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/build_device"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_machine"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="机码设置"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bt_normal_dialog_cancle"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_broad"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="定时广播"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/gwayBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_net"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="通讯应答"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/build_aduio"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/ap_setting"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="更改密码"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bt_normal_dialog_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/setting_ddns"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="链接"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_backup"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/backup_img"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="备份还原"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_video"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/cloud_videos"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="网关控制模式"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/setting_file"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/dst_file"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="文件管理"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/helpCode"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10.0dip"
+                    android:drawableLeft="@mipmap/sys_help"
+                    android:drawablePadding="8.0dip"
+                    android:gravity="center_vertical"
+                    android:text="帮助"
+                    android:textColor="@color/color_black"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.00999999dip"
+                    android:layout_gravity="bottom"
+                    android:background="#ffcccccc" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

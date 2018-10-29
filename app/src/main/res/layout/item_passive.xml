@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whites"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/color_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height60"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/whites"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/item_height50"
+                android:layout_height="@dimen/item_height50"
+                android:padding="3dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/passiveName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_marginTop="5dip"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/passiveID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_marginTop="5dip"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/font_size_14" />
+            </LinearLayout>`
+
+            <ImageView
+                android:id="@+id/passiveImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/passive_nuse_img" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

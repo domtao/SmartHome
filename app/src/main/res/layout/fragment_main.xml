@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+    android:layout_margin="@dimen/item_height10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fragmen_main_shape"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/stateLayout"
+                android:layout_margin="@dimen/item_height10"
+                android:orientation="horizontal"
+                android:background="@mipmap/img_bg">
+                <ImageView
+                    android:id="@+id/stateImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/light_off" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/modeTxt"
+                android:layout_marginTop="@dimen/item_height25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_18"
+                android:text=""/>
+            <Button
+                android:layout_marginTop="@dimen/item_height20"
+                android:layout_marginRight="@dimen/item_height20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="频道"
+                android:id="@+id/chButton"
+                android:textColor="@color/font_open_press"
+                android:textSize="@dimen/font_size_16"
+                android:background="@drawable/button_boder_square"/>
+            <LinearLayout
+                android:id="@+id/tempLayout"
+                android:layout_width="@dimen/item_height80"
+                android:layout_height="@dimen/item_height80"
+                android:layout_marginTop="@dimen/item_height40"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/item_height80"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@mipmap/air_temp_bg">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/item_height20"
+                        android:layout_height="@dimen/item_height30"
+                        android:id="@+id/tempImage0"
+                        android:src="@mipmap/sz_0"/>
+                    <ImageView
+                        android:layout_width="@dimen/item_height20"
+                        android:layout_height="@dimen/item_height30"
+                        android:id="@+id/tempImage1"
+                        android:src="@mipmap/sz_0"/>
+                    <ImageView
+                        android:id="@+id/modeImage"
+                        android:layout_width="@dimen/item_height20"
+                        android:layout_height="@dimen/item_height20"
+                        android:src="@mipmap/mode_auto_black" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginBottom="@dimen/item_height10"
+                    android:layout_width="@dimen/item_height80"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/wind_amount_white_one"
+                    android:id="@+id/speedImage"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/peopleTxt"
+                android:layout_width="wrap_content"
+                android:text="当前人数:0"
+                android:layout_marginTop="85dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="@dimen/font_size_16"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/item_height10"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/controlLayout"
+                android:layout_marginRight="@dimen/item_height10"
+                android:layout_marginLeft="@dimen/item_height10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <Button
+                android:id="@+id/showBtn"
+                android:background="@drawable/button_show_shape"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/item_height30"
+                android:layout_height="@dimen/item_height30"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:text="展开"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_height20"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/allON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/zun_button"
+                android:text="全开"
+                android:textColor="@color/font_press"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/allOFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/zun_button"
+                android:text="全关"
+                android:textColor="@color/font_press"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

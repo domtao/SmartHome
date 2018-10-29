@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"/>
+
+            <TabWidget
+                android:visibility="gone"
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/skin_tabbar_bg" />
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical">
+                <RadioButton
+                    android:id="@+id/mainRadio"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:tag="radioBtn0"
+                    android:drawableTop="@drawable/tabbar_home_select"
+                    android:textColor="@color/radiobutton_textcolor"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font_size_12"
+                    android:text="首页"/>
+                <RadioButton
+                    android:id="@+id/homeRadio"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/tabbar_main_select"
+                    android:textColor="@color/radiobutton_textcolor"
+
+                    android:padding="5dp"
+                    android:tag="radioBtn1"
+                    android:textSize="@dimen/font_size_12"
+                    android:text="家居"/>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font_size_12"
+                    android:text=""/>
+                <RadioButton
+                    android:id="@+id/modeRadio"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/tabbar_mode_select"
+                    android:textColor="@color/radiobutton_textcolor"
+                    android:padding="5dp"
+                    android:tag="radioBtn2"
+                    android:textSize="@dimen/font_size_12"
+                    android:text="集合"/>
+                <RadioButton
+                    android:id="@+id/myRadio"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/tabbar_my_select"
+                    android:textColor="@color/radiobutton_textcolor"
+                    android:padding="5dp"
+                    android:tag="radioBtn3"
+                    android:textSize="@dimen/font_size_12"
+                    android:text="我的"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/plus_btn"
+            android:layout_width="@dimen/item_height50"
+            android:layout_height="@dimen/item_height50"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/item_height15"
+            android:background="@mipmap/plus_last" />
+
+        <RelativeLayout
+            android:id="@+id/addPromptLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:visibility="gone" >
+            <TextView
+                android:id="@+id/showTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+</RelativeLayout>
+</TabHost>

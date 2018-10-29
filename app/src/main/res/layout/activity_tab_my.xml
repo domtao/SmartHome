@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topbar_3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="@dimen/item_height10"
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_icon_my"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"/>
+           <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/item_height10"
+            android:layout_marginLeft="@dimen/item_height10"
+            android:background="@drawable/view_bg"/>
+
+            <ImageView
+                android:id="@+id/userImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/item_height20"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/itcp_user_image_backgroud"
+                android:src="@mipmap/itcp_user_image" />
+            <TextView
+                android:id="@+id/userTxt"
+                android:layout_below="@id/userImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_size_16"
+                android:layout_height="wrap_content"
+                android:text="未登录"/>
+            <TextView
+                android:id="@+id/gateWayTxt"
+                android:layout_below="@id/userTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_height5"
+                android:textSize="@dimen/font_size_14"
+                android:text="主机网关不在线"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="10.0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/tabbar_item_select"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_gateWay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:text="智能网关"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/zun_gateway_img"
+                    android:drawablePadding="8.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:visibility="gone"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/set_device"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/zun_my_device"
+                    android:drawablePadding="8.0dip"
+                   android:layout_centerVertical="true"
+                    android:text="@string/my_device"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:visibility="gone"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tabbar_item_select" >
+                <ImageButton
+                    android:id="@+id/relayButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:drawableLeft="@mipmap/zun_relay_img"
+                    android:drawablePadding="8.0dip"
+                   android:layout_centerVertical="true"
+                    android:text="@string/relayManger"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:visibility="gone"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/sensorBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:drawableLeft="@mipmap/zun_sensor_img"
+                    android:drawablePadding="8.0dip"
+                   android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/passive"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/optionHis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:drawableLeft="@mipmap/zun_his_img"
+                    android:drawablePadding="8.0dip"
+                    android:layout_centerVertical="true"
+                    android:text="历史记录"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <ImageButton
+                    android:id="@+id/optionZL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tabbar_item_select" >
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height10"
+                    android:drawableLeft="@mipmap/zun_zl"
+                    android:drawablePadding="8.0dip"
+                    android:layout_centerVertical="true"
+                    android:text="操作指南"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@mipmap/index_arrow" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_boder_shape"
+                android:layout_height="40dp"
+                android:text="用户登录"
+                android:textColor="@color/font_open_press"/>
+            <TextView
+                android:layout_marginTop="@dimen/item_height20"
+                android:id="@+id/versionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_16"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+ </LinearLayout>
+  <fragment
+        android:id="@+id/deviceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.device.DeviceFragment"/>
+    <fragment
+        android:id="@+id/deviceTypeFragment"
+        android:name="com.zunder.smart.activity.device.DeviceTypeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <fragment
+        android:id="@+id/deviceAddFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.device.DeviceAddFragment"/>
+    <fragment
+        android:id="@+id/gatewayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.gateway.GateWayFragment"/>
+    <fragment
+        android:name="com.zunder.smart.activity.gateway.SimpleConfigFragment"
+        android:id="@+id/configFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <fragment
+        android:id="@+id/settingWifiFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.gateway.SettingWifiFragment"/>
+    <fragment
+    android:id="@+id/gatewayAddFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.zunder.smart.activity.gateway.GateWayAddFragment"/>
+    <fragment
+        android:id="@+id/gateWaySettingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.gateway.GateWaySettingFragment" />
+    <fragment
+        android:id="@+id/relayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.relay.RelayFragment" />
+    <fragment
+        android:id="@+id/relayListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.relay.RelayListFragment" />
+    <fragment
+        android:id="@+id/relayDeviceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.relay.RelayDeviceFragment" />
+    <fragment
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:name="com.zunder.smart.activity.passive.PassiveFragment"
+    android:id="@+id/passiveFragment"/>
+    <fragment
+        android:id="@+id/modeAddFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.zunder.smart.activity.mode.ModeAddFragment"/>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mPullRefreshView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/machine_manger"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/backTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/back_selector"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/addDevice"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="添加设备"
+            android:background="@drawable/fun_bg_selector"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/add_line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/leftMore"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="2dp"
+        android:textSize="@dimen/font_size_14" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+<!--<com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView-->
+        <!--android:id="@+id/deviceList"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/freshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <com.zunder.smart.listview.SwipeListView
+        android:id="@+id/deviceList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fastScrollEnabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
+
+</LinearLayout>

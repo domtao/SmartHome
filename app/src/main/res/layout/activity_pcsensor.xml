@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/green" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/whites"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="室外传感器数据"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:visibility="gone"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="设置城市"
+            android:textColor="@color/whites"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <!-- 温度-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/temp_img"/>
+            <TextView
+                android:id="@+id/tempText"
+                android:textSize="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="--"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温 度"/>
+    </LinearLayout>
+    <!-- 湿度-->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/hun_img"/>
+            <TextView
+                android:id="@+id/humText"
+                android:textSize="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="--"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湿 度"/>
+    </LinearLayout>
+    <!-- 温度-->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pm_img"/>
+            <TextView
+                android:id="@+id/pmText"
+                android:textSize="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="--"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PM2.5"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- 温度-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jq_img"/>
+                <TextView
+                    android:id="@+id/jqText"
+                    android:textSize="30dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="--"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="甲 醛"/>
+        </LinearLayout>
+        <!-- 温度-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/light_img"/>
+                <TextView
+                    android:id="@+id/lightText"
+                    android:textSize="30dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="--"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="照 度"/>
+        </LinearLayout>
+        <!-- 温度-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/temp_img"/>
+                <TextView
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"/>
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/groupOne"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/outdoor"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="室 外"
+                android:checked="true"
+                android:layout_margin="5dp"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector" />
+            <RadioButton
+                android:id="@+id/indoor"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="室 内"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector" />
+            <RadioButton
+                android:id="@+id/sittingRoom"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="客 厅"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector" />
+            <RadioButton
+                android:layout_margin="5dp"
+                android:id="@+id/restaurantRoom"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="餐 厅"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector"
+                />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/groupTwo"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bedroomRoom"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="卧 室"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector"
+                />
+            <RadioButton
+                android:id="@+id/parentRoom"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="父母房"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/masterRoom"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="主人房"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector"
+                />
+
+            <RadioButton
+                android:id="@+id/childRoom"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="儿童房"
+                android:textSize="17.0sp"
+                android:textColor="@color/font_pcsendor_press"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/radio_selector"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/msgTxt"/>
+</LinearLayout>

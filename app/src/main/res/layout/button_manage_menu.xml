@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<GridView
+    android:id="@+id/button_manage_menu_gv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_background"
+    android:columnWidth="@dimen/item_height30"
+    android:horizontalSpacing="10.0dip"
+    android:listSelector="@drawable/list_item_selector"
+    android:numColumns="4"
+    android:verticalSpacing="10.0dip" >
+
+</GridView>
+</RelativeLayout>

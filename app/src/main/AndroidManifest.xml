@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zunder.smart">
+
+    <application
+        tools:replace="Android:icon,android:theme"
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_png"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity
+            android:name=".activity.StartActivity"
+            android:theme="@style/Theme.AppStart"    >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!--<category android:name="android.intent.category.HOME"/>-->
+            <!--<category android:name="android.intent.category.DEFAULT"/>-->
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.door.service.MainService"
+            android:enabled="true"
+            android:exported="true" />
+        <activity android:name=".activity.WelcomeActivity"
+            android:theme="@style/Theme.AppStart"  />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.main.TabHomeActivity"/>
+        <activity android:name=".activity.main.TabMyActivity"/>
+        <activity android:name=".activity.main.TabModeActivity"/>
+        <activity android:name=".activity.main.TabMainActivity"/>
+
+        <activity android:name="com.zunder.smart.activity.LoginActivity" />
+        <activity android:name="com.zunder.smart.activity.RegisterActivity" />
+        <activity
+            android:name="com.zunder.smart.activity.main.MainActivity"
+                android:launchMode="singleTask" />
+        <activity android:name="com.zunder.smart.activity.ForgetPwdActivity" />
+        <activity android:name="com.zunder.smart.gateway.GateWaySettingActivity" />
+        <activity android:name="com.zunder.smart.scan.CaptureActivity" />
+        <activity android:name="com.zunder.smart.gateway.SettingGateWayWifiActivity" />
+        <activity android:name="com.zunder.smart.aiui.activity.CusDeviceActivity" />
+        <activity android:name="com.zunder.smart.aiui.activity.CusDeviceListActivity" />
+        <activity android:name="com.zunder.smart.aiui.activity.CusModeActivity" />
+        <activity android:name="com.zunder.smart.aiui.activity.CusModeListActivity" />
+        <activity android:name="com.zunder.smart.aiui.activity.AnHongActivity" />
+        <activity android:name="com.zunder.smart.activity.backup.BackUpActivity" />
+        <activity android:name="com.zunder.smart.activity.backup.BackClientActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.ImageActivity" />
+        <activity android:name="com.zunder.smart.activity.sub.RedFraAddActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.sub.set.DeviceTimerActivity" />
+        <activity android:name="com.zunder.smart.activity.sub.SequencerActivity" />
+        <activity android:name="com.zunder.smart.activity.sub.ProjectorActivity" />
+        <activity android:name="com.zunder.smart.aiui.activity.AddDeviceActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.centercontrol.CenterControlActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.PcSensorActivity"/>
+        <activity android:name=".aiui.activity.ModeListActionActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.sub.SubActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.sub.LightActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.tv.Channelctivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.tv.ChannelAddActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.sub.MusicActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.sub.set.LinkageActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.centercontrol.RmcEditeActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.centercontrol.ModeRmcActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.centercontrol.RMCActionActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.centercontrol.edite.TouchPanelActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.sub.set.StudyActivity"/>
+        <activity android:name=".activity.PActivity"/>
+        <activity android:name=".activity.sub.AirSwitchActivity"/>
+        <activity android:name=".activity.device.ProductsActivity"/>
+        <activity android:name=".langvage.LangvageActivity"/>
+        <activity android:name="com.door.activity.DoorPlayActivity"/>
+        <activity android:name=".sms.CountryActivity"/>
+        <activity android:name="com.door.activity.SendWifiActivity"/>
+        <activity android:name="com.door.activity.InitPwdActivity"/>
+        <activity android:name=".activity.HistoryActivity"/>
+        <activity android:name=".activity.SafeInfoActivity"/>
+        <activity android:name=".aiui.activity.SecurityActivity"/>
+        <activity android:name=".activity.RoutingActivity"/>
+        <!--中控主机 -->
+        <activity android:name=".remote.activity.FileListActivity"/>
+        <activity android:name=".remote.activity.IFileInfoActivity"/>
+        <activity android:name=".remote.activity.SelectFileActivity"/>
+        <activity android:name=".remote.RemoteMainActivity"/>
+        <activity android:name=".remote.activity.TimeListActivity"/>
+        <receiver android:name="com.zunder.smart.broadcast.ReceiverBroadcast" >
+            <intent-filter>
+                <action android:name="com.zunder.smart.receiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zunder.smart.broadcast.WifiReceiver" >
+            <intent-filter>
+                <action android:name="android.NET.wifi.RSSI_CHANGED" />
+                <action android:name="android.Net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zunder.smart.broadcast.WenWenBroadcast" >
+            <intent-filter>
+                <action android:name="com.zunder.smart.wenwen" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".net.WifiReceiver" >
+            <intent-filter>
+                <action android:name="android.NET.wifi.RSSI_CHANGED" />
+                <action android:name="android.Net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.zunder.smart.gateway.GateWayPlayActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.aiui.activity.AiuiMainActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <service android:name="com.zunder.smart.service.BridgeService" />
+        <service android:name="com.zunder.smart.service.GateWayService" />
+
+        <activity
+            android:name="com.zunder.smart.aiui.activity.PickerDialog"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zunder.smart.onekey.SettingWifiActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.zunder.smart.aiui.activity.VoiceActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.setting.SmartHomeSetting" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.sub.AirActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.sub.set.ElectricActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".activity.sub.set.MoreActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.sub.FreshAirActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.tv.TvActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.sub.LedActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name=".gateway.GateWaySettingDoor" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.activity.sub.RedFraActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+       <activity android:name="com.zunder.smart.gateway.GateWayLanPlayActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity android:name="com.zunder.smart.aiui.activity.VoiceAddActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.zunder.smart.aiui.activity.SongActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.zunder.smart.activity.mode.ModeTimerActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <activity android:name=".gateway.SettingSdcardActivity"/>
+        <activity android:name=".gateway.SettingAlarmActivity"/>
+        <activity
+            android:name="com.zunder.smart.jpush.TestActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zunder.smart.rak47.MainTabActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+
+        <activity
+            android:name="com.zunder.smart.rak47.LocalScanActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zunder.smart.rak47.ScanInfoActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name="com.zunder.smart.rak47.apconfig.ApconfigStep1"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zunder.smart.rak47.apconfig.ApconfigStep3"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zunder.smart.rak47.apconfig.ApconfigStep2"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zunder.smart.onekey.ConfigActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zunder.smart.rak47.ota.OTAActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zunder.smart.rak47.ota.OTAActivity2"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name=".aiui.activity.BlueToothActivity"/>
+        <activity android:name=".aiui.activity.SubscribeActivity"/>
+        <activity android:name=".aiui.activity.SubscribeAddActivity"/>
+        <activity android:name=".aiui.activity.HostActivity"/>
+        <activity
+            android:name="com.bluecam.api.SearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.VoiceConfigActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.CameraPlayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.bluecam.api.Setting_CamInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_UserActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_WiFiActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_AlarmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_AlarmTimeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.bluecam.api.Setting_SDcardActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_RecordTimeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_TimeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_MailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.Setting_OtherActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.bluecam.api.RecordListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.bluecam.api.TfVideoPlayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialog" >
+        </activity>
+        <activity android:name=".gateway.SettingDateActivity"/>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.zunder.smart" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":mult" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.zunder.smart" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.zunder.smart" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.PhoneListenerService"/>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.zunder.smart.jpush.MyReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.zunder.smart" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="19e1d10224a5bd4292bc9b49" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="'557d680a'" />
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="Android_Demo" />
+    </application>
+    <permission
+        android:name="com.zunder.smart.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 验证码 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.zunder.smart.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    //gell
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Web -->
+    <!-- 截图相关 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 对讲及双向视屏时需要此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 读取电话状态权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 挂断电话时需要的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 读短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+</manifest>

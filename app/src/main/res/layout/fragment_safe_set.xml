@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="安防"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/safe_manger">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/powerState"
+            android:layout_width="@dimen/item_height60"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/safe_power_off"/>
+        <CheckBox
+            android:id="@+id/stateCheck"
+            android:layout_width="@dimen/item_height80"
+            android:layout_height="@dimen/item_height80"
+            android:background="@drawable/safebox_selector"
+            android:button="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/openModeWarmLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height60"
+            android:background="@drawable/tabbar_item_select">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentTop="true"
+                android:background="#ffcccccc" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="安防发生报警联动情景"
+                android:textColor="#ff3f3f3f"
+                android:textSize="@dimen/font_size_16"/>
+            <CheckBox
+                android:id="@+id/openModeWarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_height10"
+            android:text="发生报警为紧急情况设置,此情景受 开启/关闭 布防动作\n控制"/>
+
+        <RelativeLayout
+            android:id="@+id/closeModeWarmLayout"
+            android:layout_marginTop="@dimen/item_height20"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height60"
+            android:background="@drawable/tabbar_item_select">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentTop="true"
+                android:background="#ffcccccc" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="安防解除报警联动报警"
+                android:textColor="#ff3f3f3f"
+                android:textSize="@dimen/font_size_16"/>
+            <CheckBox
+                android:id="@+id/closeModeWarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_height10"
+            android:text="解除报警为紧急情况设置,此情景受 开启/关闭 布防动作\n控制"/>
+        <RelativeLayout
+            android:id="@+id/modeOpenLayout"
+            android:layout_marginTop="@dimen/item_height20"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height60"
+            android:background="@drawable/tabbar_item_select" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="传感器开启时联动情景"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_16" />
+
+            <CheckBox
+                android:id="@+id/modeOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_height10"
+            android:text="当传感器被开启时,执行情景,不受 开启/关闭 布防动作\n控制"/>
+
+    <RelativeLayout
+        android:id="@+id/modeCloseLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height60"
+        android:layout_marginTop="@dimen/item_height20"
+        android:background="@drawable/tabbar_item_select">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="传感器关闭时联动情景"
+            android:textColor="#ff3f3f3f"
+            android:textSize="@dimen/font_size_16"/>
+
+        <CheckBox
+            android:id="@+id/modeClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_height10"
+        android:text="当传感器被关闭时,执行情景,不受 开启/关闭 布防动作\n控制"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height60"
+        android:layout_marginTop="@dimen/item_height20"
+        android:background="@drawable/tabbar_item_select">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="NO/NC"
+            android:textColor="#ff3f3f3f"
+            android:textSize="@dimen/font_size_16"/>
+
+        <CheckBox
+            android:id="@+id/modeNC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_height10"
+        android:text="传感器的动作形式,常态下开启是NO,反之是NC"/>
+
+</LinearLayout>

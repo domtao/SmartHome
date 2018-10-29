@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_style"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_item"
+        layout="@layout/header_view" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/mail_tv_sender"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="设备时间:"
+                        android:textColor="@color/color_black" />
+
+                    <Button
+                        android:id="@+id/date_tv_device_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="#00000000"
+                        android:ellipsize="marquee"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:textColor="@color/color_black" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey" />
+
+                <LinearLayout
+                    android:id="@+id/ntp_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/date_device_time_zone"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="时区:"
+                        android:textColor="@color/color_black" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/date_edit_timezone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@mipmap/txt_bg_short"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10.0dip"
+                            android:singleLine="true" />
+
+                        <ImageButton
+                            android:id="@+id/date_img_timezone_down"
+                            android:layout_width="50.0dip"
+                            android:layout_height="25.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/rightdown_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey" />
+
+                <RelativeLayout
+                    android:id="@id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5.0dip"
+                        android:gravity="left"
+                        android:text="自动校时"
+                        android:textColor="@color/color_black" />
+
+                    <CheckBox
+                        android:id="@+id/date_cbx_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey" />
+
+                <LinearLayout
+                    android:id="@+id/date_ntp_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="5.0dip" >
+
+                        <TextView
+                            android:layout_width="100.0dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Ntp服务器:"
+                            android:textColor="@color/color_black" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <EditText
+                                android:id="@+id/date_edit_ntp_server"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@mipmap/txt_bg_short"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="10.0dip"
+                                android:singleLine="true" />
+
+                            <ImageButton
+                                android:id="@+id/date_img_ntp_server_down"
+                                android:layout_width="50.0dip"
+                                android:layout_height="25.0dip"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/rightdown_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@id/imageView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:src="@color/color_grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip"
+                    android:paddingTop="10.0dip" >
+
+
+                    <Button
+                        android:id="@+id/date_btn_checkout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_height45"
+                        android:background="@drawable/button_shape"
+                        android:textColor="@color/font_press"
+                        android:text="本地时间校准时钟" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_style"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_item"
+        layout="@layout/header_view" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10.0dip"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="@string/wifiManger"
+                android:textColor="@color/color_black"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="25.0dip" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/ssid_text"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_title_size" />
+
+                <EditText
+                    android:id="@+id/edit_wifi_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@mipmap/txt_bg_short"
+                    android:digits="QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm-0123456789"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="25.0dip" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/safe"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_title_size" />
+
+                <EditText
+                    android:id="@+id/edit_wifi_plus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@mipmap/txt_bg_short"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="25.0dip" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/chanel"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_title_size" />
+
+                <EditText
+                    android:id="@+id/edit_wifi_channel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@mipmap/txt_bg_short"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="25.0dip" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/psk_text"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_title_size" />
+
+                <EditText
+                    android:id="@+id/edit_wifi_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@mipmap/txt_bg_short"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:password="true"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbox_show_wifi_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="135.0dip"
+                android:text="@string/psk_shw"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_title_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:src="@color/color_grey" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <Button
+            android:id="@+id/localnet"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:text="@string/localNet" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foot_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#70000000" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/color_white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:id="@+id/cancel_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/item_selector"
+                android:text="取消"
+                android:padding="8dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="请输入密码"
+                android:padding="8dp"
+                android:textColor="@color/color_black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/done_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="确定"
+                android:padding="8dp"
+                android:background="@drawable/item_selector"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/color_blue"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_gravity="bottom"
+                android:background="#24ad9d" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_black"
+                    android:text="密码："
+                    />
+                <EditText
+                    android:id="@+id/wifi_pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_black"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="3dp"
+                    android:hint="请输入密码"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

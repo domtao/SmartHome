@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroud" >
+
+        <TextView
+            android:id="@+id/editeTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:background="#D3D3D3"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/delBtn"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/red"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="取消\n配对"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

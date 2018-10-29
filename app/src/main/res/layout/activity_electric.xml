@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/oil_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@color/white" >
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="电流侦测"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/item_height20"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height40"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="最小值:???"
+            android:id="@+id/minTxt"
+            android:textColor="#ff3f3f3f"
+            android:textSize="@dimen/font_size_14"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取"
+            android:id="@+id/readMin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_all_on"
+            android:padding="@dimen/item_height5"
+            android:textColor="@color/font_press"
+            android:textSize="@dimen/font_size_14"
+            android:layout_marginRight="@dimen/item_height10"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="请确定设备处于关闭状态"
+        android:textColor="@color/gray_font"
+        android:layout_margin="@dimen/item_height10"
+        android:textSize="@dimen/font_size_14"/>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/item_height20"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height40"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="最大值:???"
+            android:id="@+id/maxTxt"
+            android:textColor="#ff3f3f3f"
+            android:textSize="@dimen/font_size_14"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取"
+            android:id="@+id/readMax"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_all_on"
+            android:padding="@dimen/item_height5"
+            android:textColor="@color/font_press"
+            android:textSize="@dimen/font_size_14"
+            android:layout_marginRight="@dimen/item_height10"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="请确定设备处于开启状态"
+        android:textColor="@color/gray_font"
+        android:layout_margin="@dimen/item_height10"
+        android:textSize="@dimen/font_size_14"/>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/item_height20"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height40"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="设定值:???"
+            android:id="@+id/setTxt"
+            android:textColor="#ff3f3f3f"
+            android:textSize="@dimen/font_size_14"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:id="@+id/setBtn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_all_on"
+            android:padding="@dimen/item_height5"
+            android:textColor="@color/font_press"
+            android:textSize="@dimen/font_size_14"
+            android:layout_marginRight="@dimen/item_height10"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="电流侦测系统自动设定参考值"
+        android:textColor="@color/gray_font"
+        android:layout_margin="@dimen/item_height10"
+        android:textSize="@dimen/font_size_14"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/sureBtn"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_shape"
+            android:layout_height="40dp"
+            android:text="设置电流"
+            android:textColor="@color/font_press"/>
+    </RelativeLayout>
+
+</LinearLayout>

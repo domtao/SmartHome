@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="400dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height50"
+        android:layout_gravity="center"
+        android:text="周期设置"
+        android:gravity="center"
+        android:background="@mipmap/zun_title_bg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/zun_body_bg"
+        android:layout_height="300dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bootLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/add_line"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@mipmap/zun_botton_bg"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancle_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/font_close_press" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/line_long" />
+        <Button
+            android:id="@+id/sure_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/sure"
+            android:textColor="@color/font_blue_press" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/oil_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@color/white" >
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="联动设定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/add_line"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tabbar_item_select" >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffcccccc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="动作"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/actionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@mipmap/index_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_12"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/gray_font"
+        android:text="传感动作形态"/>
+
+
+    <RelativeLayout
+        android:id="@+id/deviceLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/item_height20"
+        android:background="@drawable/tabbar_item_select" >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffcccccc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="设备"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/deviceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@mipmap/index_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_12"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/gray_font"
+        android:text="指定联动设备"/>
+
+
+    <RelativeLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/item_height20"
+        android:background="@drawable/tabbar_item_select" >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffcccccc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="时间"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@mipmap/index_arrow" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_12"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/gray_font"
+        android:text="设定设备动作时间"/>
+    <RelativeLayout
+        android:id="@+id/modeOnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/item_height20"
+        android:background="@drawable/tabbar_item_select" >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffcccccc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="情景"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/modeOnTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@mipmap/index_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_12"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/gray_font"
+        android:text="开启指定联动设备"/>
+
+    <RelativeLayout
+        android:id="@+id/modeOFFLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/item_height20"
+        android:background="@drawable/tabbar_item_select" >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffcccccc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="情景"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/modeOFFTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:src="@mipmap/index_arrow" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_12"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/gray_font"
+        android:text="关闭指定联动设备"/>
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/moreBtn"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_shape"
+        android:layout_height="40dp"
+        android:text="设置"
+        android:textColor="@color/font_press"/>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/zun_title_bg"
+        android:layout_height="@dimen/item_height50">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/updateapk"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height80"
+        android:background="@mipmap/zun_body_bg"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_marginTop="@dimen/item_height5"
+            android:id="@+id/countTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/updateapkNew"
+            android:layout_marginBottom="@dimen/item_height5"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <ProgressBar
+            android:id="@+id/proBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:max="100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/item_height10"
+            android:layout_marginBottom="@dimen/item_height10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/finished"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+            <TextView
+                android:id="@+id/leftTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/add_line" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@mipmap/zun_botton_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancle_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/font_close_press" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/add_line" />
+
+        <Button
+            android:id="@+id/sure_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/sure"
+            android:textColor="@color/font_open_press" />
+    </LinearLayout>
+
+</LinearLayout>

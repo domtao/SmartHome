@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/backTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/addDevice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/editeTxt"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2.0dip"
+            android:background="@drawable/fun_bg_selector"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/add_line"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deviceName"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/deviceName"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="240dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font_size_14"
+                    android:singleLine="true" />
+                <ImageButton
+                    android:id="@+id/deviceNameAudio"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/audio_temp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deviceId"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/deviceID"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="240dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font_size_14"
+                    android:singleLine="true" />
+                <TextView
+                    android:id="@+id/studyTxt"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:cropToPadding="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="@string/air_study"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/startTime"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/deviceTiming"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/timeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="00:00~00:00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tabbar_item_select">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="设备别称"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="@dimen/font_size_16"/>
+
+                <EditText
+                    android:id="@+id/nickName"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="240dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textSize="@dimen/font_size_14"
+                    android:textColorHint="@color/background_gray"
+                    android:hint="@string/input_content"
+                    android:padding="5dp"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/audio"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/audio_temp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多个别称用英文,隔开"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:id="@+id/roomLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/room"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/roomTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="点击选择"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/typeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/typeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="点击选择"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/productLayout"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/product"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/productTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="点击选择"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/ioLayout"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/tabbar_item_select" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Io"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_16" />
+
+                <TextView
+                    android:id="@+id/ioTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="回路1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@mipmap/index_arrow" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

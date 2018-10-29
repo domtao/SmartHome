@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bg_style"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/header_item"
+        layout="@layout/header_view" />
+
+    <ScrollView
+        android:id="@id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10.0dip"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10.0dip" >
+
+                <RelativeLayout
+                    android:id="@id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_margin="5.0dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/sdkcount"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:id="@+id/tv_sd_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_black" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@id/imageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_margin="5.0dip"
+                    android:gravity="center_vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text=""
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:id="@+id/tv_sd_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_black" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_margin="5.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/sdstate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5.0dip"
+                        android:text="@string/sdkstate"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/sdstate"
+                        android:text=""
+                        android:textColor="@color/color_black" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/videofg"
+                        android:textColor="@color/color_black" />
+
+                    <CheckBox
+                        android:id="@+id/cbx_coverage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/voice_record_che_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/voice_record_che_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/soundvideo"
+                        android:textColor="@color/color_black" />
+
+                    <CheckBox
+                        android:id="@+id/cbx_record_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="5.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/timmingvideo"
+                        android:textColor="@color/color_black" />
+
+                    <CheckBox
+                        android:id="@+id/cbx_record_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/checkbox_selector"
+                        android:button="@null" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@color/color_grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="10.0dip" >
+
+                <Button
+                    android:id="@+id/set_sd_format"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_height45"
+                    android:background="@drawable/button_shape"
+                    android:textColor="@color/font_press"
+                    android:text="@string/sdkformat" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

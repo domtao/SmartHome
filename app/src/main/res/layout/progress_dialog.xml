@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height50"
+        android:background="@mipmap/zun_title_bg">
+
+        <TextView
+            android:id="@+id/tipTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="@dimen/item_height50"
+            android:layout_height="@dimen/item_height30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:background="@drawable/button_boder_shape"
+            android:text="关闭"
+            android:textColor="@drawable/font_open_press"
+            android:textSize="@dimen/font_size_12"
+            android:layout_marginRight="@dimen/item_height10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/zun_body_bg"
+        android:layout_height="wrap_content">
+
+        <com.zunder.scrollview.ProgressWheel
+            android:id="@+id/proGress"
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            ProgressWheel:pwText="加载数据中"
+            ProgressWheel:pwTextColor="#222222"
+            ProgressWheel:pwTextSize="@dimen/font_size_12"
+            ProgressWheel:pwRimColor="@color/add_line"
+            ProgressWheel:pwBarLength="60dp"
+            ProgressWheel:pwBarColor="@color/green"
+            ProgressWheel:pwBarWidth="25dp"
+            ProgressWheel:pwRimWidth="25dp"
+            ProgressWheel:pwSpinSpeed="3dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
